@@ -1,0 +1,4 @@
+name,locale,name_type,locale_preferred,retired
+None,en,Fully Specified,TRUE,FALSE
+Fully Specified,en,Fully Specified,TRUE,FALSE
+Short,en,Fully Specified,TRUE,FALSE

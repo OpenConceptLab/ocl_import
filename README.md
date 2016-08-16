@@ -1,6 +1,6 @@
 # ocl_import
-This repository is intended to help generate OCL imports from a variety of 
-sources, excluding OpenMRS (see the `ocl_ciel_import` repo for that).
+This repository is intended to help generate OCL-formatted JSON files from CSV files.
+To import OpenMRS dictionaries, refer to the `ocl_ciel_import` repo.
 
 Currently, there is a script that accepts CSV files and converts them to the
 required JSON format that OCL uses to import concepts using the `import_concepts_to_source`

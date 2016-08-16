@@ -70,7 +70,7 @@ def csv_to_json_concept(csv_filename, id_column, standard_columns=None,
             print json.dumps(concept)
 
 def format_identifier(unformatted_id):
-    INVALID_CHARS = ' `~!@#$%^&*()_+-=[]{}\|;:"\',./<>?'
+    INVALID_CHARS = ' `~!@#$%^&*()_+-=[]{}\|;:"\',/<>?'
     REPLACE_CHAR = '-'
     formatted_id = list(unformatted_id)
     for index in range(len(unformatted_id)):

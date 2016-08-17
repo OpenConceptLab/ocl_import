@@ -1,6 +1,6 @@
 from csv_to_json_concept import csv_to_json_concept
 
-csv_filename = 'EthiopiaMoh/ethiopia_hmis_indicators.csv'
+csv_filename = 'EthiopiaMoh/hmis_indicators.csv'
 id_column = 'Indicator ID'
 standard_columns = [
     {'concept_field':'concept_class', 'value':'Indicator'},

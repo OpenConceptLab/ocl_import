@@ -1,3 +1,5 @@
 name,description,locale,name_type,locale_preferred,retired
 Subset,,en,Fully Specified,TRUE,FALSE
 Value Set,,en,Fully Specified,TRUE,FALSE
+Interface Terminology,,en,Fully Specified,TRUE,FALSE
+Indicator Registry,,en,Fully Specified,TRUE,FALSE

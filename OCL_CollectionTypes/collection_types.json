@@ -1,0 +1,4 @@
+{"datatype": "N/A", "concept_class": "Collection Type", "id": "Subset", "descriptions": [], "names": [{"locale": "en", "locale_preferred": "True", "name_type": "Fully Specified", "name": "Subset"}]}
+{"datatype": "N/A", "concept_class": "Collection Type", "id": "Value-Set", "descriptions": [], "names": [{"locale": "en", "locale_preferred": "True", "name_type": "Fully Specified", "name": "Value Set"}]}
+{"datatype": "N/A", "concept_class": "Collection Type", "id": "Interface-Terminology", "descriptions": [], "names": [{"locale": "en", "locale_preferred": "True", "name_type": "Fully Specified", "name": "Interface Terminology"}]}
+{"datatype": "N/A", "concept_class": "Collection Type", "id": "Indicator-Registry", "descriptions": [], "names": [{"locale": "en", "locale_preferred": "True", "name_type": "Fully Specified", "name": "Indicator Registry"}]}

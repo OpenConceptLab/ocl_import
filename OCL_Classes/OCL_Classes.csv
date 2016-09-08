@@ -27,3 +27,4 @@ e30d8601-07f8-413a-9d11-cdfbb28196ec,Units of Measure,For prescribing and dispen
 89a98300-062e-4003-8f6f-764ea23ab648,Organism,Class of living organisms,en,Fully Specified,TRUE,0
 de359f23-2bfc-4e8d-96d8-25b7526d6070,Drug form,Medication form for prescribing,en,Fully Specified,TRUE,0
 0dcf23d4-3008-4d8e-b12c-4ec95d1cfd97,Medical supply,Durable medical equipment and other supplies.,en,Fully Specified,TRUE,0
+e2c52f55-c7b4-49f7-9f82-1ffa2fe6023f,InteractSet,Set of drugs that interact with parent drug.,en,Fully Specified,TRUE,0

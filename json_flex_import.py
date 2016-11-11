@@ -19,10 +19,13 @@ api_token_staging_paynejd = 'a61ba53ed7b8b26ece8fcfc53022b645de0ec055'
 api_token_production_root = '230e6866c2037886909c58d8088b1a5e7cabc74b'
 api_token_production_paynejd = '950bd651dc4ee29d6bcee3e6dacfe7834bb0f881'
 
+api_url_showcase = 'https://api.openconceptlab.org'
+api_url_staging = 'https://api.staging.openconceptlab.org'
+api_url_production = 'http://api.showcase.openconceptlab.org'
 
-file_path = 'CIEL_Sources/sources.json'
-api_token = api_token_production_root
-api_url_root = 'https://api.openconceptlab.org'
+file_path = 'CIEL_Sources/pih_sources.json'
+api_token = api_token_staging_root
+api_url_root = api_url_staging
 test_mode = False
 
 
@@ -45,23 +48,14 @@ class ocl_json_flex_import:
             "has_source": False,
             "allowed_fields": ["id", "short_code", "name", "full_name", "description", "source_type", "custom_validation_schema", "public_access", "default_locale", "supported_locales", "website", "extras", "external_id"],
         },
-    }
-    '''
-        OBJ_TYPE_COLLECTION: {
+        OBJ_TYPE_ORGANIZATION: {
             "id_field": "id",
-            "url_name": "collections",
-            "has_owner": True,
+            "url_name": "orgs",
+            "has_owner": False,
             "has_source": False,
-            "allowed_fields": ["name", "full_name", "description", "collection_type", "custom_validation_schema", "public_access", "default_locale", "supported_locales", "website", "extras", "external_id"],
-        },
-        OBJ_TYPE_CONCEPT: {
-            "id_field": "id",
-            "url_name": "concepts",
-            "has_owner": True,
-            "has_source": True,
+            "allowed_fields": ["id", "company", "extras", "location", "name", "public_access", "website"]
         }
     }
-    '''
 
 
     def __init__(self, file_path='', api_url_root='', api_token='', test_mode=False):
@@ -96,7 +90,7 @@ class ocl_json_flex_import:
         # Grab owner info
         has_owner = False
         obj_owner_url = None
-        if self.obj_def["Source"]["has_owner"]:
+        if self.obj_def[obj_type]["has_owner"]:
             has_owner = True
             if "owner_url" in obj:
                 # relative url
@@ -107,12 +101,12 @@ class ocl_json_flex_import:
             elif "owner" in obj and "owner_type" in obj:
                 obj_owner_type = obj.pop("owner_type")
                 obj_owner = obj.pop("owner")
-                if obj_owner_type == 'Organization':
-                    obj_owner_url = "/orgs/" + obj_owner
-                elif obj_owner_url == 'User':
-                    obj_owner_url = "/users/" + obj_owner
+                if obj_owner_type == self.OBJ_TYPE_ORGANIZATION:
+                    obj_owner_url = "/" + self.obj_def[self.OBJ_TYPE_ORGANIZATION]["url_name"] + "/" + obj_owner
+                elif obj_owner_url == self.OBJ_TYPE_USER:
+                    obj_owner_url = "/" + self.obj_def[self.OBJ_TYPE_USER]["url_name"] + "/" + obj_owner
                 else:
-                    #throw error
+                    #TODO: throw error
                     pass
 
             else:
@@ -122,8 +116,8 @@ class ocl_json_flex_import:
         # Grab the source info
         has_source = False
         obj_source = None
-        if self.obj_def["Source"]["has_source"]:
-            #has_source = True
+        if self.obj_def[obj_type]["has_source"]:
+            #TODO has_source = True
             pass
         else:
             pass
@@ -131,19 +125,50 @@ class ocl_json_flex_import:
         # Pull out the fields that aren't allowed
         obj_not_allowed = {}
         for k in obj.keys():
-            if k in self.obj_def["Source"]["allowed_fields"]:
-                #print "Allowed: " + k
+            if k in self.obj_def[obj_type]["allowed_fields"]:
+                # do nothing
                 pass
             else:
                 obj_not_allowed[k] = obj.pop(k)
 
+        # Build object URLs
+        if has_source:
+            # Concept, mapping, reference, etc.
+            new_obj_url = ''
+            obj_url = ''
+        elif has_owner:
+            # Repository (Source or collection)
+            new_obj_url = obj_owner_url + "/" + self.obj_def[obj_type]["url_name"] + "/"
+            obj_url = new_obj_url + obj_id + "/"
+        else:
+            # Organization
+            new_obj_url = '/' + self.obj_def[obj_type]["url_name"] + "/"
+            obj_url = new_obj_url + obj_id + "/"
+
+        # Prepare the headers
+        headers = {
+            'Authorization': 'Token ' + self.api_token,
+            'Content-Type': 'application/json'
+        }
+
+        # Display some debug info
+        print " ----- " + self.api_url_root + obj_url + " ----- "
+        print "** Allowed Fields: **"
+        print json.dumps(obj)
+        print "** Removed Fields: **"
+        print json.dumps(obj_not_allowed)
+
         # Route to the appropriate method for type-based handling
-        if obj_type == self.OBJ_TYPE_CONCEPT:
-            self.process_concept(obj)
+        if obj_type == self.OBJ_TYPE_ORGANIZATION:
+            self.process_organization(obj_type=obj_type, obj_id=obj_id, obj_owner_url=obj_owner_url,
+                                      obj_url=obj_url, new_obj_url=new_obj_url,
+                                      obj=obj, obj_not_allowed=obj_not_allowed, headers=headers)
         elif obj_type == self.OBJ_TYPE_SOURCE:
-            self.process_source(obj_type, obj_id, obj_owner_url, obj, obj_not_allowed)
-        elif obj_type == self.OBJ_TYPE_ORGANIZATION:
-            self.process_organization(obj)
+            self.process_source(obj_type=obj_type, obj_id=obj_id, obj_owner_url=obj_owner_url,
+                                obj_url=obj_url, new_obj_url=new_obj_url,
+                                obj=obj, obj_not_allowed=obj_not_allowed, headers=headers)
+        elif obj_type == self.OBJ_TYPE_CONCEPT:
+            self.process_concept(obj)
         elif obj_type == self.OBJ_TYPE_MAPPING:
             self.process_mapping(obj)
         elif obj_type == self.OBJ_TYPE_COLLECTION:
@@ -152,38 +177,35 @@ class ocl_json_flex_import:
             self.process_reference(obj)
 
 
-    def process_concept(self, json_obj, obj_id=None):
-        #print(json_obj["datatype"])
-        pass
-
-
-    def process_mapping(self, json_obj, obj_id=None):
-        #print(json_obj["from_concept"])
-        pass
-
-
-    def process_reference(self, json_obj, obj_id=None):
-        #print(json_obj["expression"])
-        pass
-
-
-    def process_source(self, obj_type, obj_id, obj_owner_url, obj, obj_not_allowed):
-        # Prepare the API request
-        new_obj_url = obj_owner_url + '/' + self.obj_def[obj_type]["url_name"] + "/"
-        obj_url = new_obj_url + obj_id + "/"
-        headers = {
-            'Authorization': 'Token ' + self.api_token,
-            'Content-Type': 'application/json'
-        }
-
-        # Display some debug info
-        print " ----- " + obj_url + " ----- "
-        print "** Allowed Fields: **"
-        print json.dumps(obj)
-        print "** Removed Fields: **"
-        print json.dumps(obj_not_allowed)
-
+    def process_organization(self, obj_type='', obj_id='', obj_owner_url='', obj_url='', new_obj_url='',
+                       obj=None, obj_not_allowed=None, headers=None):
         # Check if it exists: GET self.api_url_root + obj_url
+        print "GET " + self.api_url_root + obj_url
+        r1 = requests.get(self.api_url_root + obj_url, headers=headers)
+        if r1.status_code == requests.codes.ok:
+            # Object exists, so skip for now -- in the future, can optionally perform an update
+            print "** SKIPPING: Object already exists at: " + self.api_url_root + obj_url
+        elif r1.status_code == requests.codes.not_found:
+            # Object does not exist, so create it
+            print "** Object does not exist at: " + self.api_url_root + obj_url
+            print "POST " + self.api_url_root + new_obj_url + '  ' + json.dumps(obj)
+            if not self.test_mode:
+                r3 = requests.post(self.api_url_root + new_obj_url, headers=headers, data=json.dumps(obj))
+                if r3.status_code == requests.codes.created:
+                    print "CREATED 201"
+                    print r3.text
+                else:
+                    print r3.headers
+                    print r3.text
+                    r3.raise_for_status()
+        else:
+            print "** SKIPPING: Something happened with status code: " + str(r1.status_code)
+
+
+    def process_source(self, obj_type='', obj_id='', obj_owner_url='', obj_url='', new_obj_url='',
+                       obj=None, obj_not_allowed=None, headers=None):
+        # Check if it exists: GET self.api_url_root + obj_url
+        print "GET " + self.api_url_root + obj_url
         r1 = requests.get(self.api_url_root + obj_url, headers=headers)
         if r1.status_code == requests.codes.ok:
             # Object exists, so skip for now -- in the future, can optionally perform an update
@@ -219,9 +241,16 @@ class ocl_json_flex_import:
         #print(obj["name"])
         pass
 
+    def process_concept(self, json_obj, obj_id=None):
+        #print(json_obj["datatype"])
+        pass
 
-    def process_organization(self, json_obj, obj_id=None):
-        #print(obj["name"])
+    def process_mapping(self, json_obj, obj_id=None):
+        #print(json_obj["from_concept"])
+        pass
+
+    def process_reference(self, json_obj, obj_id=None):
+        #print(json_obj["expression"])
         pass
 
 

@@ -1,0 +1,6 @@
+{
+"extras": {
+"about":
+"<h2>HMIS Registers</h2>\n<p>The following registers were modeled and incorporated into NHDD v1.1, based on the 2014 HMIS Data Recording and Reporting Guidelines:</p>\n<ul><li>Comprehensive Abortion Care Register</li><li>Antenatal Care Register</li><li>Labor and Delivery Register</li><li>Growth Monitoring Register</li><li>Infant Immunization and Growth Monitoring Register</li><li>Family Planning Register</li><li>Inpatient Admission / Discharge (IPD) Register</li><li>Outpatient (OPD) Register</li><li>Operation Register</li><li>Post-Exposure to HIV Prophylaxis (PEP) Follow Up Register</li><li>PMTCT Register</li><li>Postnatal Care (PNC) Register</li><li>Referral Register</li><li>Tetanus Toxoid Immunization Register</li><li>Voluntary Counseling and Testing Register</li><li>ART Register</li><li>Leprosy Register</li><li>MDR-TB Register</li><li>MDR-TB Follow up Register</li><li>Pre-ART register, Pre ART Register</li><li>Leprosy Register for Care after Completion of Treatment (RFT) Register</li><li>Unit TB Register</li><li>IMNCI Register</li></ul>\n<p>Please note that the full release of NHDD v1.1 is planned for the first quarter of 2017, ans some of the above content may not be available until that time.</p>"
+}
+}

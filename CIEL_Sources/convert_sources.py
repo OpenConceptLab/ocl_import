@@ -3,8 +3,6 @@ from csv_to_json_concept import csv_to_json_concept
 csv_filename = 'CIEL_Sources/sources.csv'
 id_column = 'short_code'
 standard_columns = [
-    #{'concept_field':'concept_class', 'value':'Concept Class'},
-    #{'concept_field':'datatype', 'value':'N/A'},
     {'concept_field':'short_code', 'column':'short_code'},
     {'concept_field':'type', 'column':'repository_type'},
     {'concept_field':'owner', 'column':'owner'},

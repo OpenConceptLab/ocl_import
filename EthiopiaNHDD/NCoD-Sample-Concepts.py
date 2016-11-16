@@ -1,6 +1,6 @@
 from csv_to_json_concept import csv_to_json_concept
 
-csv_filename = 'EthiopiaMoh/NCoD-Sample.csv'
+csv_filename = 'EthiopiaNHDD/NCoD-Sample-Concepts.csv'
 id_column = 'concept_id'
 standard_columns = [
     {'concept_field':'concept_class', 'value':'Diagnosis'},
@@ -12,8 +12,8 @@ name_columns = [
 desc_columns = [
 ]
 extra_columns = [
-    {'value_column':'extra_icd10_block', 'key':'ICD-10 Block'},
-    {'value_column':'extra_icd10_chapter', 'key':'ICD-10 Chapter'},
+    {'value_column':'extra_icd10_block', 'key':'ICD10-Block'},
+    {'value_column':'extra_icd10_chapter', 'key':'ICD10-Chapter'},
 ]
 
 csv_to_json_concept(

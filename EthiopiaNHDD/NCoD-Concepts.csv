@@ -1,0 +1,2055 @@
+concept_id,extra_icd10_block,extra_icd10_chapter,name
+1,A00,Infectious & Parasitic,Cholera
+2,A00,Infectious & Parasitic,Typhoid Fever (due to Salmonella typhi)
+3,A00,Infectious & Parasitic,Typhoid Fever (With Other Complications)
+4,A00,Infectious & Parasitic,Typhoid Fever
+5,A00,Infectious & Parasitic,Salmonella enteritis
+6,A00,Infectious & Parasitic,Sepsis (Salmonella sepsis)
+7,A00,Infectious & Parasitic,"Salmonella infection, unspecified"
+8,A00,Infectious & Parasitic,Diarrhea (Shigellosis due to Shigella dysenteriae)
+9,A00,Infectious & Parasitic,"Shigellosis (Shigellosis, unspecified)"
+10,A00,Infectious & Parasitic,Escherichia Coli Infection (Enterohaemorrhagic Escherichia coli infection)
+11,A00,Infectious & Parasitic,Enteritis (Campylobacter enteritis)
+12,A00,Infectious & Parasitic,Enteritis (Enteritis due to Yersinia enterocolitica)
+13,A00,Infectious & Parasitic,"Infection (Bacterial intestinal infection, unspecified)"
+14,A00,Infectious & Parasitic,Intoxications [Foodborne] (Foodborne staphylococcal intoxication)
+15,A00,Infectious & Parasitic,Botulism
+16,A00,Infectious & Parasitic,Foodborne Clostridium perfringens [Clostridium welchii] intoxication
+17,A00,Infectious & Parasitic,Other specified bacterial foodborne intoxications
+18,A00,Infectious & Parasitic,"Intoxication (Bacterial foodborne intoxication, unspecified)"
+19,A00,Infectious & Parasitic,Amoebiasis
+20,A00,Infectious & Parasitic,Amoebiasis (Acute amoebic dysentery)
+21,A00,Infectious & Parasitic,Amoebiasis (Chronic intestinal amoebiasis)
+22,A00,Infectious & Parasitic,Amoebiasis (Amoebic nondysenteric colitis)
+23,A00,Infectious & Parasitic,Amoebiasis (Amoeboma of intestine)
+24,A00,Infectious & Parasitic,Amebiasis (Amoebic liver abscess)
+25,A00,Infectious & Parasitic,Amebiasis (Amoebic lung abscess)
+26,A00,Infectious & Parasitic,Amebiasis (Amoebic brain abscess)
+27,A00,Infectious & Parasitic,Amebiasis (Amoebic infection of other sites)
+28,A00,Infectious & Parasitic,Giardiasis (Giardiasis [lambliasis])
+29,A00,Infectious & Parasitic,Cryptosporidiosis
+30,A00,Infectious & Parasitic,Acute gastroenteropathy due to Norwalk agent
+31,A00,Infectious & Parasitic,Enteritis (Other viral enteritis)
+32,A00,Infectious & Parasitic,"Viral intestinal infection, unspecified"
+33,A00,Infectious & Parasitic,Gastroenteritis and colitis of unspecified origin
+34,A15,Infectious & Parasitic,Tuberculosis (Respiratory; bacteriologically and histologically confirmed)
+35,A15,Infectious & Parasitic,"Tuberculosis (Tuberculosis of lung, confirmed by sputum microscopy with or without culture)"
+36,A15,Infectious & Parasitic,"Tuberculosis of lung, confirmed histologically"
+37,A15,Infectious & Parasitic,"Tuberculosis of lung, confirmed by unspecified means"
+38,A15,Infectious & Parasitic,"Tuberculosis (Primary respiratory tuberculosis, confirmed bacteriologically and histologically)"
+39,A15,Infectious & Parasitic,"Respiratory tuberculosis, not confirmed bacteriologically or histologically"
+40,A15,Infectious & Parasitic,"Tuberculosis of lung, without mention of bacteriological or histological confirmation"
+41,A15,Infectious & Parasitic,"Tuberculosis of larynx, trachea and bronchus, without mention of bacteriological or histological confirmation"
+42,A15,Infectious & Parasitic,"Tuberculous pleurisy, without mention of bacteriological or histological confirmation"
+43,A15,Infectious & Parasitic,Primary respiratory tuberculosis without mention of bacteriological or histological confirmation
+44,A15,Infectious & Parasitic,"Other respiratory tuberculosis, without mention of bacteriological or histological confirmation"
+45,A15,Infectious & Parasitic,"Respiratory tuberculosis unspecified, without mention of bacteriological or histological confirmation"
+46,A15,Infectious & Parasitic,Tuberculosis of nervous system
+47,A15,Infectious & Parasitic,Tuberculosis (Meningeal tuberculoma)
+48,A15,Infectious & Parasitic,Tuberculosis (Tuberculosis of other organs)
+49,A15,Infectious & Parasitic,Tuberculosis of bones and joints
+50,A15,Infectious & Parasitic,Tuberculosis of genitourinary system
+51,A15,Infectious & Parasitic,"Tuberculosis of intestines, peritoneum and mesenteric glands"
+52,A15,Infectious & Parasitic,Tuberculosis (Tuberculosis of skin and subcutaneous tissue)
+53,A15,Infectious & Parasitic,Tuberculosis (Tuberculosis of ear)
+54,A15,Infectious & Parasitic,Miliary tuberculosis
+55,A15,Infectious & Parasitic,Tuberculosis (Acute miliary tuberculosis of a single specified site)
+56,A15,Infectious & Parasitic,Acute miliary tuberculosis of multiple sites
+57,A15,Infectious & Parasitic,"Acute miliary tuberculosis, unspecified"
+58,A15,Infectious & Parasitic,"Tuberculosis (Miliary tuberculosis, unspecified)"
+59,A20,Infectious & Parasitic,Tularemia (Tularaemia)
+60,A20,Infectious & Parasitic,Anthrax
+61,A30,Infectious & Parasitic,Leprosy (Tuberculoid leprosy)
+62,A30,Infectious & Parasitic,Leprosy (Borderline leprosy)
+63,A30,Infectious & Parasitic,Leprosy (Lepromatous leprosy)
+64,A30,Infectious & Parasitic,"Leprosy (Leprosy, unspecified)"
+65,A30,Infectious & Parasitic,Listeriosis (Cutaneous listeriosis)
+66,A30,Infectious & Parasitic,Tetanus (Tetanus neonatorum)
+67,A30,Infectious & Parasitic,Diphtheria (Nasopharyngeal)
+68,A30,Infectious & Parasitic,"Diphtheria (Diphtheria, unspecified)"
+69,A30,Infectious & Parasitic,Meningitis (Meningococcal meningitis)
+70,A30,Infectious & Parasitic,Sepsis (Streptococcal sepsis)
+71,A30,Infectious & Parasitic,Sepsis (Other sepsis)
+72,A30,Infectious & Parasitic,Sepsis (Sepsis due to Staphylococcus aureus)
+73,A30,Infectious & Parasitic,Sepsis (Sepsis due to unspecified staphylococcus)
+74,A30,Infectious & Parasitic,Sepsis (Sepsis due to anaerobes)
+75,A30,Infectious & Parasitic,Sepsis (Sepsis due to other Gram-negative organisms)
+76,A30,Infectious & Parasitic,Sepsis (Other specified sepsis)
+77,A30,Infectious & Parasitic,"Sepsis (Sepsis, unspecified)"
+78,A30,Infectious & Parasitic,Erysipelas
+79,A30,Infectious & Parasitic,"Bacterial Diseases (Other bacterial diseases, not elsewhere classified)"
+80,A30,Infectious & Parasitic,Gangrene (Gas gangrene)
+81,A30,Infectious & Parasitic,Toxic shock syndrome
+82,A30,Infectious & Parasitic,Infection (Bacterial infection of unspecified site)
+83,A30,Infectious & Parasitic,"Bacterial infection, unspecified"
+84,A50,Infectious & Parasitic,Congenital syphilis
+85,A50,Infectious & Parasitic,Early syphilis
+86,A50,Infectious & Parasitic,Syphilis (Primary genital syphilis)
+87,A50,Infectious & Parasitic,Primary syphilis of other sites
+88,A50,Infectious & Parasitic,Other secondary syphilis
+89,A50,Infectious & Parasitic,Late syphilis
+90,A50,Infectious & Parasitic,"Syphilis (Syphilis, unspecified)"
+91,A50,Infectious & Parasitic,Gonococcal Infection
+92,A50,Infectious & Parasitic,"Sexual Transmission (Gonococcal infection, unspecified)"
+93,A50,Infectious & Parasitic,Chancroid (Chlamydial lymphogranuloma (venereum))
+94,A50,Infectious & Parasitic,Chlamydial Infection (Chlamydial infection of lower genitourinary tract)
+95,A50,Infectious & Parasitic,Sexual Transmission (Chlamydial infection of anus and rectum)
+96,A50,Infectious & Parasitic,Chlamydial lymphogranuloma (venereum) (Chancroid)
+97,A50,Infectious & Parasitic,Trichomoniasis (Trichomoni vaginalis)
+98,A50,Infectious & Parasitic,Sexual Transmission (Anogenital herpesviral [herpes simplex] infection)
+99,A50,Infectious & Parasitic,Herpesviral Infection (Herpesviral infection of perianal skin and rectum)
+100,A50,Infectious & Parasitic,"Herpesviral (Anogenital herpesviral infection, unspecified)"
+101,A50,Infectious & Parasitic,Genital wart (Condyloma Acumunata) (Anogenital (venereal) warts)
+102,A50,Infectious & Parasitic,Herpesviral (Other specified predominantly sexually transmitted diseases)
+103,A50,Infectious & Parasitic,Sexually Transmitted Disease (Unspecified sexually transmitted disease)
+104,A65,Infectious & Parasitic,Relapsing Fever (Relapsing fevers (Spirochaetal))
+105,A65,Infectious & Parasitic,Louse-borne relapsing fever
+106,A65,Infectious & Parasitic,"Relapsing fever, unspecified"
+107,A65,Infectious & Parasitic,Other spirochaetal infections
+108,A65,Infectious & Parasitic,Cancrum Oris (Necrotizing ulcerative stomatitis)
+109,A65,Infectious & Parasitic,Arthritis (Lyme disease)
+110,A70,Infectious & Parasitic,Trachoma
+111,A70,Infectious & Parasitic,Initial stage of trachoma
+112,A70,Infectious & Parasitic,Active stage of trachoma
+113,A70,Infectious & Parasitic,"Trachoma (Trachoma, unspecified)"
+114,A70,Infectious & Parasitic,Chlamydial conjunctivitis
+115,A75,Infectious & Parasitic,Typhus fever
+116,A75,Infectious & Parasitic,Typhus fever (Epidemic louse-borne typhus fever due to Rickettsia prowazekii)
+117,A75,Infectious & Parasitic,"Typhus fever, unspecified"
+118,A80,Infectious & Parasitic,Poliomyelitis (Acute poliomyelitis)
+119,A80,Infectious & Parasitic,"Poliomyelitis (Acute paralytic poliomyelitis, vaccine-associated)"
+120,A80,Infectious & Parasitic,"Acute paralytic poliomyelitis, wild virus, imported"
+121,A80,Infectious & Parasitic,"Acute paralytic poliomyelitis, wild virus, indigenous"
+122,A80,Infectious & Parasitic,Poliomyelitis (Acute nonparalytic poliomyelitis)
+123,A80,Infectious & Parasitic,"Acute poliomyelitis, unspecified"
+124,A80,Infectious & Parasitic,Rabies (Sylvatic rabies)
+125,A80,Infectious & Parasitic,"Rabies (Rabies, unspecified)"
+126,A90,Infectious & Parasitic,Haemorrhagic Fevers (Dengue fever [classical dengue])
+127,A90,Infectious & Parasitic,Haemorrhagic Fevers (Dengue haemorrhagic fever)
+128,A90,Infectious & Parasitic,Haemorrhagic Fevers (Yellow fever)
+129,A90,Infectious & Parasitic,Viral Hemorrhagic Fever (Other specified viral haemorrhagic fevers)
+130,A90,Infectious & Parasitic,Zika (Other specified viral haemorrhagic fevers)
+131,A90,Infectious & Parasitic,Ebola (Other specified viral haemorrhagic fevers)
+132,A90,Infectious & Parasitic,Haemorrhagic Fevers (Unspecified viral haemorrhagic fever)
+133,B00,Infectious & Parasitic,Herpes Simplex (Herpesviral [herpes simplex] infections)
+134,B00,Infectious & Parasitic,Astiatotic eczema (Eczema herpeticum)
+135,B00,Infectious & Parasitic,"Infection (Herpesviral infection, unspecified)"
+136,B00,Infectious & Parasitic,Chickenpox (Varicella [chickenpox])
+137,B00,Infectious & Parasitic,Chickenpox (Varicella with other complications)
+138,B00,Infectious & Parasitic,Varicella (Varicella without complication)
+139,B00,Infectious & Parasitic,Herpes Zoster (Zoster [herpes zoster])
+140,B00,Infectious & Parasitic,Ocular Disease (Disseminated zoster)
+141,B00,Infectious & Parasitic,Herpes Zoster (Zoster with other complications)
+142,B00,Infectious & Parasitic,Herpes Zoster (Zoster without complication)
+143,B00,Infectious & Parasitic,Smallpox
+144,B00,Infectious & Parasitic,Measles
+145,B00,Infectious & Parasitic,Measles (Measles with other complications)
+146,B00,Infectious & Parasitic,Measles (Measles without complication)
+147,B00,Infectious & Parasitic,Rubella (Rubella [German measles])
+148,B00,Infectious & Parasitic,Warts (Viral warts)
+149,B00,Infectious & Parasitic,"Infection (Other viral infections characterized by skin and mucous membrane lesions, not elsewhere classified)"
+150,B00,Infectious & Parasitic,Molluscum Contagiosum
+151,B15,Infectious & Parasitic,Hepatitis B (Acute hepatitis B)
+152,B15,Infectious & Parasitic,Hepatitis (Other acute viral hepatitis)
+153,B15,Infectious & Parasitic,"Hepatitis (Acute viral hepatitis, unspecified)"
+154,B15,Infectious & Parasitic,Hepatitis (Chronic viral hepatitis)
+155,B15,Infectious & Parasitic,Hepatitis C (Other chronic viral hepatitis)
+156,B20,Infectious & Parasitic,Human immunodeficiency virus [HIV] disease resulting in infectious and parasitic diseases
+157,B20,Infectious & Parasitic,HIV (HIV disease resulting in mycobacterial infection)
+158,B20,Infectious & Parasitic,HIV disease resulting in other bacterial infections
+159,B20,Infectious & Parasitic,HIV (HIV disease resulting in candidiasis)
+160,B20,Infectious & Parasitic,HIV disease resulting in Pneumocystis jirovecii pneumonia
+161,B20,Infectious & Parasitic,HIV disease resulting in multiple infections
+162,B20,Infectious & Parasitic,HIV Disease (HIV disease resulting in unspecified infectious or parasitic disease)
+163,B20,Infectious & Parasitic,HIV disease resulting in Kaposi sarcoma
+164,B20,Infectious & Parasitic,HIV disease resulting in encephalopathy
+165,B20,Infectious & Parasitic,HIV disease resulting in wasting syndrome
+166,B20,Infectious & Parasitic,HIV (Human immunodeficiency virus [HIV] disease resulting in other conditions)
+167,B20,Infectious & Parasitic,Acute HIV infection syndrome
+168,B20,Infectious & Parasitic,HIV disease resulting in (persistent) generalized lymphadenopathy
+169,B20,Infectious & Parasitic,Unspecified human immunodeficiency virus [HIV] disease
+170,B25,Infectious & Parasitic,Mumps
+171,B35,Infectious & Parasitic,Tinea Barbae/Capitis (Tinea barbae and tinea capitis)
+172,B35,Infectious & Parasitic,Tinea Unguium
+173,B35,Infectious & Parasitic,Tinea Manuum (Hand ringworm)
+174,B35,Infectious & Parasitic,Tinea Pedis (Athlete's foot)
+175,B35,Infectious & Parasitic,Tinea Corporis
+176,B35,Infectious & Parasitic,Tinea Cruris
+177,B35,Infectious & Parasitic,Dermatophytoses (Other dermatophytoses)
+178,B35,Infectious & Parasitic,"Dermatophytosis (Dermatophytosis, unspecified)"
+179,B35,Infectious & Parasitic,Mycoses (Other superficial mycoses)
+180,B35,Infectious & Parasitic,Pityriasis Versicolor
+181,B35,Infectious & Parasitic,Candidiasis
+182,B35,Infectious & Parasitic,Candidiasis (Candidal stomatitis)
+183,B35,Infectious & Parasitic,Candidiasis (Pulmonary candidiasis)
+184,B35,Infectious & Parasitic,Candidiasis (of skin and nail)
+185,B35,Infectious & Parasitic,Candidiasis (onychia)
+186,B35,Infectious & Parasitic,Candidiasis (paronychia)
+187,B35,Infectious & Parasitic,Candidiasis (Sebohric Dermatitis)
+188,B35,Infectious & Parasitic,Candidiasis (Candidal meningitis)
+189,B35,Infectious & Parasitic,Candidiasis (cheilitis)
+190,B35,Infectious & Parasitic,"Candidiasis (Candidiasis, unspecified)"
+191,B35,Infectious & Parasitic,"Coccidioidomycosis (Coccidioidomycosis, unspecified)"
+192,B35,Infectious & Parasitic,"Histoplasmosis (Histoplasmosis, unspecified)"
+193,B35,Infectious & Parasitic,"Aspergillosis (Aspergillosis, unspecified)"
+194,B35,Infectious & Parasitic,Actinomycetoma
+195,B35,Infectious & Parasitic,Mycoses (Opportunistic mycoses)
+196,B50,Infectious & Parasitic,Malaria (Plasmodium falciparum malaria)
+197,B50,Infectious & Parasitic,Malaria (Plasmodium falciparum malaria with cerebral complications)
+198,B50,Infectious & Parasitic,Malaria (Other severe and complicated Plasmodium falciparum malaria)
+199,B50,Infectious & Parasitic,"Malaria (Plasmodium falciparum malaria, unspecified)"
+200,B50,Infectious & Parasitic,Malaria (Plasmodium vivax malaria)
+201,B50,Infectious & Parasitic,Malaria (Plasmodium vivax malaria with other complications)
+202,B50,Infectious & Parasitic,Malaria (Plasmodium vivax malaria without complication)
+203,B50,Infectious & Parasitic,Mixed Malaria (Other parasitologically confirmed malaria)
+204,B50,Infectious & Parasitic,Malaria (Unspecified malaria)
+205,B50,Infectious & Parasitic,Leishmaniasis
+206,B50,Infectious & Parasitic,"Leishmaniasis (Visceral leishmaniasis, Kala-azar)"
+207,B50,Infectious & Parasitic,Leishmaniasis (Cutaneous leishmaniasis)
+208,B50,Infectious & Parasitic,Leishmaniasis (Mucocutaneous leishmaniasis)
+209,B50,Infectious & Parasitic,Meningoencephalitis (Toxoplasma meningoencephalitis)
+210,B50,Infectious & Parasitic,Toxoplasmosis (Toxoplasmosis with other organ involvement)
+211,B50,Infectious & Parasitic,"Toxoplasmosis (Toxoplasmosis, unspecified)"
+212,B50,Infectious & Parasitic,Protozoal Disease (Unspecified/Leech infestation)
+213,B65,Infectious & Parasitic,Schistosomiasis (Schistosomiasis due to Schistosoma haematobium [urinary schistosomiasis])
+214,B65,Infectious & Parasitic,Schistosomiasis (Schistosomiasis due to Schistosoma mansoni [intestinal schistosomiasis])
+215,B65,Infectious & Parasitic,Schistosomiasis (Unspecified)
+216,B65,Infectious & Parasitic,Echinococcosis
+217,B65,Infectious & Parasitic,Taenia Saginata (Taenia saginata taeniasis)
+218,B65,Infectious & Parasitic,"Taenia Saginata (Taeniasis, unspecified)"
+219,B65,Infectious & Parasitic,"Cysticercosis (Cysticercosis, unspecified)"
+220,B65,Infectious & Parasitic,"Tapeworm (Cestode infection, unspecified)"
+221,B65,Infectious & Parasitic,Dracunculiasis (Guinea worm)
+222,B65,Infectious & Parasitic,Onchocerciasis
+223,B65,Infectious & Parasitic,Filariasis
+224,B65,Infectious & Parasitic,Elephantiasis (Filariasis due to Wuchereria bancrofti)
+225,B65,Infectious & Parasitic,Ascariasis
+226,B65,Infectious & Parasitic,Ascariasis (Ascariasis with intestinal complications)
+227,B65,Infectious & Parasitic,Ascariasis (Ascariasis with other complications)
+228,B65,Infectious & Parasitic,"Ascariasis (Ascariasis, unspecified)"
+229,B65,Infectious & Parasitic,Strongyloidiasis (Intestinal strongyloidiasis)
+230,B65,Infectious & Parasitic,Strongyloidiasis (Disseminated)
+231,B65,Infectious & Parasitic,"Strongyloidiasis (Strongyloidiasis, unspecified)"
+232,B65,Infectious & Parasitic,Trichuriasis
+233,B65,Infectious & Parasitic,Enterobiasis
+234,B65,Infectious & Parasitic,Helminthiasis (Mixed intestinal helminthiases)
+235,B65,Infectious & Parasitic,"Helminthiasis (Intestinal helminthiasis, unspecified)"
+236,B85,Infectious & Parasitic,"Pediculosis (Pediculosis, unspecified)"
+237,B85,Infectious & Parasitic,Phthiriasis
+238,B85,Infectious & Parasitic,Pediculosis And Phthiriasis (Mixed pediculosis and phthiriasis)
+239,B85,Infectious & Parasitic,Scabies
+240,B85,Infectious & Parasitic,Myiasis
+241,B85,Infectious & Parasitic,Myiasis (Ocular myiasis)
+242,B85,Infectious & Parasitic,Tungiasis [sandflea infestation]
+243,B85,Infectious & Parasitic,Leech Infestation (Other specified infestations)
+244,B90,Infectious & Parasitic,Sequelae of tuberculosis
+245,B90,Infectious & Parasitic,Poliomyelitis (Sequelae of poliomyelitis)
+246,B90,Infectious & Parasitic,Leprosy (Sequelae of leprosy)
+247,B90,Infectious & Parasitic,Sequelae of other and unspecified infectious and parasitic diseases
+248,B90,Infectious & Parasitic,Sequelae of trachoma
+249,B90,Infectious & Parasitic,Sequelae of other specified infectious and parasitic diseases
+250,B95,Infectious & Parasitic,Staphylococcus aureus as the cause of diseases classified to other chapters
+251,B95,Infectious & Parasitic,Other staphylococcus as the cause of diseases classified to other chapters
+252,B95,Infectious & Parasitic,Escherichia coli [E. coli] as the cause of diseases classified to other chapters
+253,B95,Infectious & Parasitic,Haemophilus influenzae [H. influenzae] as the cause of diseases classified to other chapters
+254,B95,Infectious & Parasitic,Clostridium perfringens [C. perfringens] as the cause of diseases classified to other chapters
+255,B95,Infectious & Parasitic,Coronavirus as the cause of diseases classified to other chapters
+256,B99,Infectious & Parasitic,Other and unspecified infectious diseases
+257,C00,Neoplasms,"Malignant neoplasm: Floor of mouth, unspecified (Malignant neoplasm of other, unspecified parts of mouth)"
+258,C00,Neoplasms,Malignant neoplasm of other and unspecified parts of mouth (Malignant neoplasm of oropharynx)
+259,C15,Neoplasms,Malignant neoplasm of oropharynx (Malignant neoplasm of oesophagus)
+260,C15,Neoplasms,Malignant neoplasm of oesophagus (Malignant neoplasm of stomach)
+261,C15,Neoplasms,"Malignant (Malignant neoplasm: Stomach, unspecified)"
+262,C15,Neoplasms,Malignant neoplasm of stomach (Malignant neoplasm of small intestine)
+263,C15,Neoplasms,Malignant neoplasm of small intestine (Malignant neoplasm: Duodenum)
+264,C15,Neoplasms,Malignant neoplasm: Duodenum (Malignant neoplasm: Jejunum)
+265,C15,Neoplasms,Malignant neoplasm: Jejunum (Malignant neoplasm: Ileum)
+266,C15,Neoplasms,Malignant neoplasm: Ileum (Malignant neoplasm of colon)
+267,C15,Neoplasms,Malignant neoplasm: Sigmoid colon (Malignant neoplasm of anus and anal canal)
+268,C15,Neoplasms,Malignant neoplasm of anus and anal canal (Malignant neoplasm: Liver cell carcinoma)
+269,C30,Neoplasms,"Malignant neoplasm: Larynx, unspecified (Malignant neoplasm of trachea)"
+270,C30,Neoplasms,Malignant neoplasm of trachea (Malignant neoplasm of bronchus and lung)
+271,C30,Neoplasms,"Malignant neoplasm of bronchus and lung (Malignant neoplasm: Mediastinum, part unspecified)"
+272,C30,Neoplasms,"Malignant neoplasm: Upper respiratory tract, part unspecified"
+273,C40,Neoplasms,"Malignant neoplasm: Bone and articular cartilage, unspecified"
+274,C43,Neoplasms,"Malignant neoplasm: Bone and articular cartilage, unspecified (Malignant melanoma of skin)"
+275,C45,Neoplasms,Malignant Neoplasm (Kaposi sarcoma)
+276,C50,Neoplasms,Kaposi sarcoma (Malignant neoplasm of breast)
+277,C50,Neoplasms,"Malignant (Malignant neoplasm: Breast, unspecified)"
+278,C51,Neoplasms,Malignant neoplasm of breast (Malignant neoplasm of cervix uteri)
+279,C51,Neoplasms,"Malignant (Malignant neoplasm: Cervix uteri, unspecified)"
+280,C51,Neoplasms,Malignant neoplasm: Exocervix (Malignant neoplasm: Endometrium)
+281,C51,Neoplasms,Malignant neoplasm: Endometrium (Malignant neoplasm: Myometrium)
+282,C51,Neoplasms,Malignant neoplasm: Myometrium (Malignant neoplasm of ovary)
+283,C51,Neoplasms,Malignant neoplasm of ovary (Malignant neoplasm of other and unspecified female genital organs)
+284,C60,Neoplasms,"Malignant neoplasm: Female genital organ, unspecified (Malignant neoplasm of prostate)"
+285,C60,Neoplasms,"Malignant neoplasm of prostate (Malignant neoplasm: Testis, unspecified)"
+286,C60,Neoplasms,"Malignant neoplasm: Testis, unspecified (Malignant neoplasm of other and unspecified male genital organs)"
+287,C64,Neoplasms,"Malignant neoplasm: Male genital organ, unspecified (Malignant neoplasm: Urinary organ, unspecified)"
+288,C76,Neoplasms,"Malignant neoplasm: Urinary organ, unspecified (Malignant neoplasm of other and ill-defined sites)"
+289,C76,Neoplasms,Malignant Neoplasm (Secondary and unspecified malignant neoplasm of lymph nodes)
+290,C76,Neoplasms,Secondary and unspecified malignant neoplasm of lymph nodes
+291,C76,Neoplasms,Malignant Neoplasm (Secondary malignant neoplasm of mediastinum)
+292,C76,Neoplasms,Malignant Neoplasm (Secondary malignant neoplasm of retroperitoneum and peritoneum)
+293,C76,Neoplasms,Malignant Neoplasm (Secondary malignant neoplasm of liver and intrahepatic bile duct)
+294,C76,Neoplasms,Secondary malignant neoplasm of kidney and renal pelvis
+295,C76,Neoplasms,Malignant Neoplasm (Secondary malignant neoplasm of skin)
+296,C76,Neoplasms,Malignant Neoplasm (Secondary malignant neoplasm of bone and bone marrow)
+297,C76,Neoplasms,Malignant Neoplasm (Secondary malignant neoplasm of ovary)
+298,C76,Neoplasms,"Secondary malignant neoplasm, unspecified site"
+299,C76,Neoplasms,"Malignant (Malignant neoplasm, without specification of site)"
+300,C76,Neoplasms,"Malignant (Malignant neoplasm, primary site unknown, so stated)"
+301,C76,Neoplasms,"Malignant (Malignant neoplasm, unspecified)"
+302,C81,Neoplasms,Hodgkin lymphoma
+303,C81,Neoplasms,"Lymphoma (Hodgkin lymphoma, unspecified)"
+304,C81,Neoplasms,Follicular lymphoma
+305,C81,Neoplasms,Non-follicular lymphoma
+306,C81,Neoplasms,Burkitt lymphoma
+307,C81,Neoplasms,"Lymphoma (Mature T/NK-cell lymphoma, unspecified)"
+308,C81,Neoplasms,"Non-Hodgkin Lymphoma (Non-Hodgkin lymphoma, unspecified)"
+309,C81,Neoplasms,Leukemia (Acute myeloblastic leukaemia [AML])
+310,C81,Neoplasms,Leukemia (Other myeloid leukaemia)
+311,C81,Neoplasms,"Leukemia (Leukaemia, unspecified)"
+312,C81,Neoplasms,"Leukemia (Other and unspecified malignant neoplasms of lymphoid, haematopoietic and related tissue)"
+313,D10,Neoplasms,Benign Neoplasms (Benign neoplasm of bone and articular cartilage)
+314,D10,Neoplasms,"Lipoma (Benign lipomatous neoplasm, unspecified)"
+315,D10,Neoplasms,"Angioma (Haemangioma, any site)"
+316,D10,Neoplasms,Benign Neoplasms (Benign neoplasm of ovary)
+317,D10,Neoplasms,Benign Neoplasms (Benign neoplasm: Kidney)
+318,D10,Neoplasms,Benign Neoplasms (Benign neoplasm: Urethra)
+319,D10,Neoplasms,Benign (Benign neoplasm of other and unspecified sites)
+320,D37,Neoplasms,Polycythaemia vera
+321,D50,"Blood, Immune System",Anaemia (Iron deficiency anaemia)
+322,D60,"Blood, Immune System",Anaemia (Idiopathic aplastic anaemia)
+323,D60,"Blood, Immune System",Pancytopenia (Other specified aplastic anaemias)
+324,D60,"Blood, Immune System",Anaemia (Acute posthaemorrhagic anaemia)
+325,D60,"Blood, Immune System",Other specified anaemias
+326,D60,"Blood, Immune System","Anaemia (Anaemia, unspecified)"
+327,D65,"Blood, Immune System",Papulosquamous Diseases (Acquired coagulation factor deficiency)
+328,D65,"Blood, Immune System",Purpura (Allergic purpura)
+329,D65,"Blood, Immune System","Thrombocytopenia (Thrombocytopenia, unspecified)"
+330,D70,"Blood, Immune System",Hyposplenism
+331,D70,"Blood, Immune System",Hypersplenism
+332,D70,"Blood, Immune System",Secondary polycythaemia
+333,D70,"Blood, Immune System",Blood And Blood-Forming Organs (Other)
+334,D80,"Blood, Immune System",Leg Ulcers (Adenosine deaminase [ADA] deficiency)
+335,D80,"Blood, Immune System","Immunodeficiency (Immunodeficiency, unspecified)"
+336,E00,"Endocrine, Metabolic System",Goiter (Iodine-deficiency-related diffuse (endemic) goitre)
+337,E00,"Endocrine, Metabolic System",Iodine-deficiency-related multinodular (endemic) goitre
+338,E00,"Endocrine, Metabolic System","Goiter (Iodine-deficiency-related (endemic) goitre, unspecified)"
+339,E00,"Endocrine, Metabolic System",Myxoedema coma
+340,E00,"Endocrine, Metabolic System","Hypothyroidism, unspecified"
+341,E00,"Endocrine, Metabolic System",Nontoxic diffuse goitre
+342,E00,"Endocrine, Metabolic System",Nontoxic single thyroid nodule
+343,E00,"Endocrine, Metabolic System",Nontoxic multinodular goitre
+344,E00,"Endocrine, Metabolic System","Nontoxic goitre, unspecified"
+345,E00,"Endocrine, Metabolic System",Thyrotoxicosis [hyperthyroidism]
+346,E00,"Endocrine, Metabolic System",Thyrotoxicosis with diffuse goitre
+347,E00,"Endocrine, Metabolic System",Thyrotoxicosis with toxic single thyroid nodule
+348,E00,"Endocrine, Metabolic System",Thyrotoxicosis with toxic multinodular goitre
+349,E00,"Endocrine, Metabolic System","Thyrotoxicosis, unspecified"
+350,E00,"Endocrine, Metabolic System",Thyroiditis
+351,E00,"Endocrine, Metabolic System","Thyroid Disorder (Disorder of thyroid, unspecified)"
+352,E10,"Endocrine, Metabolic System",Diabetes Mellitus (Insulin-dependent diabetes mellitus)
+353,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: With coma
+354,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: With ketoacidosis
+355,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: With renal complications
+356,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: With ophthalmic complications
+357,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: With neurological complications
+358,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: With peripheral circulatory complications
+359,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: With other specified complications
+360,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: With multiple complications
+361,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: With unspecified complications
+362,E10,"Endocrine, Metabolic System",Insulin-dependent diabetes mellitus: Without complications
+363,E10,"Endocrine, Metabolic System",Diabetes Mellitus (Non-insulin-dependent diabetes mellitus)
+364,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: With coma
+365,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: With ketoacidosis
+366,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: With renal complications
+367,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: With ophthalmic complications
+368,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: With neurological complications
+369,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: With peripheral circulatory complications
+370,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: With other specified complications
+371,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: With multiple complications
+372,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: With unspecified complications
+373,E10,"Endocrine, Metabolic System",Non-insulin-dependent diabetes mellitus: Without complications
+374,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus
+375,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus: With coma
+376,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus: With ketoacidosis
+377,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus: With renal complications
+378,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus: With ophthalmic complications
+379,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus: With peripheral circulatory complications
+380,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus: With other specified complications
+381,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus: With multiple complications
+382,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus: With unspecified complications
+383,E10,"Endocrine, Metabolic System",Malnutrition-related diabetes mellitus: Without complications
+384,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus
+385,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus: With coma
+386,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus: With ketoacidosis
+387,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus: With renal complications
+388,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus: With ophthalmic complications
+389,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus: With neurological complications
+390,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus: With other specified complications
+391,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus: With multiple complications
+392,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus: With unspecified complications
+393,E10,"Endocrine, Metabolic System",Other specified diabetes mellitus: Without complications
+394,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus
+395,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: With coma
+396,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: With ketoacidosis
+397,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: With renal complications
+398,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: With ophthalmic complications
+399,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: With neurological complications
+400,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: With peripheral circulatory complications
+401,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: With other specified complications
+402,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: With multiple complications
+403,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: With unspecified complications
+404,E10,"Endocrine, Metabolic System",Unspecified diabetes mellitus: Without complications
+405,E20,"Endocrine, Metabolic System",Pituitary Gland (Hypofunction and other disorders of pituitary gland)
+406,E40,"Endocrine, Metabolic System",Malnutrition (Kwashiorkor)
+407,E40,"Endocrine, Metabolic System",Malnutrition (Nutritional marasmus)
+408,E40,"Endocrine, Metabolic System",Malnutrition (Marasmic kwashiorkor)
+409,E40,"Endocrine, Metabolic System",Malnutrition (Unspecified severe protein-energy malnutrition)
+410,E40,"Endocrine, Metabolic System",Malnutrition (Moderate protein-energy malnutrition)
+411,E40,"Endocrine, Metabolic System",Malnutrition (Mild protein-energy malnutrition)
+412,E40,"Endocrine, Metabolic System",Malnutrition (Unspecified protein-energy malnutrition)
+413,E50,"Endocrine, Metabolic System",Deficiency (Vitamin A deficiency)
+414,E50,"Endocrine, Metabolic System",Vitamin A Deficiency (Vitamin A deficiency with conjunctival xerosis)
+415,E50,"Endocrine, Metabolic System",Vitamin A Deficiency (Vitamin A deficiency with corneal xerosis)
+416,E50,"Endocrine, Metabolic System",Vitamin A Deficiency (Vitamin A deficiency with corneal ulceration and xerosis)
+417,E50,"Endocrine, Metabolic System",Keratomalacia (Vitamin A deficiency with keratomalacia)
+418,E50,"Endocrine, Metabolic System",Vitamin A Deficiency (Vitamin A deficiency with night blindness)
+419,E50,"Endocrine, Metabolic System",Vitamin A Deficiency (Vitamin A deficiency with xerophthalmic scars of cornea)
+420,E50,"Endocrine, Metabolic System",Vitamin A Deficiency (Other manifestations of vitamin A deficiency)
+421,E50,"Endocrine, Metabolic System",Thiamine Deficiency
+422,E50,"Endocrine, Metabolic System",Deficiency (Vitamin D deficiency)
+423,E50,"Endocrine, Metabolic System",Deficiency (Iron deficiency)
+424,E50,"Endocrine, Metabolic System",Deficiency Of Nutrient (Deficiency of other specified nutrient elements)
+425,E50,"Endocrine, Metabolic System",Deficiency (Imbalance of constituents of food intake)
+426,E50,"Endocrine, Metabolic System","Deficiency (Nutritional deficiency, unspecified)"
+427,E50,"Endocrine, Metabolic System",Deficiency (Sequelae of vitamin C deficiency)
+428,E65,"Endocrine, Metabolic System","Obesity (Obesity, hyperalimentation)"
+429,E70,"Endocrine, Metabolic System",Pure hypercholesterolaemia
+430,E70,"Endocrine, Metabolic System",Pure hyperglyceridaemia
+431,E70,"Endocrine, Metabolic System","Disorder Of Lipoprotein Metabolism (Disorder of lipoprotein metabolism, unspecified)"
+432,E70,"Endocrine, Metabolic System","Hyperbilirubinemia (Disorder of bilirubin metabolism, unspecified)"
+433,E70,"Endocrine, Metabolic System",Amyloidosis
+434,E70,"Endocrine, Metabolic System",Volume Depletion
+435,E70,"Endocrine, Metabolic System",Some Dehydration (Volume depletion)
+436,E70,"Endocrine, Metabolic System",Severe Dehydration (Volume depletion)
+437,E70,"Endocrine, Metabolic System",Sodium [Na] Excess (Hyperosmolality and hypernatraemia)
+438,E70,"Endocrine, Metabolic System",Acidosis
+439,E70,"Endocrine, Metabolic System",Potassium [K] Deficiency (Hypokalaemia)
+440,F00,Mental & Behavioral Disease,Dimentia (Unspecified dementia)
+441,F00,Mental & Behavioral Disease,"Delirium (Delirium, not induced by alcohol and other psychoactive substances)"
+442,F00,Mental & Behavioral Disease,Delirium (Other delirium)
+443,F00,Mental & Behavioral Disease,Mild cognitive disorder
+444,F10,Mental & Behavioral Disease,Alcohol Dependence (Mental and behavioural disorders due to use of alcohol)
+445,F10,Mental & Behavioral Disease,Alcohol (Mental and behavioural disorders due to use of alcohol: Dependence syndrome)
+446,F10,Mental & Behavioral Disease,Mental And Behavioural Disorders (due to use of alcohol: Other mental and behavioural disorders)
+447,F10,Mental & Behavioral Disease,Drugs (Mental and behavioural disorders due to use of cannabinoids: Withdrawal state)
+448,F20,Mental & Behavioral Disease,Schizophrenia
+449,F20,Mental & Behavioral Disease,Schizophrenia (Paranoid schizophrenia)
+450,F20,Mental & Behavioral Disease,Schizophrenia (Catatonic schizophrenia)
+451,F20,Mental & Behavioral Disease,Schizophrenia (Undifferentiated schizophrenia)
+452,F20,Mental & Behavioral Disease,Schizophrenia (Residual schizophrenia)
+453,F20,Mental & Behavioral Disease,Schizophrenia (Other schizophrenia)
+454,F20,Mental & Behavioral Disease,"Schizophrenia (Schizophrenia, unspecified)"
+455,F20,Mental & Behavioral Disease,Schizotypal disorder
+456,F20,Mental & Behavioral Disease,Delusional Disorder (Persistent delusional disorders)
+457,F20,Mental & Behavioral Disease,Delusion (Delusional disorder)
+458,F20,Mental & Behavioral Disease,Psychotic Disorder (Acute and transient psychotic disorders)
+459,F20,Mental & Behavioral Disease,Psychotic Disorder (Other acute and transient psychotic disorders)
+460,F20,Mental & Behavioral Disease,Schizoaffective disorders
+461,F20,Mental & Behavioral Disease,Unspecified nonorganic psychosis
+462,F30,Mental & Behavioral Disease,Manic episode
+463,F30,Mental & Behavioral Disease,Hypomania
+464,F30,Mental & Behavioral Disease,Mania without psychotic symptoms
+465,F30,Mental & Behavioral Disease,Mania with psychotic symptoms
+466,F30,Mental & Behavioral Disease,"Manic episode, unspecified"
+467,F30,Mental & Behavioral Disease,Bipolar affective disorder
+468,F30,Mental & Behavioral Disease,"Bipolar Disorder (Bipolar affective disorder, current episode manic without psychotic symptoms)"
+469,F30,Mental & Behavioral Disease,"Bipolar Disorder (Bipolar affective disorder, current episode manic with psychotic symptoms)"
+470,F30,Mental & Behavioral Disease,"Bipolar Disorder (Bipolar affective disorder, current episode mild or moderate depression)"
+471,F30,Mental & Behavioral Disease,Bipolar Disorder (Other bipolar affective disorders)
+472,F30,Mental & Behavioral Disease,Depression (Depressive episode)
+473,F40,Mental & Behavioral Disease,Anxiety State (Generalized anxiety disorder)
+474,F40,Mental & Behavioral Disease,Anxiety (Other specified anxiety disorders)
+475,F40,Mental & Behavioral Disease,Stress Disorder (Post-traumatic stress disorder)
+476,F40,Mental & Behavioral Disease,Adjustment Disorders
+477,F40,Mental & Behavioral Disease,Dissociative [Conversion] Disorders
+478,F40,Mental & Behavioral Disease,Hypochondriasis (Hypochondriacal disorder)
+479,F40,Mental & Behavioral Disease,Pain (Persistent somatoform pain disorder)
+480,F40,Mental & Behavioral Disease,Psychogenic Syncope (Other specified neurotic disorders)
+481,F40,Mental & Behavioral Disease,"Neurosis (Neurotic disorder, unspecified)"
+482,F50,Mental & Behavioral Disease,Premature Ejaculation
+483,F60,Mental & Behavioral Disease,Personality Disorder (Emotionally unstable personality disorder)
+484,F60,Mental & Behavioral Disease,Personality Disorder (Other specific personality disorders)
+485,F60,Mental & Behavioral Disease,"Personality Disorder (Personality disorder, unspecified)"
+486,F80,Mental & Behavioral Disease,Autism (Childhood autism)
+487,F80,Mental & Behavioral Disease,Autistic Psychopathy (Asperger syndrome)
+488,F90,Mental & Behavioral Disease,Attention-Deficit Hyperactivity Disorder (Disturbance of activity and attention)
+489,F90,Mental & Behavioral Disease,Attention-Deficit Hyperactivity Disorder (Hyperkinetic conduct disorder)
+490,F90,Mental & Behavioral Disease,"Attention-Deficit Hyperactivity Disorder (Hyperkinetic disorder, unspecified)"
+491,F90,Mental & Behavioral Disease,Attention-Deficit Hyperactivity Disorder (Mixed disorders of conduct and emotions)
+492,G00,Nervous System,"Meningitis (Meningitis, unspecified)"
+493,G40,Nervous System,Epilepsy
+494,G40,Nervous System,Epilepsy (Generalized idiopathic epilepsy and epileptic syndromes)
+495,G40,Nervous System,Epilepsy (Other generalized epilepsy and epileptic syndromes)
+496,G40,Nervous System,Epileptic Seizures (related to drugs)
+497,G40,Nervous System,"Grand mal seizures, unspecified (with or without petit mal)"
+498,G40,Nervous System,"Petit mal, unspecified, without grand mal seizures"
+499,G40,Nervous System,Other epilepsy
+500,G40,Nervous System,"Epilepsy (Epilepsy, unspecified)"
+501,G40,Nervous System,Status epilepticus
+502,G40,Nervous System,Grand mal status epilepticus
+503,G40,Nervous System,Petit mal status epilepticus
+504,G40,Nervous System,"Status epilepticus, unspecified"
+505,G40,Nervous System,Migraine
+506,G40,Nervous System,Migraine (Migraine without aura [common migraine])
+507,G40,Nervous System,Migraine (Migraine with aura [classical migraine])
+508,G40,Nervous System,"Headache (Drug-induced headache, not elsewhere classified)"
+509,G40,Nervous System,"Transient cerebral ischaemic attack, unspecified"
+510,G40,Nervous System,Sleep Disorders
+511,G40,Nervous System,Insomnia (Disorders of initiating and maintaining sleep [insomnias])
+512,G40,Nervous System,Sleep Disorders (Sleep apnoea)
+513,G40,Nervous System,Narcolepsy (Narcolepsy and cataplexy)
+514,G50,Nervous System,Palsy (Bell palsy)
+515,G50,Nervous System,Carpal Tunnel Syndrome
+516,G50,Nervous System,"Mononeuropathy of upper limb, unspecified"
+517,G50,Nervous System,Mononeuropathies of lower limb
+518,G50,Nervous System,Neuropathy (Intercostal neuropathy)
+519,G60,Nervous System,Guillain-Barré Syndrome
+520,G60,Nervous System,Polyneuropathies (Other inflammatory polyneuropathies)
+521,G60,Nervous System,"Polyneuropathy, unspecified"
+522,G70,Nervous System,Myasthenia Gravis
+523,G70,Nervous System,Muscular dystrophy
+524,G70,Nervous System,"Myopathy (Myopathy, unspecified)"
+525,G80,Nervous System,Cerebral palsy
+526,G80,Nervous System,Hemiplegia
+527,G80,Nervous System,Hemiplegia (Flaccid hemiplegia)
+528,G80,Nervous System,"Paraplegia (Paraplegia, unspecified)"
+529,G80,Nervous System,"Quadriplegia (Quadriplegia, C1-C4 complete)"
+530,G80,Nervous System,"Quadriplegia (Quadriplegia, C1-C4 incomplete)"
+531,G80,Nervous System,"Quadriplegia (Quadriplegia, C5-C7 complete)"
+532,G80,Nervous System,"Quadriplegia (Quadriplegia, C5-C7 incomplete)"
+533,G80,Nervous System,Paralysis (Monoplegia of lower limb)
+534,G80,Nervous System,Paralysis (Monoplegia of upper limb)
+535,G80,Nervous System,"Monoplegia, unspecified"
+536,G80,Nervous System,Cauda equina syndrome
+537,G80,Nervous System,"Cervical Sympathetic Dystrophy Or Paralysis (Paralytic syndrome, unspecified)"
+538,G90,Nervous System,Nervous System Disorder (Disorders of autonomic nervous system)
+539,G90,Nervous System,Hydrocephalus
+540,G90,Nervous System,Hydrocephalus (Other hydrocephalus)
+541,G90,Nervous System,Cyst (Cerebral cysts)
+542,G90,Nervous System,"Encephalopathy (Encephalopathy, unspecified)"
+543,G90,Nervous System,Herniation Of Brain (Stem) (Compression of brain)
+544,G90,Nervous System,Edema (Cerebral oedema)
+545,G90,Nervous System,"Disorder Of Brain (Disorder of brain, unspecified)"
+546,G90,Nervous System,Cord Compression (Other specified diseases of spinal cord)
+547,G90,Nervous System,"Cerebrospinal Fluid Leak (Postprocedural disorders of nervous system, not elsewhere classified)"
+548,G90,Nervous System,"Nervous System (Other disorders of nervous system, not elsewhere classified)"
+549,G90,Nervous System,Myelopathy (Myelopathy in diseases classified elsewhere)
+550,H00,Eye & Adnexa,Chalazion
+551,H00,Eye & Adnexa,Blepharitis
+552,H00,Eye & Adnexa,Entropion (Entropion and trichiasis of eyelid)
+553,H00,Eye & Adnexa,Ectropion (Mechanical Ectropion Of Eyelid)
+554,H00,Eye & Adnexa,"Ectropion (Senile, of eyelid)"
+555,H00,Eye & Adnexa,Ectropion (Spastic ectropion of eyelid)
+556,H00,Eye & Adnexa,Ectropion (Lagophthalmos)
+557,H10,Eye & Adnexa,Conjunctivitis
+558,H15,Eye & Adnexa,Scleritis
+559,H15,Eye & Adnexa,Tuberculosis (Episcleritis)
+560,H15,Eye & Adnexa,Keratitis
+561,H15,Eye & Adnexa,Corneal Ulcer
+562,H15,Eye & Adnexa,Keratitis (Other superficial keratitis without conjunctivitis)
+563,H15,Eye & Adnexa,Keratoconjunctivitis
+564,H15,Eye & Adnexa,Keratitis (Interstitial and deep keratitis)
+565,H15,Eye & Adnexa,Corneal Neovascularization
+566,H15,Eye & Adnexa,"Photokeratitis (Keratitis, unspecified)"
+567,H15,Eye & Adnexa,Corneal scars and opacities
+568,H15,Eye & Adnexa,Adherent leukoma
+569,H15,Eye & Adnexa,Corneal Degeneration
+570,H15,Eye & Adnexa,Herpesviral (Herpesviral keratitis and keratoconjunctivitis)
+571,H15,Eye & Adnexa,Tuberculosis (Iridocyclitis)
+572,H25,Eye & Adnexa,"Cataract (Cataract, unspecified)"
+573,H25,Eye & Adnexa,Aphakia
+574,H30,Eye & Adnexa,Retinal Vascular Occlusions
+575,H40,Eye & Adnexa,Glaucoma
+576,H40,Eye & Adnexa,Glaucoma (Glaucoma suspect)
+577,H40,Eye & Adnexa,Glaucoma (Primary open-angle glaucoma)
+578,H40,Eye & Adnexa,Glaucoma (Primary angle-closure glaucoma)
+579,H40,Eye & Adnexa,Glaucoma (Glaucoma secondary to eye trauma)
+580,H40,Eye & Adnexa,Glaucoma (Glaucoma secondary to eye inflammation)
+581,H40,Eye & Adnexa,Glaucoma (Glaucoma secondary to other eye disorders)
+582,H40,Eye & Adnexa,Glaucoma (Other glaucoma)
+583,H40,Eye & Adnexa,"Glaucoma (Glaucoma, unspecified)"
+584,H43,Eye & Adnexa,"Disorder Of Vitreous Body (Disorder of vitreous body, unspecified)"
+585,H46,Eye & Adnexa,"Papilloedema, unspecified"
+586,H49,Eye & Adnexa,Esotropia (Alternating)
+587,H49,Eye & Adnexa,Strabismus (Convergent concomitant)
+588,H49,Eye & Adnexa,"Strabismus (Strabismus, unspecified)"
+589,H49,Eye & Adnexa,"Disorders Of Ocular Muscles, Binocular Movement, Accommodation And Refraction"
+590,H49,Eye & Adnexa,Myopia
+591,H49,Eye & Adnexa,Astigmatism
+592,H49,Eye & Adnexa,Anisometropia (Anisometropia and aniseikonia)
+593,H49,Eye & Adnexa,Presbyopia
+594,H53,Eye & Adnexa,Amblyopia (Amblyopia ex anopsia)
+595,H53,Eye & Adnexa,Double Vision (Diplopia)
+596,H53,Eye & Adnexa,Night Blindness
+597,H55,Eye & Adnexa,Nystagmus (Nystagmus and other irregular eye movements)
+598,H55,Eye & Adnexa,Pain (Ocular pain)
+599,H55,Eye & Adnexa,Keratopathy (Keratopathy (bullous aphakic) following cataract surgery)
+600,H60,Ear & Mastoid,Otitis externa
+601,H60,Ear & Mastoid,Abscess of external ear
+602,H60,Ear & Mastoid,"Acute otitis externa, noninfective"
+603,H60,Ear & Mastoid,"Otitis externa, unspecified"
+604,H60,Ear & Mastoid,Impacted cerumen
+605,H65,Ear & Mastoid,"Otitis media, unspecified"
+606,H65,Ear & Mastoid,Mastoiditis and related conditions
+607,H65,Ear & Mastoid,Acute Mastoiditis
+608,H65,Ear & Mastoid,chronic Mastoiditis
+609,H65,Ear & Mastoid,"Mastoiditis, unspecified"
+610,I00,Circulatory System,Rheumatic fever without mention of heart involvement
+611,I00,Circulatory System,Rheumatic fever with heart involvement
+612,I00,Circulatory System,"Rheumatic Fever (Acute rheumatic heart disease, unspecified)"
+613,I05,Circulatory System,Mitral Stenosis
+614,I05,Circulatory System,Tricuspid stenosis
+615,I05,Circulatory System,Multiple valve diseases
+616,I05,Circulatory System,Other rheumatic heart diseases
+617,I05,Circulatory System,Rheumatic myocarditis
+618,I05,Circulatory System,"Rheumatic heart disease (Rheumatic heart disease, unspecified)"
+619,I10,Circulatory System,Hypertension (Essential (primary) hypertension)
+620,I10,Circulatory System,Hypertensive Renal Disease
+621,I10,Circulatory System,Hypertension (Secondary hypertension)
+622,I10,Circulatory System,Hypertension (Renovascular hypertension)
+623,I10,Circulatory System,Hypertension (Other secondary hypertension)
+624,I10,Circulatory System,"Hypertension (Secondary hypertension, unspecified)"
+625,I20,Circulatory System,Angina Pectoris
+626,I20,Circulatory System,Unstable angina
+627,I20,Circulatory System,"Angina pectoris, unspecified"
+628,I20,Circulatory System,Acute myocardial infarction
+629,I20,Circulatory System,Other acute ischaemic heart diseases
+630,I20,Circulatory System,"Acute ischaemic heart disease, unspecified"
+631,I20,Circulatory System,Chronic ischaemic heart disease
+632,I20,Circulatory System,"Atherosclerotic cardiovascular disease, so described"
+633,I20,Circulatory System,Atherosclerotic heart disease
+634,I20,Circulatory System,Old myocardial infarction
+635,I20,Circulatory System,Ischaemic cardiomyopathy
+636,I20,Circulatory System,Silent myocardial ischaemia
+637,I20,Circulatory System,"Chronic ischaemic heart disease, unspecified"
+638,I26,Circulatory System,Pulmonary embolism
+639,I26,Circulatory System,Primary pulmonary hypertension
+640,I26,Circulatory System,Cardiopulmonary Disease (Other specified pulmonary heart diseases)
+641,I30,Circulatory System,Rheumatic Fever (Acute pericarditis)
+642,I30,Circulatory System,Pericarditis (Infective Suppurative)
+643,I30,Circulatory System,Effusion (Pericardial effusion (noninflammatory))
+644,I30,Circulatory System,"Acute endocarditis, unspecified"
+645,I30,Circulatory System,Mitral (valve) insufficiency
+646,I30,Circulatory System,Nonrheumatic aortic valve disorders
+647,I30,Circulatory System,Aortic (valve) stenosis
+648,I30,Circulatory System,Aortic (valve) insufficiency
+649,I30,Circulatory System,Nonrheumatic tricuspid valve disorders
+650,I30,Circulatory System,Pulmonary Valve Insufficiency
+651,I30,Circulatory System,Myocarditis (Infective myocarditis)
+652,I30,Circulatory System,Cardiomyopathy
+653,I30,Circulatory System,Dilated cardiomyopathy
+654,I30,Circulatory System,Alcoholic cardiomyopathy
+655,I30,Circulatory System,"Cardiomyopathy, unspecified"
+656,I30,Circulatory System,Heart Block (Nonspecific intraventricular block)
+657,I30,Circulatory System,Conduction Disorder (Other specified conduction disorders)
+658,I30,Circulatory System,Cardiac arrest
+659,I30,Circulatory System,"Cardiac arrest, unspecified"
+660,I30,Circulatory System,Paroxysmal tachycardia
+661,I30,Circulatory System,Supraventricular tachycardia
+662,I30,Circulatory System,Ventricular tachycardia
+663,I30,Circulatory System,"Paroxysmal tachycardia, unspecified"
+664,I30,Circulatory System,Atrial fibrillation and flutter
+665,I30,Circulatory System,Arrhythmias (Other cardiac arrhythmias)
+666,I30,Circulatory System,Tachycardia-Bradycardia Syndrome (Sick sinus syndrome)
+667,I30,Circulatory System,"Cardiac arrhythmia, unspecified"
+668,I30,Circulatory System,Heart failure
+669,I30,Circulatory System,Congestive heart failure
+670,I30,Circulatory System,Left ventricular failure
+671,I30,Circulatory System,"Heart failure, unspecified"
+672,I30,Circulatory System,"Myocarditis (Myocarditis, unspecified)"
+673,I30,Circulatory System,Cardiac Dilatation (Myocardial degeneration)
+674,I30,Circulatory System,Ventricular Dilatation (Cardiomegaly)
+675,I30,Circulatory System,"Heart disease (Heart disease, unspecified)"
+676,I60,Circulatory System,Haemorrhage (Intracerebral haemorrhage)
+677,I60,Circulatory System,"Hemorrhage (Intracranial haemorrhage (nontraumatic), unspecified)"
+678,I60,Circulatory System,Cerebral Infarction
+679,I60,Circulatory System,Stroke (Other cerebral infarction)
+680,I60,Circulatory System,Aneurysm (Occlusion and stenosis of unspecified cerebral artery)
+681,I60,Circulatory System,"Aneurysm (Cerebral aneurysm, nonruptured)"
+682,I60,Circulatory System,Hypertensive encephalopathy
+683,I60,Circulatory System,Cerebrovascular Insufficiency (Other specified cerebrovascular diseases)
+684,I60,Circulatory System,"Cerebrovascular Diseases (Cerebrovascular disease, unspecified)"
+685,I60,Circulatory System,Cognitive Deficits (Sequelae of cerebrovascular disease)
+686,I60,Circulatory System,Hemiplegia And Hemiparesis (Sequelae of subarachnoid haemorrhage)
+687,I60,Circulatory System,Cognitive Deficits (Sequelae of intracerebral haemorrhage)
+688,I60,Circulatory System,Speech And Language Deficits (Sequelae of intracerebral haemorrhage)
+689,I60,Circulatory System,Hemiplegia And Hemiparesis (Sequelae of other nontraumatic intracranial haemorrhage)
+690,I60,Circulatory System,Cognitive Deficits (Sequelae of cerebral infarction)
+691,I60,Circulatory System,"Stroke (Sequelae of stroke, not specified as haemorrhage or infarction)"
+692,I60,Circulatory System,Hemiplegia And Hemiparesis (Sequelae of other and unspecified cerebrovascular diseases)
+693,I60,Circulatory System,Speech And Language Deficits (Sequelae of other and unspecified cerebrovascular diseases)
+694,I70,Circulatory System,Atherosclerosis
+695,I70,Circulatory System,Atherosclerosis (Atherosclerosis of arteries of extremities)
+696,I70,Circulatory System,Embolism And Thrombosis (Arterial embolism and thrombosis)
+697,I80,Circulatory System,Varicose Veins (Varicose veins of lower extremities)
+698,I80,Circulatory System,Varices (Oesophageal varices)
+699,I80,Circulatory System,Varices (Oesophageal varices with bleeding)
+700,I80,Circulatory System,Varices (Oesophageal varices without bleeding)
+701,I80,Circulatory System,Varicose Veins (Varicose veins of other sites)
+702,I80,Circulatory System,Varicocele (Scrotal varices)
+703,I80,Circulatory System,Varices (Pelvic varices)
+704,I80,Circulatory System,Varices (Gastric varices)
+705,I80,Circulatory System,Ingiunal Bubo (Nonspecific lymphadenitis)
+706,I80,Circulatory System,"Lymphoedema, not elsewhere classified"
+707,I80,Circulatory System,Ascites (Chylous)
+708,I95,Circulatory System,Hypotension
+709,I95,Circulatory System,Hypotension (Hypotension due to drugs)
+710,J00,Respiratory System,common cold (Acute nasopharyngitis [common cold])
+711,J00,Respiratory System,Pharyngitis (Acute pharyngitis)
+712,J00,Respiratory System,"Tonsillitis (Acute pharyngitis, unspecified)"
+713,J00,Respiratory System,Croup & Epiglottitis (Acute obstructive laryngitis [croup] and epiglottitis)
+714,J00,Respiratory System,Croup (Acute obstructive laryngitis [croup])
+715,J00,Respiratory System,laryngopharyngitis (Acute laryngopharyngitis)
+716,J09,Respiratory System,Avian influenza-h5n1 (Other acute upper respiratory infections of multiple sites)
+717,J09,Respiratory System,Pandemic influenza A-h1n1 (Other acute upper respiratory infections of multiple sites)
+718,J00,Respiratory System,"Respiratory Infection (Acute upper respiratory infection, unspecified)"
+719,J09,Respiratory System,"Influenza (Influenza, virus not identified)"
+720,J09,Respiratory System,"Pneumonia (Bacterial pneumonia, unspecified)"
+721,J09,Respiratory System,"Pneumonia (Bronchopneumonia, unspecified)"
+722,J09,Respiratory System,"Pneumonia (Lobar pneumonia, unspecified)"
+723,J09,Respiratory System,"severe pneumonia (Other pneumonia, organism unspecified)"
+724,J09,Respiratory System,"Pneumonia (Pneumonia, unspecified)"
+725,J20,Respiratory System,Bronchitis (Acute bronchitis)
+726,J20,Respiratory System,Respiratory Infections (Unspecified acute lower respiratory infection)
+727,J30,Respiratory System,Tonsillitis & Adenoiditis (Chronic tonsillitis)
+728,J30,Respiratory System,Peritonsillar abscess
+729,J40,Respiratory System,"Bronchitis, not specified as acute or chronic"
+730,J40,Respiratory System,Emphysema
+731,J40,Respiratory System,Asthma
+732,J40,Respiratory System,"Asthma (Asthma, unspecified)"
+733,J40,Respiratory System,Bronchiectasis
+734,J80,Respiratory System,Adult respiratory distress syndrome
+735,J80,Respiratory System,Pulmonary oedema
+736,J90,Respiratory System,"Pleural effusion, not elsewhere classified"
+737,J90,Respiratory System,Pneumonia (Pneumothorax)
+738,J90,Respiratory System,Oligodontia (Haemothorax)
+739,J95,Respiratory System,Cor Pulmonale (Chronic respiratory failure)
+740,J95,Respiratory System,"Respiratory Failure (Respiratory failure, unspecified)"
+741,K00,Digestive System,Disorders of tooth development and eruption
+742,K00,Digestive System,Supernumerary teeth
+743,K00,Digestive System,Dental Disorder (Abnormalities of size and form of teeth)
+744,K00,Digestive System,Dental Disorder (Fluorosis; Abnormalities of size and form of teeth)
+745,K00,Digestive System,Disturbances in tooth formation
+746,K00,Digestive System,"Hereditary disturbances in tooth structure, not elsewhere classified"
+747,K00,Digestive System,Disturbances in tooth eruption
+748,K00,Digestive System,Other disorders of tooth development
+749,K00,Digestive System,"Dental Disorder (Disorder of tooth development, unspecified)"
+750,K00,Digestive System,Embedded and impacted teeth
+751,K00,Digestive System,Dental Disorder (Impacted teeth)
+752,K00,Digestive System,Dental Disorder (Dental caries)
+753,K00,Digestive System,Dental Caries (Caries limited to enamel)
+754,K00,Digestive System,Dental Caries (Caries of dentine)
+755,K00,Digestive System,Dental Caries (Caries of cementum)
+756,K00,Digestive System,Dental Caries (Arrested dental caries)
+757,K00,Digestive System,Other diseases of hard tissues of teeth
+758,K00,Digestive System,Occupational Erosion Of Teeth (Excessive attrition of teeth)
+759,K00,Digestive System,Dental Abrasion (Abrasion of teeth)
+760,K00,Digestive System,Dental Disorder (Erosion of teeth)
+761,K00,Digestive System,Teeth Resorption (Pathological resorption of teeth)
+762,K00,Digestive System,Hypercementosis
+763,K00,Digestive System,Ankylosis of teeth
+764,K00,Digestive System,Dental Disorder (Deposits [accretions] on teeth)
+765,K00,Digestive System,Posteruptive colour changes of dental hard tissues
+766,K00,Digestive System,Other specified diseases of hard tissues of teeth
+767,K00,Digestive System,"Dental Disorder (Disease of hard tissues of teeth, unspecified)"
+768,K00,Digestive System,Diseases of pulp and periapical tissues
+769,K00,Digestive System,Pulpitis
+770,K00,Digestive System,Pulp (Necrosis of pulp)
+771,K00,Digestive System,Abnormal hard tissue formation in pulp
+772,K00,Digestive System,Gingivitis (Acute plaque induced)
+773,K00,Digestive System,Chronic apical periodontitis
+774,K00,Digestive System,Periapical abscess with sinus
+775,K00,Digestive System,Periapical abscess without sinus
+776,K00,Digestive System,Radicular cyst
+777,K00,Digestive System,Other and unspecified diseases of pulp and periapical tissues
+778,K00,Digestive System,"Gingivitis, Periodontal (Gingivitis and periodontal diseases)"
+779,K00,Digestive System,Acute gingivitis
+780,K00,Digestive System,Chronic gingivitis
+781,K00,Digestive System,Periodontitis (Acute periodontitis)
+782,K00,Digestive System,Periodontitis (Chronic periodontitis)
+783,K00,Digestive System,Periodontosis
+784,K00,Digestive System,"Periodontal (Periodontal disease, unspecified)"
+785,K00,Digestive System,Gingival recession
+786,K00,Digestive System,Gingival enlargement
+787,K00,Digestive System,Dentofacial anomalies [including malocclusion]
+788,K00,Digestive System,Major anomalies of jaw size
+789,K00,Digestive System,Anomalies of dental arch relationship
+790,K00,Digestive System,Anomalies of tooth position
+791,K00,Digestive System,"Malocclusion, unspecified"
+792,K00,Digestive System,Dentofacial functional abnormalities
+793,K00,Digestive System,Joint Disorders (Temporomandibular joint disorders)
+794,K00,Digestive System,Other disorders of teeth and supporting structures
+795,K00,Digestive System,"Dental Disorder (Loss of teeth due to accident, extraction or local periodontal disease)"
+796,K00,Digestive System,Retained dental root
+797,K00,Digestive System,"Dental Disorder (Disorder of teeth and supporting structures, unspecified)"
+798,K00,Digestive System,"Cyst (Other cysts of oral region, not elsewhere classified)"
+799,K00,Digestive System,Other diseases of jaws
+800,K00,Digestive System,Inflammatory conditions of jaws
+801,K00,Digestive System,Alveolitis of jaws
+802,K00,Digestive System,"Jaw Disease (Disease of jaws, unspecified)"
+803,K00,Digestive System,Diseases of salivary glands
+804,K00,Digestive System,Sialoadenitis
+805,K00,Digestive System,Stone Of Salivary Gland Or Duct (Sialolithiasis)
+806,K00,Digestive System,"Salivary gland Disease (Disease of salivary gland, unspecified)"
+807,K00,Digestive System,Stomatitis (Stomatitis and related lesions)
+808,K00,Digestive System,Other forms of stomatitis
+809,K00,Digestive System,Cellulitis and abscess of mouth
+810,K00,Digestive System,Oral mucositis (ulcerative)
+811,K00,Digestive System,Lip and oral mucosa (Other diseases of lip and oral mucosa)
+812,K00,Digestive System,Lips (Diseases of lips)
+813,K00,Digestive System,Bite (Cheek and lip biting)
+814,K00,Digestive System,Hairy leukoplakia
+815,K00,Digestive System,Diseases of tongue
+816,K00,Digestive System,Geographic tongue
+817,K00,Digestive System,Plicated tongue
+818,K00,Digestive System,Ulceration (Other diseases of tongue)
+819,K00,Digestive System,"Tongue Disease (Disease of tongue, unspecified)"
+820,K20,Digestive System,Gastro-oesophageal reflux (Gastro-oesophageal reflux disease)
+821,K20,Digestive System,Esophageal Reflux (Other diseases of oesophagus)
+822,K20,Digestive System,Gastrojejunal Ulcer
+823,K20,Digestive System,Gastritis and duodenitis
+824,K20,Digestive System,Acute haemorrhagic gastritis
+825,K20,Digestive System,"Chronic gastritis, unspecified"
+826,K20,Digestive System,"Gastritis, unspecified"
+827,K20,Digestive System,"Gastroduodenitis, unspecified"
+828,K20,Digestive System,Dyspepsia (Inability To Swallow)
+829,K20,Digestive System,Pyloric Stenosis (Other diseases of stomach and duodenum)
+830,K35,Digestive System,Appendicitis (Acute appendicitis)
+831,K35,Digestive System,Appendicitis (Acute appendicitis with generalized peritonitis)
+832,K35,Digestive System,Appendicitis (Acute appendicitis with localized peritonitis)
+833,K35,Digestive System,Appendix (Other diseases of appendix)
+834,K35,Digestive System,"Appendix (Disease of appendix, unspecified)"
+835,K40,Digestive System,Inguinal (Inguinal hernia)
+836,K40,Digestive System,"Hernia (Bilateral inguinal hernia, with obstruction, without gangrene)"
+837,K40,Digestive System,"Hernia (Bilateral inguinal hernia, with gangrene)"
+838,K40,Digestive System,"Hernia (Bilateral inguinal hernia, without obstruction or gangrene)"
+839,K40,Digestive System,Femoral (Femoral hernia)
+840,K40,Digestive System,"Hernia (Bilateral femoral hernia, with obstruction, without gangrene)"
+841,K40,Digestive System,"Hernia (Bilateral femoral hernia, with gangrene)"
+842,K40,Digestive System,"Hernia (Bilateral femoral hernia, without obstruction or gangrene)"
+843,K40,Digestive System,"Hernia (Unilateral or unspecified femoral hernia, with obstruction, without gangrene)"
+844,K40,Digestive System,"Hernia (Unilateral or unspecified femoral hernia, with gangrene)"
+845,K40,Digestive System,"Hernia (Unilateral or unspecified femoral hernia, without obstruction or gangrene)"
+846,K40,Digestive System,Hernia (Umbilical hernia)
+847,K40,Digestive System,"Hernia (Umbilical hernia with obstruction, without gangrene)"
+848,K40,Digestive System,Hernia (Umbilical hernia with gangrene)
+849,K40,Digestive System,Hernia (Umbilical hernia without obstruction or gangrene)
+850,K40,Digestive System,"Hernia (Diaphragmatic hernia with obstruction, without gangrene)"
+851,K40,Digestive System,Hernia (Diaphragmatic hernia with gangrene)
+852,K40,Digestive System,Hernia (Diaphragmatic hernia without obstruction or gangrene)
+853,K40,Digestive System,Hernia (Other abdominal hernia)
+854,K40,Digestive System,Abdominal hernia (Unspecified abdominal hernia)
+855,K50,Digestive System,"Crohn Disease (Crohn disease, unspecified)"
+856,K50,Digestive System,Colitis (Ulcerative colitis)
+857,K55,Digestive System,Paralytic ileus
+858,K55,Digestive System,Intussusception
+859,K55,Digestive System,Volvulus
+860,K55,Digestive System,Fecal Impaction (Gallstone ileus)
+861,K55,Digestive System,Intestinal obstruction (Other and unspecified intestinal obstruction)
+862,K55,Digestive System,"Ileus, unspecified"
+863,K55,Digestive System,Diverticular disease of intestine
+864,K55,Digestive System,Irritable bowel syndrome
+865,K55,Digestive System,Constipation
+866,K55,Digestive System,Diarrhea (Functional diarrhoea)
+867,K55,Digestive System,Persistent Diarrhea (Functional diarrhoea)
+868,K55,Digestive System,Severe Persistent Diarrhea (Functional diarrhoea)
+869,K55,Digestive System,"Anal Fissure (Anal fissure, unspecified)"
+870,K55,Digestive System,Fistula (Anal fistula)
+871,K55,Digestive System,Fistula (Rectal fistula)
+872,K55,Digestive System,Fistula (Anorectal fistula)
+873,K55,Digestive System,Prolapse (Anal prolapse)
+874,K55,Digestive System,Prolapse (Rectal prolapse)
+875,K55,Digestive System,Stricture (Stenosis of anus and rectum)
+876,K55,Digestive System,Haemorrhage (Haemorrhage of anus and rectum)
+877,K55,Digestive System,Abscess (Abscess of intestine)
+878,K65,Digestive System,Peritonitis
+879,K65,Digestive System,Acute peritonitis
+880,K65,Digestive System,"Abscess (Peritonitis, unspecified)"
+881,K65,Digestive System,Haemoperitoneum
+882,K65,Digestive System,Tuberculous peritonitis
+883,K70,Digestive System,Alcoholic fatty liver
+884,K70,Digestive System,Alcoholic cirrhosis of liver
+885,K70,Digestive System,Chronic hepatic failure
+886,K70,Digestive System,"Chronic hepatitis, unspecified"
+887,K70,Digestive System,Fibrosis and cirrhosis of liver
+888,K70,Digestive System,Abscess of liver
+889,K70,Digestive System,"Fatty (change of) liver, not elsewhere classified"
+890,K70,Digestive System,Portal hypertension
+891,K70,Digestive System,Hepatorenal syndrome
+892,K70,Digestive System,"Liver disease, unspecified"
+893,K80,Digestive System,Cholelithiasis
+894,K80,Digestive System,Calculus Of Gallbladder (Calculus of gallbladder with acute cholecystitis)
+895,K80,Digestive System,Calculus of gallbladder (Calculus of gallbladder without cholecystitis)
+896,K80,Digestive System,Calculus Of Bile Duct (Calculus of bile duct with cholangitis)
+897,K80,Digestive System,Cholecystitis
+898,K80,Digestive System,Acute cholecystitis
+899,K80,Digestive System,Chronic cholecystitis
+900,K80,Digestive System,Cholecystitis (Other cholecystitis)
+901,K80,Digestive System,Cholangitis
+902,K80,Digestive System,Acute pancreatitis
+903,K90,Digestive System,Intestinal malabsorption
+904,K90,Digestive System,Coeliac disease
+905,K90,Digestive System,Tropical Ulcer (Tropical sprue)
+906,K90,Digestive System,"Malabsorption (Intestinal malabsorption, unspecified)"
+907,K90,Digestive System,"Postprocedural disorders of digestive system, not elsewhere classified"
+908,K90,Digestive System,Haematemesis
+909,K90,Digestive System,Melaena
+910,K90,Digestive System,"Haemorrhage (Gastrointestinal haemorrhage, unspecified)"
+911,K90,Digestive System,"Disease of digestive system, unspecified"
+912,L00,Skin & Subcutaneous,Staphylococcal scalded skin syndrome
+913,L00,Skin & Subcutaneous,Impetigo (Bullous)
+914,L00,Skin & Subcutaneous,Impetigo Contagiosa (Impetigo [any organism] [any site])
+915,L00,Skin & Subcutaneous,"Cutaneous abscess, furuncle and carbuncle"
+916,L00,Skin & Subcutaneous,Cellulitis
+917,L00,Skin & Subcutaneous,Cellulitis of finger and toe
+918,L00,Skin & Subcutaneous,Cellulitis of other parts of limb
+919,L00,Skin & Subcutaneous,Cellulitis of other sites
+920,L00,Skin & Subcutaneous,"Cellulitis, unspecified"
+921,L00,Skin & Subcutaneous,Acute lymphadenitis
+922,L00,Skin & Subcutaneous,Pyoderma
+923,L10,Skin & Subcutaneous,Pemphigus Vulgaris
+924,L10,Skin & Subcutaneous,Pemphigoid
+925,L10,Skin & Subcutaneous,Others Bullous Disorders (Other bullous disorders)
+926,L10,Skin & Subcutaneous,Dermatitis Herpetiformis
+927,L10,Skin & Subcutaneous,"Bullous Disorders (Bullous disorder, unspecified)"
+928,L10,Skin & Subcutaneous,Bullous Disorders (Bullous disorders in diseases classified elsewhere)
+929,L20,Skin & Subcutaneous,Dermatitis (Atopic dermatitis)
+930,L20,Skin & Subcutaneous,Dermatitis (Atopic) (Flexural eczema)
+931,L20,Skin & Subcutaneous,Dermatitis (Atopic) (Infantile (acute) (chronic) eczema)
+932,L20,Skin & Subcutaneous,Dermatitis (Atopic) (Intrinsic (allergic) eczema)
+933,L20,Skin & Subcutaneous,Dermatitis (Atopic) (Other atopic dermatitis)
+934,L20,Skin & Subcutaneous,Dermatitis (Atopic) (Unspecified)
+935,L20,Skin & Subcutaneous,Seborrhoeic dermatitis
+936,L20,Skin & Subcutaneous,Diaper [napkin] dermatitis
+937,L20,Skin & Subcutaneous,Dermatitis (Allergic contact dermatitis)
+938,L20,Skin & Subcutaneous,Dermatitis (Irritant contact dermatitis due to detergents)
+939,L20,Skin & Subcutaneous,"Dermatitis (Unspecified contact dermatitis, unspecified cause)"
+940,L20,Skin & Subcutaneous,Carbuncule (Other dermatitis)
+941,L20,Skin & Subcutaneous,Pityriasis Alba
+942,L20,Skin & Subcutaneous,Dermatitis (Other specified dermatitis)
+943,L20,Skin & Subcutaneous,Neurodermatitis (Other specified dermatitis)
+944,L20,Skin & Subcutaneous,"Dermatitis, unspecified"
+945,L40,Skin & Subcutaneous,Psoriasis
+946,L40,Skin & Subcutaneous,Psoriasis (Psoriasis vulgaris)
+947,L40,Skin & Subcutaneous,Psoriasis (Generalized pustular psoriasis)
+948,L40,Skin & Subcutaneous,Psoriasis (Acrodermatitis continua)
+949,L40,Skin & Subcutaneous,Psoriasis (Pustulosis palmaris et plantaris)
+950,L40,Skin & Subcutaneous,Psoriasis (Arthropathic psoriasis)
+951,L40,Skin & Subcutaneous,Psoriasis (Other psoriasis)
+952,L40,Skin & Subcutaneous,"Psoriasis (Psoriasis, unspecified)"
+953,L40,Skin & Subcutaneous,Pityriasis Lichenoides Chronicus (Pityriasis lichenoides chronica)
+954,L40,Skin & Subcutaneous,Parapsoriasis (Retiform parapsoriasis)
+955,L40,Skin & Subcutaneous,Pityriasis Rosea
+956,L40,Skin & Subcutaneous,Lichen Planus
+957,L40,Skin & Subcutaneous,Lichen Planus (Hypertrophic lichen planus)
+958,L40,Skin & Subcutaneous,Lichen Planus (Bullous lichen planus)
+959,L40,Skin & Subcutaneous,Lichen Planus (Lichenoid drug reaction)
+960,L40,Skin & Subcutaneous,Lichen Planus (Other lichen planus)
+961,L40,Skin & Subcutaneous,"Lichen Planus (Lichen planus, unspecified)"
+962,L40,Skin & Subcutaneous,Infantile papular acrodermatitis [Giannotti-Crosti]
+963,L40,Skin & Subcutaneous,"Papulosquamous Diseases (Papulosquamous disorder, unspecified)"
+964,L50,Skin & Subcutaneous,Urticaria
+965,L50,Skin & Subcutaneous,Urticaria (Allergic urticaria)
+966,L50,Skin & Subcutaneous,Idiopathic urticaria
+967,L50,Skin & Subcutaneous,Urticaria (Dermatographic urticaria)
+968,L50,Skin & Subcutaneous,Urticaria (Cholinergic urticaria)
+969,L50,Skin & Subcutaneous,Urticaria (Contact urticaria)
+970,L50,Skin & Subcutaneous,Urticaria (Other urticaria)
+971,L50,Skin & Subcutaneous,"Urticaria (Urticaria, unspecified)"
+972,L55,Skin & Subcutaneous,Photodermatosis (Photocontact dermatitis [berloque dermatitis])
+973,L55,Skin & Subcutaneous,Polymorphous Light Eruption
+974,L60,Skin & Subcutaneous,Nail Disorders (Nail disorders in diseases classified elsewhere)
+975,L60,Skin & Subcutaneous,Alopecia (Alopecia areata)
+976,L60,Skin & Subcutaneous,Alopecia (NOS)
+977,L60,Skin & Subcutaneous,Cicatricial Alopecia [Scarring Hair Loss]
+978,L60,Skin & Subcutaneous,Cicatricial Alopecia [Scarring Hair Loss] (Pseudopelade)
+979,L60,Skin & Subcutaneous,Cicatricial Alopecia [Scarring Hair Loss] (Folliculitis decalvans)
+980,L60,Skin & Subcutaneous,Cicatricial Alopecia [Scarring Hair Loss] (Perifolliculitis capitis abscedens)
+981,L60,Skin & Subcutaneous,Cicatricial Alopecia [Scarring Hair Loss] (Folliculitis ulerythematosa reticulata)
+982,L60,Skin & Subcutaneous,Acne
+983,L60,Skin & Subcutaneous,Acne (Acne vulgaris)
+984,L60,Skin & Subcutaneous,Acne (Acne conglobata)
+985,L60,Skin & Subcutaneous,Acne (Acne varioliformis)
+986,L60,Skin & Subcutaneous,Acne (Acne tropica)
+987,L60,Skin & Subcutaneous,Acne (Other acne)
+988,L60,Skin & Subcutaneous,"Acne (Acne, unspecified)"
+989,L60,Skin & Subcutaneous,Acne (Rosacea)
+990,L60,Skin & Subcutaneous,Rosacea (Other rosacea)
+991,L60,Skin & Subcutaneous,"Rosacea (Rosacea, unspecified)"
+992,L60,Skin & Subcutaneous,Cyst (Follicular cysts of skin and subcutaneous tissue)
+993,L60,Skin & Subcutaneous,Local Vitiligo (Other follicular disorders)
+994,L60,Skin & Subcutaneous,Acne (Acne keloid)
+995,L80,Skin & Subcutaneous,Vitiligo
+996,L80,Skin & Subcutaneous,Pyoderma Gangrenosum (PG) (Pyoderma gangrenosum)
+997,L80,Skin & Subcutaneous,Lichen Sclerosis Cronicus (Lichen sclerosus et atrophicus)
+998,L80,Skin & Subcutaneous,Keloid Scar (Hypertrophic scar)
+999,L80,Skin & Subcutaneous,Cutaneous Lupus Erethemathosis (Lupus erythematosus)
+1000,L80,Skin & Subcutaneous,Cutaneous Lupus Erethemathosis (Discoid lupus erythematosus)
+1001,L80,Skin & Subcutaneous,Cutaneous Lupus Erethemathosis (Subacute cutaneous lupus erythematosus)
+1002,L80,Skin & Subcutaneous,Cutaneous Lupus Erethemathosis (Other local lupus erythematosus)
+1003,L80,Skin & Subcutaneous,Scleroderma (Localized scleroderma [morphea])
+1004,L80,Skin & Subcutaneous,Scleroderma (Linear scleroderma)
+1005,L80,Skin & Subcutaneous,"Ulcer (Chronic ulcer of skin, not elsewhere classified)"
+1006,M00,Musculoskeletal,Reiter disease
+1007,M00,Musculoskeletal,"Reactive arthropathy, unspecified"
+1008,M05,Musculoskeletal,Seropositive rheumatoid arthritis
+1009,M05,Musculoskeletal,Other seropositive rheumatoid arthritis
+1010,M05,Musculoskeletal,"Seropositive rheumatoid arthritis, unspecified"
+1011,M05,Musculoskeletal,Other rheumatoid arthritis
+1012,M05,Musculoskeletal,Seronegative rheumatoid arthritis
+1013,M05,Musculoskeletal,Rheumatoid bursitis
+1014,M05,Musculoskeletal,Rheumatoid nodule
+1015,M05,Musculoskeletal,Inflammatory polyarthropathy
+1016,M05,Musculoskeletal,"Rheumatoid arthritis, unspecified"
+1017,M05,Musculoskeletal,Juvenile arthritis
+1018,M05,Musculoskeletal,Juvenile rheumatoid arthritis
+1019,M05,Musculoskeletal,Juvenile ankylosing spondylitis
+1020,M05,Musculoskeletal,"Juvenile arthritis, unspecified"
+1021,M05,Musculoskeletal,Gout (Primary)
+1022,M05,Musculoskeletal,Idiopathic gout
+1023,M05,Musculoskeletal,Gout (Drug-induced gout)
+1024,M05,Musculoskeletal,"Gout (Gout, unspecified)"
+1025,M05,Musculoskeletal,Other arthritis
+1026,M05,Musculoskeletal,"Polyarthritis (Polyarthritis, unspecified)"
+1027,M05,Musculoskeletal,"Arthritis, unspecified"
+1028,M05,Musculoskeletal,Diabetic arthropathy
+1029,M20,Musculoskeletal,Deformity Of Finger(S)
+1030,M20,Musculoskeletal,Hallux valgus (acquired)
+1031,M20,Musculoskeletal,Hallux rigidus
+1032,M20,Musculoskeletal,"Valgus deformity, not elsewhere classified"
+1033,M20,Musculoskeletal,Wrist or foot drop (acquired)
+1034,M20,Musculoskeletal,Disorders of patella
+1035,M20,Musculoskeletal,Contracture of joint
+1036,M20,Musculoskeletal,Haemarthrosis
+1037,M20,Musculoskeletal,Fistula (Fistula of joint)
+1038,M20,Musculoskeletal,Pain (Pain in joint)
+1039,M20,Musculoskeletal,"Stiffness of joint, not elsewhere classified"
+1040,M20,Musculoskeletal,"Joint disorder, unspecified"
+1041,M30,Musculoskeletal,Polyarteritis nodosa
+1042,M30,Musculoskeletal,Juvenile polyarteritis
+1043,M30,Musculoskeletal,Systemic lupus erythematosus
+1044,M30,Musculoskeletal,Polymyositis
+1045,M30,Musculoskeletal,Arthropathies (Arthropathy in other blood disorders)
+1046,M40,Musculoskeletal,Scoliosis
+1047,M45,Musculoskeletal,"Spondylopathy, unspecified"
+1048,M45,Musculoskeletal,Tuberculosis of spine
+1049,M50,Musculoskeletal,Cervical Disc Disorder (Cervical disc disorders)
+1050,M50,Musculoskeletal,Radiculopathy
+1051,M50,Musculoskeletal,Sciatica
+1052,M50,Musculoskeletal,Lumbago (Lumbago with sciatica)
+1053,M50,Musculoskeletal,Low Back Pain
+1054,M50,Musculoskeletal,Pain (Pain in thoracic spine)
+1055,M50,Musculoskeletal,"Dorsalgia, unspecified"
+1056,M60,Musculoskeletal,Myositis
+1057,M60,Musculoskeletal,Myositis (Infective myositis)
+1058,M60,Musculoskeletal,"Myositis (Myositis, unspecified)"
+1059,M65,Musculoskeletal,Ganglion
+1060,M70,Musculoskeletal,Frozen Shoulder (Adhesive capsulitis of shoulder)
+1061,M70,Musculoskeletal,Myalgia
+1062,M70,Musculoskeletal,Pain (Pain in limb)
+1063,M70,Musculoskeletal,Fibromyalgia
+1064,M70,Musculoskeletal,Soft Tissue Disorders (Other specified soft tissue disorders)
+1065,M70,Musculoskeletal,"Soft tissue disorder, unspecified"
+1066,M80,Musculoskeletal,Osteoporosis with pathological fracture
+1067,M80,Musculoskeletal,Fracture (Malunion of fracture)
+1068,M80,Musculoskeletal,"Fracture (Stress fracture, not elsewhere classified)"
+1069,M80,Musculoskeletal,"Fracture (Pathological fracture, not elsewhere classified)"
+1070,M86,Musculoskeletal,Osteomyelitis
+1071,M86,Musculoskeletal,Osteomyelitis (Chronic osteomyelitis with draining sinus)
+1072,M86,Musculoskeletal,Osteomyelitis (Other chronic osteomyelitis)
+1073,M86,Musculoskeletal,Osteomyelitis (other osteomyelitis)
+1074,M91,Musculoskeletal,"Osteochondrosis (Juvenile osteochondrosis, unspecified)"
+1075,M91,Musculoskeletal,"Costochondritis (Osteochondropathy, unspecified)"
+1076,N00,Genitourinary System,Nephritic Syndrome (Acute nephritic syndrome: Focal and segmental glomerular lesions)
+1077,N00,Genitourinary System,Nephrotic Syndrome
+1078,N00,Genitourinary System,Nephrotic Syndrome (Nephrotic syndrome: Focal and segmental glomerular lesions)
+1079,N00,Genitourinary System,Nephrotic Syndrome (Nephrotic syndrome: Other)
+1080,N00,Genitourinary System,Glomerular disorders in diabetes mellitus
+1081,N10,Genitourinary System,Nephritis (Acute tubulo-interstitial nephritis)
+1082,N10,Genitourinary System,Pyelonephritis (Chronic tubulo-interstitial nephritis)
+1083,N10,Genitourinary System,"Nephritis (Tubulo-interstitial nephritis, not specified as acute or chronic)"
+1084,N10,Genitourinary System,"Hydronephrosis (Hydronephrosis with ureteral stricture, not elsewhere classified)"
+1085,N10,Genitourinary System,"Nephropathy (Nephropathy induced by unspecified drug, medicament or biological substance)"
+1086,N17,Genitourinary System,Renal Disease (Chronic kidney disease)
+1087,N17,Genitourinary System,Renal Failure (Unspecified kidney failure)
+1088,N20,Genitourinary System,Stone (Calculus of ureter)
+1089,N20,Genitourinary System,Calculus (Calculus of kidney with calculus of ureter)
+1090,N20,Genitourinary System,"Calculus (Urinary calculus, unspecified)"
+1091,N20,Genitourinary System,Stone (Calculus in bladder)
+1092,N20,Genitourinary System,"Calculus of lower urinary tract, unspecified"
+1093,N20,Genitourinary System,Urolithiasis (Unspecified renal colic)
+1094,N25,Genitourinary System,"Small kidney, unspecified"
+1095,N25,Genitourinary System,Other disorders of kidney and ureter in diseases classified elsewhere
+1096,N30,Genitourinary System,Cystitis
+1097,N30,Genitourinary System,Acute cystitis
+1098,N30,Genitourinary System,Interstitial cystitis (chronic)
+1099,N30,Genitourinary System,Cystitis (Other chronic cystitis)
+1100,N30,Genitourinary System,Cystitis (with hematuria)
+1101,N30,Genitourinary System,Cystitis (without hematuria)
+1102,N30,Genitourinary System,"Bladder disorder, unspecified"
+1103,N30,Genitourinary System,Urethral Stricture
+1104,N30,Genitourinary System,Urethral Stricture (Post-traumatic urethral stricture)
+1105,N30,Genitourinary System,"Urethral Stricture (Postinfective urethral stricture, not elsewhere classified)"
+1106,N30,Genitourinary System,"Urethral disorder, unspecified"
+1107,N30,Genitourinary System,"Urinary Tract Infection (Urinary tract infection, site not specified)"
+1108,N30,Genitourinary System,Stress incontinence
+1109,N40,Genitourinary System,Inflammatory diseases of prostate
+1110,N40,Genitourinary System,Dysplasia of prostate
+1111,N40,Genitourinary System,Hydrocele and spermatocele
+1112,N40,Genitourinary System,"Hydrocele (Hydrocele, unspecified)"
+1113,N40,Genitourinary System,Torsion of testis
+1114,N40,Genitourinary System,Orchitis and epididymitis
+1115,N40,Genitourinary System,Infertility (Male infertility)
+1116,N40,Genitourinary System,"Redundant prepuce, phimosis and paraphimosis"
+1117,N40,Genitourinary System,Other disorders of penis
+1118,N40,Genitourinary System,Impotence (Impotence of organic origin)
+1119,N40,Genitourinary System,Ulcer of penis
+1120,N40,Genitourinary System,"Inflammatory disorders of male genital organs, not elsewhere classified"
+1121,N40,Genitourinary System,Carbuncle (of male genital organ of unspecified)
+1122,N40,Genitourinary System,Other disorders of male genital organs
+1123,N60,Genitourinary System,Fibroadenosis of breast
+1124,N60,Genitourinary System,Inflammatory disorders of breast
+1125,N60,Genitourinary System,Unspecified lump in breast
+1126,N60,Genitourinary System,Galactorrhoea not associated with childbirth
+1127,N60,Genitourinary System,"Disorder of breast, unspecified"
+1128,N70,Genitourinary System,Salpingitis and oophoritis
+1129,N70,Genitourinary System,Acute inflammatory disease of uterus
+1130,N70,Genitourinary System,"Female pelvic inflammatory disease, unspecified"
+1131,N70,Genitourinary System,Cyst of Bartholin gland
+1132,N70,Genitourinary System,Ulceration of vagina
+1133,N70,Genitourinary System,Ulceration of vulva
+1134,N80,Genitourinary System,Endometriosis
+1135,N80,Genitourinary System,Endometriosis (Endometriosis of uterus)
+1136,N80,Genitourinary System,Endometriosis (Endometriosis of ovary)
+1137,N80,Genitourinary System,Prolapse (Female genital prolapse)
+1138,N80,Genitourinary System,Female urethrocele
+1139,N80,Genitourinary System,Cystocele
+1140,N80,Genitourinary System,Incomplete uterovaginal prolapse
+1141,N80,Genitourinary System,Complete uterovaginal prolapse
+1142,N80,Genitourinary System,"Prolapse (Uterovaginal prolapse, unspecified)"
+1143,N80,Genitourinary System,Vaginal enterocele
+1144,N80,Genitourinary System,Rectocele
+1145,N80,Genitourinary System,Other female genital prolapse
+1146,N80,Genitourinary System,Fistulae involving female genital tract
+1147,N80,Genitourinary System,Fistula (Vesicovaginal fistula)
+1148,N80,Genitourinary System,Other female urinary-genital tract fistulae
+1149,N80,Genitourinary System,Follicular cyst of ovary
+1150,N80,Genitourinary System,Corpus luteum cyst
+1151,N80,Genitourinary System,Other and unspecified ovarian cysts
+1152,N80,Genitourinary System,Haematosalpinx
+1153,N80,Genitourinary System,"Other noninflammatory disorders of ovary, fallopian tube and broad ligament"
+1154,N80,Genitourinary System,"Noninflammatory disorder of ovary, fallopian tube and broad ligament, unspecified"
+1155,N80,Genitourinary System,Polyp of female genital tract
+1156,N80,Genitourinary System,Polyp (Polyp of vagina)
+1157,N80,Genitourinary System,Endometrial adenomatous hyperplasia
+1158,N80,Genitourinary System,Hypertrophy of uterus
+1159,N80,Genitourinary System,Dysplasia of cervix uteri
+1160,N80,Genitourinary System,Incompetence of cervix uteri
+1161,N80,Genitourinary System,Tight hymenal ring
+1162,N80,Genitourinary System,Haematocolpos
+1163,N80,Genitourinary System,Primary amenorrhoea
+1164,N80,Genitourinary System,Secondary amenorrhoea
+1165,N80,Genitourinary System,"Amenorrhoea (Amenorrhoea, unspecified)"
+1166,N80,Genitourinary System,Primary oligomenorrhoea
+1167,N80,Genitourinary System,Secondary oligomenorrhoea
+1168,N80,Genitourinary System,"Oligomenorrhoea (Oligomenorrhoea, unspecified)"
+1169,N80,Genitourinary System,"Excessive, frequent and irregular menstruation"
+1170,N80,Genitourinary System,Excessive and frequent menstruation with regular cycle
+1171,N80,Genitourinary System,Excessive and frequent menstruation with irregular cycle
+1172,N80,Genitourinary System,Excessive menstruation at puberty
+1173,N80,Genitourinary System,Ovulation bleeding
+1174,N80,Genitourinary System,Excessive bleeding in the premenopausal period
+1175,N80,Genitourinary System,"Irregular menstruation, unspecified"
+1176,N80,Genitourinary System,Other abnormal uterine and vaginal bleeding
+1177,N80,Genitourinary System,Postcoital and contact bleeding
+1178,N80,Genitourinary System,Haemorrhage (Other specified abnormal uterine and vaginal bleeding)
+1179,N80,Genitourinary System,Pain (Pain and other conditions associated with female genital organs and menstrual cycle)
+1180,N80,Genitourinary System,Dyspareunia
+1181,N80,Genitourinary System,Primary dysmenorrhoea
+1182,N80,Genitourinary System,Secondary dysmenorrhoea
+1183,N80,Genitourinary System,"Dysmenorrhoea (Dysmenorrhoea, unspecified)"
+1184,N80,Genitourinary System,Haemorrhage (Postmenopausal bleeding)
+1185,N80,Genitourinary System,Abortion (Habitual aborter)
+1186,N80,Genitourinary System,Infertility (Female infertility)
+1187,O00,"Pregnancy, Birth, Puerperium",Pregnancy (Ectopic pregnancy)
+1188,O00,"Pregnancy, Birth, Puerperium",Abdominal pregnancy
+1189,O00,"Pregnancy, Birth, Puerperium",Tubal pregnancy
+1190,O00,"Pregnancy, Birth, Puerperium",Ectopic Pregnancy (Other ectopic pregnancy)
+1191,O00,"Pregnancy, Birth, Puerperium","Ectopic pregnancy, unspecified"
+1192,O00,"Pregnancy, Birth, Puerperium",Hydatidiform mole
+1193,O00,"Pregnancy, Birth, Puerperium",Abortion (Missed abortion)
+1194,O00,"Pregnancy, Birth, Puerperium",Abortion (Other specified abnormal products of conception)
+1195,O00,"Pregnancy, Birth, Puerperium","Abortion (Abnormal product of conception, unspecified)"
+1196,O00,"Pregnancy, Birth, Puerperium",Abortion (Spontaneous abortion)
+1197,O00,"Pregnancy, Birth, Puerperium","Spontaneous abortion: Incomplete, with other and unspecified complications"
+1198,O00,"Pregnancy, Birth, Puerperium","Spontaneous abortion: Incomplete, without complication"
+1199,O00,"Pregnancy, Birth, Puerperium","Spontaneous abortion: Complete or unspecified, with other and unspecified complications"
+1200,O00,"Pregnancy, Birth, Puerperium","Spontaneous abortion: Complete or unspecified, without complication"
+1201,O00,"Pregnancy, Birth, Puerperium",Abortion (Medical abortion)
+1202,O00,"Pregnancy, Birth, Puerperium","Medical abortion: Incomplete, with other and unspecified complications"
+1203,O00,"Pregnancy, Birth, Puerperium","Medical abortion: Incomplete, without complication"
+1204,O00,"Pregnancy, Birth, Puerperium","Medical abortion: Complete or unspecified, with other and unspecified complications"
+1205,O00,"Pregnancy, Birth, Puerperium","Medical abortion: Complete or unspecified, without complication"
+1206,O00,"Pregnancy, Birth, Puerperium",Other abortion
+1207,O00,"Pregnancy, Birth, Puerperium",Abortion (Unspecified abortion)
+1208,O00,"Pregnancy, Birth, Puerperium",Abortion (Failed attempted abortion)
+1209,O00,"Pregnancy, Birth, Puerperium","Failed medical abortion, with other and unspecified complications"
+1210,O00,"Pregnancy, Birth, Puerperium","Failed medical abortion, without complication"
+1211,O00,"Pregnancy, Birth, Puerperium",Complications following abortion and ectopic and molar pregnancy
+1212,O00,"Pregnancy, Birth, Puerperium",Delayed or excessive haemorrhage following abortion and ectopic and molar pregnancy
+1213,O00,"Pregnancy, Birth, Puerperium",Shock following abortion and ectopic and molar pregnancy
+1214,O00,"Pregnancy, Birth, Puerperium",Metabolic disorders following abortion and ectopic and molar pregnancy
+1215,O00,"Pregnancy, Birth, Puerperium",Damage to pelvic organs and tissues following abortion and ectopic and molar pregnancy
+1216,O00,"Pregnancy, Birth, Puerperium","Complication following abortion and ectopic and molar pregnancy, unspecified"
+1217,O10,"Pregnancy, Birth, Puerperium","Hypertension (Pre-existing hypertension complicating pregnancy, childbirth and the puerperium)"
+1218,O10,"Pregnancy, Birth, Puerperium","Hypertension (Unspecified pre-existing hypertension complicating pregnancy, childbirth, and the puerperium)"
+1219,O10,"Pregnancy, Birth, Puerperium",Gestational oedema
+1220,O10,"Pregnancy, Birth, Puerperium",Proteinuria (Gestational proteinuria)
+1221,O10,"Pregnancy, Birth, Puerperium",Gestational oedema with proteinuria
+1222,O10,"Pregnancy, Birth, Puerperium",Moderate pre-eclampsia
+1223,O10,"Pregnancy, Birth, Puerperium",Severe pre-eclampsia
+1224,O10,"Pregnancy, Birth, Puerperium",HELLP Syndrome
+1225,O10,"Pregnancy, Birth, Puerperium","Pre-eclampsia (Pre-eclampsia, unspecified)"
+1226,O10,"Pregnancy, Birth, Puerperium",Eclampsia
+1227,O10,"Pregnancy, Birth, Puerperium",Eclampsia (Eclampsia in pregnancy)
+1228,O10,"Pregnancy, Birth, Puerperium",Eclampsia (Eclampsia in labour)
+1229,O10,"Pregnancy, Birth, Puerperium","Eclampsia, unspecified as to time period"
+1230,O10,"Pregnancy, Birth, Puerperium",Hypertension (Unspecified maternal hypertension)
+1231,O20,"Pregnancy, Birth, Puerperium",Haemorrhage in early pregnancy
+1232,O20,"Pregnancy, Birth, Puerperium",Abortion (Threatened abortion)
+1233,O20,"Pregnancy, Birth, Puerperium","Haemorrhage (Haemorrhage in early pregnancy, unspecified)"
+1234,O20,"Pregnancy, Birth, Puerperium",Excessive vomiting in pregnancy
+1235,O20,"Pregnancy, Birth, Puerperium",Mild hyperemesis gravidarum
+1236,O20,"Pregnancy, Birth, Puerperium",Hyperemesis gravidarum (Hyperemesis gravidarum with metabolic disturbance)
+1237,O20,"Pregnancy, Birth, Puerperium",Late vomiting of pregnancy
+1238,O20,"Pregnancy, Birth, Puerperium","Vomiting (Vomiting of pregnancy, unspecified)"
+1239,O20,"Pregnancy, Birth, Puerperium",Varicose veins of lower extremity in pregnancy
+1240,O20,"Pregnancy, Birth, Puerperium",Genital Varices (Genital varices in pregnancy)
+1241,O20,"Pregnancy, Birth, Puerperium",Phlebitis In Pregnancy (Superficial thrombophlebitis in pregnancy)
+1242,O20,"Pregnancy, Birth, Puerperium",Phlebothrombosis (Deep phlebothrombosis in pregnancy)
+1243,O20,"Pregnancy, Birth, Puerperium",Hemorrhoids (Haemorrhoids in pregnancy)
+1244,O20,"Pregnancy, Birth, Puerperium",Infection (Infections of genitourinary tract in pregnancy)
+1245,O20,"Pregnancy, Birth, Puerperium",Pyelonephritis (Infections of kidney in pregnancy)
+1246,O20,"Pregnancy, Birth, Puerperium",Urinary Tract Infection (Unspecified infection of urinary tract in pregnancy)
+1247,O20,"Pregnancy, Birth, Puerperium",Infection (Infections of the genital tract in pregnancy)
+1248,O20,"Pregnancy, Birth, Puerperium",Genitourinary Tract Infection (Other and unspecified genitourinary tract infection in pregnancy)
+1249,O20,"Pregnancy, Birth, Puerperium",Diabetes Mellitus (Diabetes mellitus in pregnancy)
+1250,O20,"Pregnancy, Birth, Puerperium","Diabetes mellitus in pregnancy: Pre-existing diabetes mellitus, insulin-dependent"
+1251,O20,"Pregnancy, Birth, Puerperium","Diabetes mellitus in pregnancy: Pre-existing diabetes mellitus, non-insulin-dependent"
+1252,O20,"Pregnancy, Birth, Puerperium",Diabetes mellitus in pregnancy: Pre-existing malnutrition-related diabetes mellitus
+1253,O20,"Pregnancy, Birth, Puerperium","Diabetes mellitus in pregnancy: Pre-existing diabetes mellitus, unspecified"
+1254,O20,"Pregnancy, Birth, Puerperium",Diabetes mellitus arising in pregnancy
+1255,O20,"Pregnancy, Birth, Puerperium",Malnutrition (Malnutrition in pregnancy)
+1256,O20,"Pregnancy, Birth, Puerperium",Maternal care for other conditions predominantly related to pregnancy
+1257,O20,"Pregnancy, Birth, Puerperium",Excessive weight gain in pregnancy
+1258,O20,"Pregnancy, Birth, Puerperium",Weight gain (Low weight gain in pregnancy)
+1259,O20,"Pregnancy, Birth, Puerperium",Retained intrauterine contraceptive device in pregnancy
+1260,O20,"Pregnancy, Birth, Puerperium","Pregnancy-related condition, unspecified"
+1261,O20,"Pregnancy, Birth, Puerperium",Abnormal findings on antenatal screening of mother
+1262,O20,"Pregnancy, Birth, Puerperium",Abnormal biochemical finding on antenatal screening of mother
+1263,O20,"Pregnancy, Birth, Puerperium",Abnormal cytological finding on antenatal screening of mother
+1264,O20,"Pregnancy, Birth, Puerperium",Abnormal ultrasonic finding on antenatal screening of mother
+1265,O20,"Pregnancy, Birth, Puerperium",Abnormal radiological finding on antenatal screening of mother
+1266,O20,"Pregnancy, Birth, Puerperium",Abnormal chromosomal and genetic finding on antenatal screening of mother
+1267,O20,"Pregnancy, Birth, Puerperium",ANC (Other abnormal findings on antenatal screening of mother)
+1268,O20,"Pregnancy, Birth, Puerperium","Abnormal finding on antenatal screening of mother, unspecified"
+1269,O20,"Pregnancy, Birth, Puerperium",Complications of anaesthesia during pregnancy
+1270,O20,"Pregnancy, Birth, Puerperium",Failed or difficult intubation during pregnancy
+1271,O20,"Pregnancy, Birth, Puerperium","Complication of anaesthesia during pregnancy, unspecified"
+1272,O30,"Pregnancy, Birth, Puerperium",Multiple gestation
+1273,O30,"Pregnancy, Birth, Puerperium",Twin pregnancy
+1274,O30,"Pregnancy, Birth, Puerperium",Triplet pregnancy
+1275,O30,"Pregnancy, Birth, Puerperium",Pregnancy (Continuing pregnancy after intrauterine death of one fetus or more)
+1276,O30,"Pregnancy, Birth, Puerperium",Maternal care for known or suspected malpresentation of fetus
+1277,O30,"Pregnancy, Birth, Puerperium",Maternal care for unstable lie
+1278,O30,"Pregnancy, Birth, Puerperium",Maternal care for breech presentation
+1279,O30,"Pregnancy, Birth, Puerperium",Maternal care for transverse and oblique lie
+1280,O30,"Pregnancy, Birth, Puerperium","Maternal care for face, brow and chin presentation"
+1281,O30,"Pregnancy, Birth, Puerperium",Maternal care for compound presentation
+1282,O30,"Pregnancy, Birth, Puerperium","Maternal care for malpresentation of fetus, unspecified"
+1283,O30,"Pregnancy, Birth, Puerperium",Maternal care for known or suspected disproportion
+1284,O30,"Pregnancy, Birth, Puerperium",Maternal care for disproportion due to unusually large fetus
+1285,O30,"Pregnancy, Birth, Puerperium",Maternal care for disproportion due to hydrocephalic fetus
+1286,O30,"Pregnancy, Birth, Puerperium","Maternal care for disproportion, unspecified"
+1287,O30,"Pregnancy, Birth, Puerperium",Maternal care for cervical incompetence
+1288,O30,"Pregnancy, Birth, Puerperium",Maternal care for other known or suspected fetal problems
+1289,O30,"Pregnancy, Birth, Puerperium",Maternal care for rhesus isoimmunization
+1290,O30,"Pregnancy, Birth, Puerperium",Maternal care for signs of fetal hypoxia
+1291,O30,"Pregnancy, Birth, Puerperium",Intrauterine Fetal Death (Maternal care for intrauterine death)
+1292,O30,"Pregnancy, Birth, Puerperium",Maternal care for poor fetal growth
+1293,O30,"Pregnancy, Birth, Puerperium",Maternal care for viable fetus in abdominal pregnancy
+1294,O30,"Pregnancy, Birth, Puerperium","Maternal care for fetal problem, unspecified"
+1295,O30,"Pregnancy, Birth, Puerperium",Polyhydramnios
+1296,O30,"Pregnancy, Birth, Puerperium",Other disorders of amniotic fluid and membranes
+1297,O30,"Pregnancy, Birth, Puerperium",Oligohydramnios
+1298,O30,"Pregnancy, Birth, Puerperium",Premature rupture of membranes
+1299,O30,"Pregnancy, Birth, Puerperium",Placental disorders
+1300,O30,"Pregnancy, Birth, Puerperium",Placenta (Morbidly adherent placenta)
+1301,O30,"Pregnancy, Birth, Puerperium",Placenta praevia
+1302,O30,"Pregnancy, Birth, Puerperium",Placenta Previa (Placenta praevia specified as without haemorrhage)
+1303,O30,"Pregnancy, Birth, Puerperium",Placenta Previa (Placenta praevia with haemorrhage)
+1304,O30,"Pregnancy, Birth, Puerperium",Premature separation of placenta [abruptio placentae]
+1305,O30,"Pregnancy, Birth, Puerperium","Antepartum haemorrhage, not elsewhere classified"
+1306,O30,"Pregnancy, Birth, Puerperium","Haemorrhage (Antepartum haemorrhage, unspecified)"
+1307,O30,"Pregnancy, Birth, Puerperium",False labour
+1308,O30,"Pregnancy, Birth, Puerperium",False labour before 37 completed weeks of gestation
+1309,O30,"Pregnancy, Birth, Puerperium","False labour, unspecified"
+1310,O30,"Pregnancy, Birth, Puerperium",Prolonged pregnancy
+1311,O60,"Pregnancy, Birth, Puerperium",Preterm (Preterm labour and delivery)
+1312,O60,"Pregnancy, Birth, Puerperium",Preterm labour without delivery
+1313,O60,"Pregnancy, Birth, Puerperium",Preterm spontaneous labour with preterm delivery
+1314,O60,"Pregnancy, Birth, Puerperium",Term (Preterm spontaneous labour with term delivery)
+1315,O60,"Pregnancy, Birth, Puerperium",Preterm delivery without spontaneous labour
+1316,O60,"Pregnancy, Birth, Puerperium",Failed Induction (Failed induction of labour)
+1317,O60,"Pregnancy, Birth, Puerperium",Failed medical induction of labour
+1318,O60,"Pregnancy, Birth, Puerperium","Failed Labour (Failed trial of labour, unspecified)"
+1319,O60,"Pregnancy, Birth, Puerperium",Labour (Abnormalities of forces of labour)
+1320,O60,"Pregnancy, Birth, Puerperium",Primary inadequate contractions
+1321,O60,"Pregnancy, Birth, Puerperium",Precipitate labour
+1322,O60,"Pregnancy, Birth, Puerperium","Hypertonic, incoordinate, and prolonged uterine contractions"
+1323,O60,"Pregnancy, Birth, Puerperium","Abnormality of forces of labour, unspecified"
+1324,O60,"Pregnancy, Birth, Puerperium",Long labour
+1325,O60,"Pregnancy, Birth, Puerperium",Prolonged (FSOL) (Prolonged first stage (of labour))
+1326,O60,"Pregnancy, Birth, Puerperium",Prolonged (SSOL) (Prolonged second stage (of labour))
+1327,O60,"Pregnancy, Birth, Puerperium","Long labour, unspecified"
+1328,O60,"Pregnancy, Birth, Puerperium",Obstructed labour due to malposition and malpresentation of fetus
+1329,O60,"Pregnancy, Birth, Puerperium",Obstructed Labour (Obstructed labour due to breech presentation)
+1330,O60,"Pregnancy, Birth, Puerperium",Obstructed Labour (Obstructed labour due to face presentation)
+1331,O60,"Pregnancy, Birth, Puerperium",Obstructed Labour (Obstructed labour due to brow presentation)
+1332,O60,"Pregnancy, Birth, Puerperium",Obstructed Labour (Obstructed labour due to shoulder presentation)
+1333,O60,"Pregnancy, Birth, Puerperium",Obstructed Labour (Obstructed labour due to compound presentation)
+1334,O60,"Pregnancy, Birth, Puerperium",Obstructed Labour (Obstructed labour due to other malposition and malpresentation)
+1335,O60,"Pregnancy, Birth, Puerperium",Labor And Delivery (Obstructed labour due to generally contracted pelvis)
+1336,O60,"Pregnancy, Birth, Puerperium",Obstructed labour due to pelvic inlet contraction
+1337,O60,"Pregnancy, Birth, Puerperium","Obstructed Labour (Obstructed labour due to fetopelvic disproportion, unspecified)"
+1338,O60,"Pregnancy, Birth, Puerperium",Labor And Delivery (other obstructed labour)
+1339,O60,"Pregnancy, Birth, Puerperium",Obstructed Labour (Obstructed labour due to shoulder dystocia)
+1340,O60,"Pregnancy, Birth, Puerperium",Obstructed Labour (Obstructed labour due to unusually large fetus)
+1341,O60,"Pregnancy, Birth, Puerperium",Obstructed labour due to other abnormalities of fetus
+1342,O60,"Pregnancy, Birth, Puerperium","Failed application of vacuum extractor and forceps, unspecified"
+1343,O60,"Pregnancy, Birth, Puerperium","Obstructed Labour (Obstructed labour, unspecified)"
+1344,O60,"Pregnancy, Birth, Puerperium","Labour and delivery complicated by intrapartum haemorrhage, not elsewhere classified"
+1345,O60,"Pregnancy, Birth, Puerperium","Haemorrhage (Intrapartum haemorrhage, unspecified)"
+1346,O60,"Pregnancy, Birth, Puerperium",Fetal distress (Labour and delivery complicated by fetal stress [distress])
+1347,O60,"Pregnancy, Birth, Puerperium",fetal heart rate (Labour and delivery complicated by fetal heart rate anomaly)
+1348,O60,"Pregnancy, Birth, Puerperium",Labor And Delivery (Labour and delivery complicated by meconium in amniotic fluid)
+1349,O60,"Pregnancy, Birth, Puerperium",Labor And Delivery (complicated by fetal heart rate anomaly with meconium in amniotic fluid)
+1350,O60,"Pregnancy, Birth, Puerperium",Labor And Delivery (complicated by other evidence of fetal stress)
+1351,O60,"Pregnancy, Birth, Puerperium","Labor And Delivery (Labour and delivery complicated by fetal stress, unspecified)"
+1352,O60,"Pregnancy, Birth, Puerperium",Labor And Delivery (Labour and delivery complicated by umbilical cord complications)
+1353,O60,"Pregnancy, Birth, Puerperium",cord prolapse (Labour and delivery complicated by prolapse of cord)
+1354,O60,"Pregnancy, Birth, Puerperium",Perineal laceration during delivery
+1355,O60,"Pregnancy, Birth, Puerperium",Uterine Rupture (Rupture of uterus before onset of labour)
+1356,O60,"Pregnancy, Birth, Puerperium",Uterine Rupture (Rupture of uterus during labour)
+1357,O60,"Pregnancy, Birth, Puerperium","Obstetric trauma, unspecified"
+1358,O60,"Pregnancy, Birth, Puerperium",Haemorrhage (Postpartum haemorrhage)
+1359,O60,"Pregnancy, Birth, Puerperium",Third-stage haemorrhage
+1360,O60,"Pregnancy, Birth, Puerperium",Other immediate postpartum haemorrhage
+1361,O60,"Pregnancy, Birth, Puerperium",Haemorrhage (Delayed and secondary postpartum haemorrhage)
+1362,O60,"Pregnancy, Birth, Puerperium","Retained placenta and membranes, without haemorrhage"
+1363,O60,"Pregnancy, Birth, Puerperium",Placenta (Retained placenta without haemorrhage)
+1364,O60,"Pregnancy, Birth, Puerperium","Retained portions of placenta and membranes, without haemorrhage"
+1365,O60,"Pregnancy, Birth, Puerperium",Complications of anaesthesia during labour and delivery
+1366,O60,"Pregnancy, Birth, Puerperium",Labor And Delivery (other complications of spinal and epidural anaesthesia during labour and delivery)
+1367,O60,"Pregnancy, Birth, Puerperium",Labor And Delivery (Failed or difficult intubation during labour and delivery)
+1368,O60,"Pregnancy, Birth, Puerperium","Labor And Delivery (Other complications of labour and delivery, not elsewhere classified)"
+1369,O60,"Pregnancy, Birth, Puerperium",Maternal distress (Maternal distress during labour and delivery)
+1370,O60,"Pregnancy, Birth, Puerperium",Shock during or following labour and delivery
+1371,O60,"Pregnancy, Birth, Puerperium","Pyrexia during labour, not elsewhere classified"
+1372,O60,"Pregnancy, Birth, Puerperium",Labor And Delivery (Other infection during labour)
+1373,O60,"Pregnancy, Birth, Puerperium",Other complications of obstetric surgery and procedures
+1374,O60,"Pregnancy, Birth, Puerperium",Vaginal delivery following previous caesarean section
+1375,O60,"Pregnancy, Birth, Puerperium",Labour & Delivery (Other specified complications of labour and delivery)
+1376,O60,"Pregnancy, Birth, Puerperium","Complication (Complication of labour and delivery, unspecified)"
+1377,O80,"Pregnancy, Birth, Puerperium",Single spontaneous delivery
+1378,O80,"Pregnancy, Birth, Puerperium",Spontaneous vertex delivery
+1379,O80,"Pregnancy, Birth, Puerperium",Spontaneous breech delivery
+1380,O80,"Pregnancy, Birth, Puerperium","Single spontaneous delivery, unspecified"
+1381,O80,"Pregnancy, Birth, Puerperium",Single delivery by forceps and vacuum extractor
+1382,O80,"Pregnancy, Birth, Puerperium",Delivery by combination of forceps and vacuum extractor
+1383,O80,"Pregnancy, Birth, Puerperium",Single delivery by caesarean section
+1384,O80,"Pregnancy, Birth, Puerperium",Delivery by elective caesarean section
+1385,O80,"Pregnancy, Birth, Puerperium",Delivery by emergency caesarean section
+1386,O80,"Pregnancy, Birth, Puerperium","Delivery by caesarean section, unspecified"
+1387,O80,"Pregnancy, Birth, Puerperium",Other assisted single delivery
+1388,O80,"Pregnancy, Birth, Puerperium",Breech extraction
+1389,O80,"Pregnancy, Birth, Puerperium",Destructive operation for delivery
+1390,O80,"Pregnancy, Birth, Puerperium","Assisted single delivery, unspecified"
+1391,O80,"Pregnancy, Birth, Puerperium",Multiple delivery
+1392,O85,"Pregnancy, Birth, Puerperium",Puerperal sepsis
+1393,O85,"Pregnancy, Birth, Puerperium",Infection of obstetric surgical wound
+1394,O85,"Pregnancy, Birth, Puerperium",Pyrexia of unknown origin following delivery
+1395,O85,"Pregnancy, Birth, Puerperium",Obstetric embolism
+1396,O85,"Pregnancy, Birth, Puerperium",Air Embolism (Obstetric air embolism)
+1397,O85,"Pregnancy, Birth, Puerperium",Amniotic fluid embolism
+1398,O85,"Pregnancy, Birth, Puerperium",Disruption of caesarean section wound
+1399,O85,"Pregnancy, Birth, Puerperium",Disruption of perineal obstetric wound
+1400,O85,"Pregnancy, Birth, Puerperium",Abscess (Abscess of breast associated with childbirth)
+1401,O85,"Pregnancy, Birth, Puerperium",Galactorrhea (Other and unspecified disorders of breast associated with childbirth)
+1402,O85,"Pregnancy, Birth, Puerperium",Disorders Of Lactation (Other and unspecified disorders of lactation)
+1403,O94,"Pregnancy, Birth, Puerperium","Pregnancy (Sequelae of complication of pregnancy, childbirth and the puerperium)"
+1404,O94,"Pregnancy, Birth, Puerperium",Maternal death (Obstetric death of unspecified cause)
+1405,O94,"Pregnancy, Birth, Puerperium",Death from any obstetric cause occurring more than 42 days but less than one year after delivery
+1406,O94,"Pregnancy, Birth, Puerperium",Death from direct obstetric cause
+1407,O94,"Pregnancy, Birth, Puerperium",Death from indirect obstetric cause
+1408,O94,"Pregnancy, Birth, Puerperium","Syphilis (Syphilis complicating pregnancy, childbirth and the puerperium)"
+1409,O94,"Pregnancy, Birth, Puerperium","Gonorrhea (Gonorrhoea complicating pregnancy, childbirth and the puerperium)"
+1410,O94,"Pregnancy, Birth, Puerperium","HIV (Human immunodeficiency [HIV] disease complicating pregnancy, childbirth and the puerperium)"
+1411,O94,"Pregnancy, Birth, Puerperium","Maternal Infectious & Parasitic Diseases Complicating Pregnancy, Childbirth, Puerperium (Other)"
+1412,O94,"Pregnancy, Birth, Puerperium","Anaemia (Anaemia complicating pregnancy, childbirth and the puerperium)"
+1413,P00,Perinatal Period,Fetus and newborn affected by maternal infectious and parasitic diseases
+1414,P00,Perinatal Period,Fetus and newborn affected by maternal injury
+1415,P00,Perinatal Period,Fetus and newborn affected by other maternal conditions
+1416,P00,Perinatal Period,Fetus and Newborn (Fetus and newborn affected by maternal complications of pregnancy)
+1417,P00,Perinatal Period,Fetus and newborn affected by incompetent cervix
+1418,P00,Perinatal Period,Fetus and Newborn (Fetus and newborn affected by premature rupture of membranes)
+1419,P00,Perinatal Period,Fetus and Newborn (Fetus and newborn affected by oligohydramnios)
+1420,P00,Perinatal Period,Fetus and newborn affected by polyhydramnios
+1421,P00,Perinatal Period,Fetus and newborn affected by maternal death
+1422,P00,Perinatal Period,Fetus and newborn affected by malpresentation before labour
+1423,P00,Perinatal Period,"Fetus and Newborn (Fetus and newborn affected by complications of placenta, cord and membranes)"
+1424,P00,Perinatal Period,Fetus and newborn affected by placenta praevia
+1425,P00,Perinatal Period,Fetus and newborn affected by prolapsed cord
+1426,P00,Perinatal Period,Fetus and newborn affected by chorioamnionitis
+1427,P00,Perinatal Period,"Fetus and newborn affected by abnormality of membranes, unspecified"
+1428,P00,Perinatal Period,Fetus and newborn affected by breech delivery and extraction
+1429,P00,Perinatal Period,"Fetus and Newborn (Fetus and newborn affected by other malpresentation, malposition and disproportion during labour and delivery)"
+1430,P00,Perinatal Period,Fetus and newborn affected by forceps delivery
+1431,P00,Perinatal Period,Fetus and newborn affected by delivery by vacuum extractor [ventouse]
+1432,P00,Perinatal Period,Fetus and newborn affected by caesarean delivery
+1433,P00,Perinatal Period,Fetus and newborn affected by precipitate delivery
+1434,P00,Perinatal Period,Fetus and newborn affected by abnormal uterine contractions
+1435,P00,Perinatal Period,"Fetus and newborn affected by complication of labour and delivery, unspecified"
+1436,P00,Perinatal Period,"Fetus and newborn affected by maternal anaesthesia and analgesia in pregnancy, labour and delivery"
+1437,P00,Perinatal Period,Fetus and newborn affected by maternal use of drugs of addiction
+1438,P05,Perinatal Period,Slow fetal growth and fetal malnutrition
+1439,P05,Perinatal Period,Gestational Age (Light for gestational age)
+1440,P05,Perinatal Period,Gestational Age (Small for gestational age)
+1441,P05,Perinatal Period,Fetal malnutrition without mention of light or small for gestational age
+1442,P05,Perinatal Period,"Disorders Related To Short Gestation And Low Birth Weight, Not Elsewhere Classified"
+1443,P05,Perinatal Period,Low Birth Weight (Extremely low birth weight)
+1444,P05,Perinatal Period,Low Birth Weight (Other low birth weight)
+1445,P05,Perinatal Period,Extreme immaturity
+1446,P05,Perinatal Period,Fetus and Newborn (Other preterm infants)
+1447,P05,Perinatal Period,Pregnancy (Disorders related to long gestation and high birth weight)
+1448,P05,Perinatal Period,pregnancy (Exceptionally large baby)
+1449,P05,Perinatal Period,Other heavy for gestational age infants
+1450,P05,Perinatal Period,"Gestational Age (Post-term infant, not heavy for gestational age)"
+1451,P10,Perinatal Period,Birth Injuries (Unspecified intracranial laceration and haemorrhage due to birth injury)
+1452,P10,Perinatal Period,Edema (Cerebral oedema due to birth injury)
+1453,P10,Perinatal Period,Unspecified brain damage due to birth injury
+1454,P10,Perinatal Period,Injury (Birth injury to other cranial nerves)
+1455,P10,Perinatal Period,Birth injury (Birth injury to scalp)
+1456,P10,Perinatal Period,Cephalhaematoma (Cephalhaematoma due to birth injury)
+1457,P10,Perinatal Period,Bruising of scalp due to birth injury
+1458,P10,Perinatal Period,Birth injury to skeleton
+1459,P10,Perinatal Period,Birth Injuries (Other birth injuries to skull)
+1460,P10,Perinatal Period,Fracture of clavicle due to birth injury
+1461,P10,Perinatal Period,"Birth injury to skeleton, unspecified"
+1462,P10,Perinatal Period,Birth injury (Erb paralysis due to birth injury)
+1463,P10,Perinatal Period,Other birth injuries
+1464,P10,Perinatal Period,"Birth injury (Birth injury, unspecified)"
+1465,P20,Perinatal Period,Intrauterine hypoxia
+1466,P20,Perinatal Period,Hypoxia (Intrauterine hypoxia first noted before onset of labour)
+1467,P20,Perinatal Period,Hypoxia (Intrauterine hypoxia first noted during labour and delivery)
+1468,P20,Perinatal Period,"Hypoxia (Intrauterine hypoxia, unspecified)"
+1469,P20,Perinatal Period,Birth asphyxia
+1470,P20,Perinatal Period,Asphyxia (Mild and moderate birth asphyxia)
+1471,P20,Perinatal Period,"Asphyxia (Birth asphyxia, unspecified)"
+1472,P20,Perinatal Period,Respiratory distress of newborn
+1473,P20,Perinatal Period,Respiratory Distress (Respiratory distress syndrome of newborn)
+1474,P20,Perinatal Period,Tachypnoea (Transient tachypnoea of newborn)
+1475,P20,Perinatal Period,Fetus and Newborn (Other respiratory distress of newborn)
+1476,P20,Perinatal Period,Pneumonia (Congenital pneumonia)
+1477,P20,Perinatal Period,Neonatal aspiration syndromes
+1478,P20,Perinatal Period,Newborn (Neonatal aspiration of meconium)
+1479,P20,Perinatal Period,Neonatal aspiration of amniotic fluid and mucus
+1480,P20,Perinatal Period,Neonatal Aspiration (Neonatal aspiration of milk and regurgitated food)
+1481,P20,Perinatal Period,"Newborn (Neonatal aspiration syndrome, unspecified)"
+1482,P20,Perinatal Period,Respiratory Failure (Respiratory failure of newborn)
+1483,P20,Perinatal Period,Neonatal hypertension
+1484,P20,Perinatal Period,Fetus And Newborn (Persistent fetal circulation)
+1485,P35,Perinatal Period,Congenital viral diseases
+1486,P35,Perinatal Period,Congenital rubella syndrome
+1487,P35,Perinatal Period,Congenital cytomegalovirus infection
+1488,P35,Perinatal Period,Congenital herpesviral [herpes simplex] infection
+1489,P35,Perinatal Period,"Congenital viral disease, unspecified"
+1490,P35,Perinatal Period,Sepsis (Bacterial sepsis of newborn)
+1491,P35,Perinatal Period,Sepsis (Sepsis of newborn due to anaerobes)
+1492,P35,Perinatal Period,Sepsis (Other bacterial sepsis of newborn)
+1493,P35,Perinatal Period,"Sepsis (Bacterial sepsis of newborn, unspecified)"
+1494,P35,Perinatal Period,Congenital tuberculosis
+1495,P35,Perinatal Period,Congenital falciparum malaria
+1496,P35,Perinatal Period,Neonatal candidiasis
+1497,P35,Perinatal Period,Osteoarthritis (Other infections specific to the perinatal period)
+1498,P35,Perinatal Period,Dacryocystitis (Neonatal conjunctivitis and dacryocystitis)
+1499,P35,Perinatal Period,Neonatal conjunctivitis and dacryocystitis
+1500,P35,Perinatal Period,Neonatal urinary tract infection
+1501,P35,Perinatal Period,Neonatal skin infection
+1502,P50,Perinatal Period,Fetal blood loss
+1503,P50,Perinatal Period,Umbilical haemorrhage of newborn
+1504,P50,Perinatal Period,"Neonatal haemorrhage, unspecified"
+1505,P50,Perinatal Period,"Isoimmunization, Rh (Rh isoimmunization of fetus and newborn)"
+1506,P50,Perinatal Period,"Isoimmunization, ABO (ABO isoimmunization of fetus and newborn)"
+1507,P50,Perinatal Period,Kernicterus
+1508,P50,Perinatal Period,Kernicterus due to isoimmunization
+1509,P50,Perinatal Period,Neonatal jaundice due to bruising
+1510,P50,Perinatal Period,Neonatal jaundice due to bleeding
+1511,P50,Perinatal Period,Neonatal jaundice due to infection
+1512,P50,Perinatal Period,Neonatal jaundice due to polycythaemia
+1513,P50,Perinatal Period,Neonatal jaundice due to swallowed maternal blood
+1514,P50,Perinatal Period,Neonatal jaundice from other and unspecified causes
+1515,P50,Perinatal Period,Jaundice (Neonatal jaundice associated with preterm delivery)
+1516,P50,Perinatal Period,Inspissated bile syndrome
+1517,P50,Perinatal Period,"Jaundice (Neonatal jaundice, unspecified)"
+1518,P50,Perinatal Period,Disseminated intravascular coagulation of fetus and newborn
+1519,P50,Perinatal Period,Polycythaemia neonatorum
+1520,P50,Perinatal Period,Anaemia of prematurity
+1521,P50,Perinatal Period,"Perinatal haematological disorder, unspecified"
+1522,P70,Perinatal Period,Neonatal diabetes mellitus
+1523,P70,Perinatal Period,Iatrogenic neonatal hypoglycaemia
+1524,P70,Perinatal Period,Other neonatal hypoglycaemia
+1525,P70,Perinatal Period,Dehydration of newborn
+1526,P75,Perinatal Period,"Intestinal obstruction (Intestinal obstruction of newborn, unspecified)"
+1527,P75,Perinatal Period,Noninfective neonatal diarrhoea
+1528,P75,Perinatal Period,"Perinatal digestive system disorder, unspecified"
+1529,P80,Perinatal Period,Hypothermia of newborn
+1530,P80,Perinatal Period,Cold injury syndrome
+1531,P90,Perinatal Period,Convulsions of newborn
+1532,P90,Perinatal Period,Neonatal coma
+1533,P90,Perinatal Period,Feeding problems of newborn
+1534,P90,Perinatal Period,Vomiting in newborn
+1535,P90,Perinatal Period,Slow feeding of newborn
+1536,P90,Perinatal Period,Underfeeding of newborn
+1537,P90,Perinatal Period,Overfeeding of newborn
+1538,P90,Perinatal Period,Breastfeeding (Neonatal difficulty in feeding at breast)
+1539,P90,Perinatal Period,"Feeding problem of newborn, unspecified"
+1540,P90,Perinatal Period,Fetus and Newborn (Fetal death of unspecified cause)
+1541,P90,Perinatal Period,"Acephaly (Termination of pregnancy, affecting fetus and newborn)"
+1542,Q00,Congenital Malformations,Anencephaly
+1543,Q00,Congenital Malformations,Encephalocele
+1544,Q00,Congenital Malformations,Microcephaly
+1545,Q00,Congenital Malformations,Congenital hydrocephalus
+1546,Q00,Congenital Malformations,"Congenital malformation of brain, unspecified"
+1547,Q00,Congenital Malformations,Spina bifida
+1548,Q10,Congenital Malformations,Congenital cataract
+1549,Q10,Congenital Malformations,"Congenital malformation of face and neck, unspecified"
+1550,Q20,Congenital Malformations,Ventricular septal defect
+1551,Q20,Congenital Malformations,Atrial Septal Defect
+1552,Q20,Congenital Malformations,Atrioventricular septal defect
+1553,Q20,Congenital Malformations,Tetralogy of Fallot
+1554,Q20,Congenital Malformations,"Patent Ductus Arteriosus (Congenital malformation of heart, unspecified)"
+1555,Q20,Congenital Malformations,"Congenital malformation of heart, unspecified"
+1556,Q20,Congenital Malformations,Patent ductus arteriosus
+1557,Q20,Congenital Malformations,"Congenital malformation of circulatory system, unspecified"
+1558,Q30,Congenital Malformations,"Congenital malformation of larynx, unspecified"
+1559,Q30,Congenital Malformations,"Congenital malformation of lung, unspecified"
+1560,Q30,Congenital Malformations,"Congenital malformation of respiratory system, unspecified"
+1561,Q35,Congenital Malformations,Cleft Palate
+1562,Q35,Congenital Malformations,Cleft Hard Palate
+1563,Q35,Congenital Malformations,Cleft Soft Palate
+1564,Q35,Congenital Malformations,Cleft Hard And Soft Palate (Cleft hard palate with cleft soft palate)
+1565,Q35,Congenital Malformations,Cleft Lip
+1566,Q35,Congenital Malformations,Cleft Lip & Palate (Cleft palate with cleft lip)
+1567,Q38,Congenital Malformations,Ankyloglossia
+1568,Q38,Congenital Malformations,Macroglossia
+1569,Q38,Congenital Malformations,Other congenital malformations of mouth
+1570,Q38,Congenital Malformations,Congenital tracheo-oesophageal fistula without atresia
+1571,Q38,Congenital Malformations,"Congenital malformation of oesophagus, unspecified"
+1572,Q38,Congenital Malformations,"Congenital malformation of stomach, unspecified"
+1573,Q38,Congenital Malformations,Meckel diverticulum
+1574,Q38,Congenital Malformations,Hirschsprung disease
+1575,Q38,Congenital Malformations,Ectopic anus
+1576,Q50,Congenital Malformations,"Congenital malformation of uterus and cervix, unspecified"
+1577,Q50,Congenital Malformations,Imperforate hymen
+1578,Q50,Congenital Malformations,"Congenital malformation of female genitalia, unspecified"
+1579,Q50,Congenital Malformations,Undescended testicle
+1580,Q50,Congenital Malformations,Hypospadias
+1581,Q50,Congenital Malformations,"Congenital malformation of male genital organ, unspecified"
+1582,Q60,Congenital Malformations,"Polycystic kidney, unspecified"
+1583,Q60,Congenital Malformations,Ectopic kidney
+1584,Q65,Congenital Malformations,Talipes equinovarus
+1585,Q65,Congenital Malformations,Talipes calcaneovarus
+1586,Q65,Congenital Malformations,Metatarsus varus
+1587,Q65,Congenital Malformations,Other specified congenital musculoskeletal deformities
+1588,Q65,Congenital Malformations,Polydactyly
+1589,Q65,Congenital Malformations,Other reduction defects of upper limb(s)
+1590,Q65,Congenital Malformations,Reduction defects of lower limb
+1591,Q65,Congenital Malformations,Macrocephaly
+1592,Q65,Congenital Malformations,Spina bifida occulta
+1593,Q65,Congenital Malformations,"Other congenital malformations of spine, not associated with scoliosis"
+1594,Q65,Congenital Malformations,Osteopetrosis
+1595,Q65,Congenital Malformations,"Congenital malformations of the musculoskeletal system, not elsewhere classified"
+1596,Q65,Congenital Malformations,Gastroschisis
+1597,Q80,Congenital Malformations,Ichthyosis Vulgaris
+1598,Q80,Congenital Malformations,Xeroderma Pigmentosum
+1599,Q80,Congenital Malformations,Neurofibromatosis (Neurofibromatosis (nonmalignant))
+1600,Q80,Congenital Malformations,Conjoined twins
+1601,Q90,Congenital Malformations,Down syndrome
+1602,Q90,Congenital Malformations,"Edwards syndrome, unspecified"
+1603,Q90,Congenital Malformations,"Patau syndrome, unspecified"
+1604,Q90,Congenital Malformations,Turner syndrome
+1605,Q90,Congenital Malformations,"Klinefelter syndrome, unspecified"
+1606,Q90,Congenital Malformations,"46,XX true hermaphrodite"
+1607,Q90,Congenital Malformations,Chromosomal Abnormality (other specified chromosome abnormalities)
+1608,Q90,Congenital Malformations,"Chromosomal abnormality, unspecified"
+1609,R00,"Symptoms, Signs, Findings",Heart Beat (Abnormalities of heart beat)
+1610,R00,"Symptoms, Signs, Findings","Heartbeat (Tachycardia, unspecified)"
+1611,R00,"Symptoms, Signs, Findings","Heartbeat (Bradycardia, unspecified)"
+1612,R00,"Symptoms, Signs, Findings",Heartbeat (Palpitations)
+1613,R00,"Symptoms, Signs, Findings","Murmur (Cardiac) (Cardiac murmur, unspecified)"
+1614,R00,"Symptoms, Signs, Findings","Gangrene, not elsewhere classified"
+1615,R00,"Symptoms, Signs, Findings","Blood-Pressure (Abnormal blood-pressure reading, without diagnosis)"
+1616,R00,"Symptoms, Signs, Findings","Elevated blood-pressure reading, without diagnosis of hypertension"
+1617,R00,"Symptoms, Signs, Findings",Nonspecific low blood-pressure reading
+1618,R00,"Symptoms, Signs, Findings",Haemorrhage from respiratory passages
+1619,R00,"Symptoms, Signs, Findings",Epistaxis
+1620,R00,"Symptoms, Signs, Findings",Haemoptysis
+1621,R00,"Symptoms, Signs, Findings","Haemorrhage (Haemorrhage from respiratory passages, unspecified)"
+1622,R00,"Symptoms, Signs, Findings",Cough
+1623,R00,"Symptoms, Signs, Findings",Respiratory Disorder (Abnormalities of breathing)
+1624,R00,"Symptoms, Signs, Findings",Dyspnoea
+1625,R00,"Symptoms, Signs, Findings",Stridor
+1626,R00,"Symptoms, Signs, Findings",Wheezing
+1627,R00,"Symptoms, Signs, Findings",Hyperventilation
+1628,R00,"Symptoms, Signs, Findings",Mouth breathing
+1629,R00,"Symptoms, Signs, Findings",Hiccough
+1630,R00,"Symptoms, Signs, Findings",Sneezing
+1631,R00,"Symptoms, Signs, Findings",Pain (Pain in throat and chest)
+1632,R00,"Symptoms, Signs, Findings",Pain in throat
+1633,R00,"Symptoms, Signs, Findings",Pain (Chest pain on breathing)
+1634,R00,"Symptoms, Signs, Findings",Precordial pain
+1635,R00,"Symptoms, Signs, Findings","Pain (Chest pain, unspecified)"
+1636,R00,"Symptoms, Signs, Findings",Other symptoms and signs involving the circulatory and respiratory systems
+1637,R00,"Symptoms, Signs, Findings","Asphyxia (Intrauterine hypoxia, unspecified)"
+1638,R00,"Symptoms, Signs, Findings",Pleurisy
+1639,R00,"Symptoms, Signs, Findings",Respiratory Arrest
+1640,R00,"Symptoms, Signs, Findings",Sputum (Abnormal sputum)
+1641,R10,"Symptoms, Signs, Findings",Pain (Abdominal and pelvic pain)
+1642,R10,"Symptoms, Signs, Findings",Acute Abdomen
+1643,R10,"Symptoms, Signs, Findings",Pain (Pain localized to upper abdomen)
+1644,R10,"Symptoms, Signs, Findings",Pain (Pelvic and perineal pain)
+1645,R10,"Symptoms, Signs, Findings",Pain (Pain localized to other parts of lower abdomen)
+1646,R10,"Symptoms, Signs, Findings",Other and unspecified abdominal pain
+1647,R10,"Symptoms, Signs, Findings",Vomiting (Nausea and vomiting)
+1648,R10,"Symptoms, Signs, Findings",Heartburn
+1649,R10,"Symptoms, Signs, Findings",Dysphagia
+1650,R10,"Symptoms, Signs, Findings",Flatulence (Flatulence and related conditions)
+1651,R10,"Symptoms, Signs, Findings",Faecal incontinence
+1652,R10,"Symptoms, Signs, Findings","Hepatomegaly (Hepatomegaly, not elsewhere classified)"
+1653,R10,"Symptoms, Signs, Findings","Splenomegaly (Splenomegaly, not elsewhere classified)"
+1654,R10,"Symptoms, Signs, Findings","Hepatosplenomegaly (Hepatomegaly with splenomegaly, not elsewhere classified)"
+1655,R10,"Symptoms, Signs, Findings",Jaundice (Unspecified jaundice)
+1656,R10,"Symptoms, Signs, Findings",Severe Jaundice (Unspecified jaundice)
+1657,R10,"Symptoms, Signs, Findings",Ascites
+1658,R10,"Symptoms, Signs, Findings",Other symptoms and signs involving the digestive system and abdomen
+1659,R10,"Symptoms, Signs, Findings","Mass, Lump, Swelling (Intra-abdominal and pelvic swelling, mass and lump)"
+1660,R10,"Symptoms, Signs, Findings",Bowel Sounds (Abnormal bowel sounds)
+1661,R10,"Symptoms, Signs, Findings",Visible peristalsis
+1662,R10,"Symptoms, Signs, Findings",Abdominal rigidity
+1663,R10,"Symptoms, Signs, Findings",Bowel Habit (Change in bowel habit)
+1664,R10,"Symptoms, Signs, Findings",Other faecal abnormalities
+1665,R10,"Symptoms, Signs, Findings",Halitosis
+1666,R10,"Symptoms, Signs, Findings",Other specified symptoms and signs involving the digestive system and abdomen
+1667,R20,"Symptoms, Signs, Findings",Disturbances of skin sensation
+1668,R20,"Symptoms, Signs, Findings",Paraesthesia (Paraesthesia of skin)
+1669,R20,"Symptoms, Signs, Findings",Hyperaesthesia
+1670,R20,"Symptoms, Signs, Findings",Rash and other nonspecific skin eruption
+1671,R20,"Symptoms, Signs, Findings","Mass, Lump, Swelling (Localized swelling, mass and lump of skin and subcutaneous tissue)"
+1672,R20,"Symptoms, Signs, Findings","Mass, Lump, Swelling (Localized swelling, mass and lump, head)"
+1673,R20,"Symptoms, Signs, Findings","Mass, Lump, Swelling (Localized swelling, mass and lump, neck)"
+1674,R20,"Symptoms, Signs, Findings","Mass, Lump, Swelling (Localized swelling, mass and lump, trunk)"
+1675,R20,"Symptoms, Signs, Findings","Mass, Lump, Swelling (Localized swelling, mass and lump, upper limb)"
+1676,R20,"Symptoms, Signs, Findings","Mass, Lump, Swelling (Localized swelling, mass and lump, lower limb)"
+1677,R20,"Symptoms, Signs, Findings","Mass, Lump, Swelling (Localized swelling, mass and lump, multiple sites)"
+1678,R20,"Symptoms, Signs, Findings","Mass, Lump, Swelling (Localized swelling, mass and lump, unspecified)"
+1679,R20,"Symptoms, Signs, Findings",Other skin changes
+1680,R20,"Symptoms, Signs, Findings",Cyanosis
+1681,R20,"Symptoms, Signs, Findings",Pallor
+1682,R20,"Symptoms, Signs, Findings",Flushing
+1683,R20,"Symptoms, Signs, Findings",Changes In Skin Texture
+1684,R25,"Symptoms, Signs, Findings",Abnormal involuntary movements
+1685,R25,"Symptoms, Signs, Findings",Abnormal head movements
+1686,R25,"Symptoms, Signs, Findings","Tremor (Tremor, unspecified)"
+1687,R25,"Symptoms, Signs, Findings",Cramp and spasm
+1688,R25,"Symptoms, Signs, Findings",Fasciculation
+1689,R25,"Symptoms, Signs, Findings",Other and unspecified abnormal involuntary movements
+1690,R25,"Symptoms, Signs, Findings",Abnormalities of gait and mobility
+1691,R25,"Symptoms, Signs, Findings",Ataxic gait
+1692,R25,"Symptoms, Signs, Findings","Difficulty in walking, not elsewhere classified"
+1693,R25,"Symptoms, Signs, Findings",Immobility
+1694,R25,"Symptoms, Signs, Findings",Tetany
+1695,R25,"Symptoms, Signs, Findings",Meningismus
+1696,R25,"Symptoms, Signs, Findings",Abnormal reflex
+1697,R25,"Symptoms, Signs, Findings",Abnormal posture
+1698,R25,"Symptoms, Signs, Findings","Tendency to fall, not elsewhere classified"
+1699,R30,"Symptoms, Signs, Findings",Pain (Pain associated with micturition)
+1700,R30,"Symptoms, Signs, Findings",Dysuria
+1701,R30,"Symptoms, Signs, Findings",Vesical tenesmus
+1702,R30,"Symptoms, Signs, Findings","Pain (Painful micturition, unspecified)"
+1703,R30,"Symptoms, Signs, Findings",Hematuria (Unspecified haematuria)
+1704,R30,"Symptoms, Signs, Findings",Urinary Incontinence (Unspecified urinary incontinence)
+1705,R30,"Symptoms, Signs, Findings",Retention Of Urine
+1706,R30,"Symptoms, Signs, Findings",Anuria & Oliguria (Anuria and oliguria)
+1707,R30,"Symptoms, Signs, Findings",Polyuria
+1708,R30,"Symptoms, Signs, Findings",Urethral Discharge
+1709,R40,"Symptoms, Signs, Findings","Somnolence, stupor and coma"
+1710,R40,"Symptoms, Signs, Findings",Stupor
+1711,R40,"Symptoms, Signs, Findings","Coma (Coma, unspecified)"
+1712,R40,"Symptoms, Signs, Findings",Other symptoms and signs involving cognitive functions and awareness
+1713,R40,"Symptoms, Signs, Findings","Disorientation (Disorientation, unspecified)"
+1714,R40,"Symptoms, Signs, Findings",Anterograde amnesia
+1715,R40,"Symptoms, Signs, Findings",Retrograde amnesia
+1716,R40,"Symptoms, Signs, Findings",Other amnesia
+1717,R40,"Symptoms, Signs, Findings",Other and unspecified symptoms and signs involving cognitive functions and awareness
+1718,R40,"Symptoms, Signs, Findings",Disturbances of smell and taste
+1719,R40,"Symptoms, Signs, Findings",Other symptoms and signs involving general sensations and perceptions
+1720,R40,"Symptoms, Signs, Findings",Auditory hallucinations
+1721,R40,"Symptoms, Signs, Findings",Visual hallucinations
+1722,R40,"Symptoms, Signs, Findings",Other hallucinations
+1723,R40,"Symptoms, Signs, Findings","Hallucination (Hallucinations, unspecified)"
+1724,R40,"Symptoms, Signs, Findings",Other and unspecified symptoms and signs involving general sensations and perceptions
+1725,R40,"Symptoms, Signs, Findings",Nervousness
+1726,R40,"Symptoms, Signs, Findings",Restlessness and agitation
+1727,R40,"Symptoms, Signs, Findings",Unhappiness
+1728,R40,"Symptoms, Signs, Findings",Irritability and anger
+1729,R40,"Symptoms, Signs, Findings",Hostility
+1730,R40,"Symptoms, Signs, Findings",Physical Violence
+1731,R40,"Symptoms, Signs, Findings","State of emotional shock and stress, unspecified"
+1732,R40,"Symptoms, Signs, Findings",Very low level of personal hygiene
+1733,R40,"Symptoms, Signs, Findings",Bizarre personal appearance
+1734,R40,"Symptoms, Signs, Findings",Slowness and poor responsiveness
+1735,R47,"Symptoms, Signs, Findings","Speech disturbances, not elsewhere classified"
+1736,R47,"Symptoms, Signs, Findings",Aphasia (Dysphasia and aphasia)
+1737,R47,"Symptoms, Signs, Findings",Voice Disturbances
+1738,R50,"Symptoms, Signs, Findings",Fever (Fever of other and unknown origin)
+1739,R50,"Symptoms, Signs, Findings",Other specified fever
+1740,R50,"Symptoms, Signs, Findings",Severe febrile disease (Other specified fever)
+1741,R50,"Symptoms, Signs, Findings",Fever (Unspecified)
+1742,R50,"Symptoms, Signs, Findings",Headache
+1743,R50,"Symptoms, Signs, Findings","Toothache (Pain, not elsewhere classified)"
+1744,R50,"Symptoms, Signs, Findings",Pain (Acute pain)
+1745,R50,"Symptoms, Signs, Findings",Chronic intractable pain
+1746,R50,"Symptoms, Signs, Findings",Pain (Other chronic pain)
+1747,R50,"Symptoms, Signs, Findings","Pain (Pain, unspecified)"
+1748,R50,"Symptoms, Signs, Findings",Malaise & Fatigue (Malaise and fatigue)
+1749,R50,"Symptoms, Signs, Findings",Syncope And Collapse
+1750,R50,"Symptoms, Signs, Findings","Convulsions, not elsewhere classified"
+1751,R50,"Symptoms, Signs, Findings",Fever (Febrile convulsions)
+1752,R50,"Symptoms, Signs, Findings","Shock, not elsewhere classified"
+1753,R50,"Symptoms, Signs, Findings",Shock (Cardiogenic shock)
+1754,R50,"Symptoms, Signs, Findings",Shock (Hypovolaemic shock)
+1755,R50,"Symptoms, Signs, Findings",Shock (Septic shock)
+1756,R50,"Symptoms, Signs, Findings",Other shock
+1757,R50,"Symptoms, Signs, Findings","Shock (Shock, unspecified)"
+1758,R50,"Symptoms, Signs, Findings","Haemorrhage (Haemorrhage, not elsewhere classified)"
+1759,R50,"Symptoms, Signs, Findings",Enlarged lymph nodes
+1760,R50,"Symptoms, Signs, Findings",Localized enlarged lymph nodes
+1761,R50,"Symptoms, Signs, Findings",Generalized enlarged lymph nodes
+1762,R50,"Symptoms, Signs, Findings","Oedema, not elsewhere classified"
+1763,R50,"Symptoms, Signs, Findings",Edema (Localized oedema)
+1764,R50,"Symptoms, Signs, Findings",Generalized oedema
+1765,R50,"Symptoms, Signs, Findings","Edema (Oedema, unspecified)"
+1766,R50,"Symptoms, Signs, Findings",Development Delay (Delayed milestone)
+1767,R50,"Symptoms, Signs, Findings","Development (Lack of expected normal physiological development, unspecified)"
+1768,R50,"Symptoms, Signs, Findings",Anorexia
+1769,R50,"Symptoms, Signs, Findings",Polydipsia
+1770,R50,"Symptoms, Signs, Findings",Weight Loss (Abnormal weight loss)
+1771,R50,"Symptoms, Signs, Findings",Weight gain (Abnormal weight gain)
+1772,R50,"Symptoms, Signs, Findings",Underweight (Insufficient intake of food and water due to self neglect)
+1773,R50,"Symptoms, Signs, Findings",Cachexia (Other symptoms and signs concerning food and fluid intake)
+1774,R50,"Symptoms, Signs, Findings","Dry Mouth (Dry mouth, unspecified)"
+1775,R50,"Symptoms, Signs, Findings",Clubbing (Clubbing of fingers)
+1776,R70,"Symptoms, Signs, Findings","Examination, Encounter (Laboratory evidence of human immunodeficiency virus [HIV])"
+1777,S00,"Injury, Poison, External","Head (Superficial injury of head, part unspecified)"
+1778,S00,"Injury, Poison, External",Fracture (Fracture of skull and facial bones)
+1779,S00,"Injury, Poison, External",Fracture of malar and maxillary bones
+1780,S00,"Injury, Poison, External",Dental Disorder (Fracture of tooth)
+1781,S00,"Injury, Poison, External",Fracture of mandible
+1782,S00,"Injury, Poison, External","Fracture (Fracture of skull and facial bones, part unspecified)"
+1783,S00,"Injury, Poison, External","Dislocation, Sprain And Strain Of Joints And Ligaments Of Head"
+1784,S00,"Injury, Poison, External",Dislocation of jaw
+1785,S00,"Injury, Poison, External",Dental Disorder (Dislocation of tooth)
+1786,S00,"Injury, Poison, External",Sprain and strain of jaw
+1787,S00,"Injury, Poison, External",Head (Injury of eye and orbit)
+1788,S00,"Injury, Poison, External",Concussion
+1789,S00,"Injury, Poison, External",Head (Crushing injury of head)
+1790,S00,"Injury, Poison, External","Head (Crushing injury of head, part unspecified)"
+1791,S10,"Injury, Poison, External",Fracture (Fracture of neck)
+1792,S10,"Injury, Poison, External",Fracture (Multiple fractures of cervical spine)
+1793,S20,"Injury, Poison, External",Fracture (Fracture of thoracic vertebra)
+1794,S20,"Injury, Poison, External",Fracture (Fracture of rib)
+1795,S20,"Injury, Poison, External",Hemopneumothorax (Traumatic haemopneumothorax)
+1796,S30,"Injury, Poison, External","Abdomen, Lower back, Pelvis (Superficial injury of abdomen, lower back and pelvis)"
+1797,S30,"Injury, Poison, External",Open wound of abdominal wall
+1798,S30,"Injury, Poison, External",Fracture (Fracture of lumbar spine and pelvis)
+1799,S30,"Injury, Poison, External",Fracture (Fracture of pubis)
+1800,S30,"Injury, Poison, External",Fracture (Fracture of other and unspecified parts of lumbar spine and pelvis)
+1801,S30,"Injury, Poison, External",Abdomen (Injury of intra-abdominal organs)
+1802,S30,"Injury, Poison, External","Abdomen, Lower back, Pelvis (Injury of muscle and tendon of abdomen, lower back and pelvis)"
+1803,S30,"Injury, Poison, External",Abdomen (Injury of intra-abdominal organ(s) with pelvic organ(s))
+1804,S30,"Injury, Poison, External","Abdomen, Lower back, Pelvis (Unspecified injury of abdomen, lower back and pelvis)"
+1805,S40,"Injury, Poison, External","Injury (Superficial injury of shoulder and upper arm, unspecified)"
+1806,S40,"Injury, Poison, External",Open wound of shoulder and upper arm
+1807,S40,"Injury, Poison, External",Fracture (Fracture of shoulder and upper arm)
+1808,S40,"Injury, Poison, External","Fracture (Fracture of shoulder girdle, part unspecified)"
+1809,S40,"Injury, Poison, External",Dislocation (Dislocation of shoulder joint)
+1810,S50,"Injury, Poison, External",Injury (Superficial injury of forearm)
+1811,S50,"Injury, Poison, External","Superficial injury of forearm, unspecified"
+1812,S50,"Injury, Poison, External",Open wound of forearm
+1813,S50,"Injury, Poison, External",Fracture (Fracture of forearm)
+1814,S50,"Injury, Poison, External","Dislocation (Dislocation of elbow, unspecified)"
+1815,S50,"Injury, Poison, External",Injury (Injury of multiple muscles and tendons at forearm level)
+1816,S50,"Injury, Poison, External",Injury (Unspecified injury of forearm)
+1817,S60,"Injury, Poison, External",Injury (Superficial injury of wrist and hand)
+1818,S60,"Injury, Poison, External",Fracture (Fracture at wrist and hand level)
+1819,S60,"Injury, Poison, External",Injury (Injury of unspecified nerve at wrist and hand level)
+1820,S60,"Injury, Poison, External",Injury (Unspecified injury of wrist and hand)
+1821,S70,"Injury, Poison, External",Injury (Superficial injury of hip and thigh)
+1822,S70,"Injury, Poison, External",Fracture (Fracture of femur)
+1823,S70,"Injury, Poison, External",Injury (Unspecified injury of hip and thigh)
+1824,S80,"Injury, Poison, External",Injury (Superficial injury of lower leg)
+1825,S80,"Injury, Poison, External","Injury (Superficial injury of lower leg, unspecified)"
+1826,S80,"Injury, Poison, External","Fracture (Fracture of lower leg, part unspecified)"
+1827,S80,"Injury, Poison, External",Dislocation of patella
+1828,S80,"Injury, Poison, External",Dislocation of knee
+1829,S80,"Injury, Poison, External",Injury (Injury of Achilles tendon)
+1830,S80,"Injury, Poison, External",Injury (Unspecified injury of lower leg)
+1831,S90,"Injury, Poison, External",Injury (Superficial injury of ankle and foot)
+1832,S90,"Injury, Poison, External","Fracture (Fracture of foot, unspecified)"
+1833,S90,"Injury, Poison, External",Dislocation (Dislocation of ankle joint)
+1834,S90,"Injury, Poison, External",Injury (Unspecified injury of ankle and foot)
+1835,T00,"Injury, Poison, External",Fracture (Fractures involving multiple body regions)
+1836,T00,"Injury, Poison, External",Fracture (Fractures involving head with neck)
+1837,T00,"Injury, Poison, External",Fracture (Fractures involving other combinations of body regions)
+1838,T00,"Injury, Poison, External","Fracture (Multiple fractures, unspecified)"
+1839,T00,"Injury, Poison, External","Dislocation (Multiple dislocations, sprains and strains, unspecified)"
+1840,T00,"Injury, Poison, External","Multiple crushing injuries, unspecified"
+1841,T08,"Injury, Poison, External","Fracture (Fracture of upper limb, level unspecified)"
+1842,T08,"Injury, Poison, External","Fracture (Fracture of lower limb, level unspecified)"
+1843,T08,"Injury, Poison, External",Contusion (Superficial injury of unspecified body region)
+1844,T08,"Injury, Poison, External",Open wound (Open wound of unspecified body region)
+1845,T08,"Injury, Poison, External",Fracture (Fracture of unspecified body region)
+1846,T08,"Injury, Poison, External","Dislocation (Dislocation, sprain and strain of unspecified body region)"
+1847,T08,"Injury, Poison, External",Injury (Injury of blood vessel(s) of unspecified body region)
+1848,T08,"Injury, Poison, External",Injury (Injury of muscles and tendons of unspecified body region)
+1849,T08,"Injury, Poison, External","Injury (Injury, unspecified)"
+1850,T08,"Injury, Poison, External","Suicide (Injury, unspecified)"
+1851,T15,"Injury, Poison, External",Foreign Body (Foreign body in ear)
+1852,T15,"Injury, Poison, External",Foreign Body (Foreign body in nostril)
+1853,T15,"Injury, Poison, External",Foreign Body (Foreign body in oesophagus)
+1854,T20,"Injury, Poison, External",Burn (Burn of unspecified degree of head and neck)
+1855,T20,"Injury, Poison, External","Burn (Burn of unspecified degree of shoulder and upper limb, except wrist and hand)"
+1856,T20,"Injury, Poison, External",Burn (Burn of unspecified degree of wrist and hand)
+1857,T20,"Injury, Poison, External","Burn (Burn of unspecified degree of hip and lower limb, except ankle and foot)"
+1858,T20,"Injury, Poison, External",Burn (Burn of unspecified degree of ankle and foot)
+1859,T26,"Injury, Poison, External",Burn (Burn of eyelid and periocular area)
+1860,T26,"Injury, Poison, External",Burn And Corrosion (Burn of larynx and trachea)
+1861,T26,"Injury, Poison, External",Burn (Burn of other and unspecified internal organs)
+1862,T29,"Injury, Poison, External",Burn (Burns and corrosions of multiple body regions)
+1863,T29,"Injury, Poison, External","Burn (Burns of multiple regions, unspecified degree)"
+1864,T29,"Injury, Poison, External","Burn And Corrosion (Burn and corrosion, body region unspecified)"
+1865,T29,"Injury, Poison, External","Burn (Burn of unspecified body region, unspecified degree)"
+1866,T29,"Injury, Poison, External","Corrosion (Corrosion of unspecified body region, unspecified degree)"
+1867,T29,"Injury, Poison, External",Burn (Burns involving less than 10% of body surface)
+1868,T36,"Injury, Poison, External","Poisoning (Poisoning: Other and unspecified drugs, medicaments and biological substances)"
+1869,T51,"Injury, Poison, External",Toxic effect of alcohol
+1870,T51,"Injury, Poison, External",Toxic effect of carbon monoxide
+1871,T51,"Injury, Poison, External",Toxic effect: Snake venom
+1872,T51,"Injury, Poison, External",Toxic effect: Toxic effect of other specified substances
+1873,T66,"Injury, Poison, External",Hypothermia
+1874,T66,"Injury, Poison, External",Asphyxiation
+1875,T66,"Injury, Poison, External",Effects of hunger
+1876,T66,"Injury, Poison, External",Effects of thirst
+1877,T66,"Injury, Poison, External","Effect of deprivation, unspecified"
+1878,T66,"Injury, Poison, External",Maltreatment syndromes
+1879,T66,"Injury, Poison, External",Neglect or abandonment
+1880,T66,"Injury, Poison, External",Physical abuse
+1881,T66,"Injury, Poison, External",Sexual abuse
+1882,T66,"Injury, Poison, External",Effects of other external causes
+1883,T66,"Injury, Poison, External",Drowning and nonfatal submersion
+1884,T66,"Injury, Poison, External",Motion Sickness
+1885,T66,"Injury, Poison, External",Effects of electric current
+1886,T66,"Injury, Poison, External","Anaphylactic shock, unspecified"
+1887,T66,"Injury, Poison, External","Allergy (Allergy, unspecified)"
+1888,T79,"Injury, Poison, External","Certain early complications of trauma, not elsewhere classified"
+1889,T79,"Injury, Poison, External","Post-traumatic wound infection, not elsewhere classified"
+1890,T79,"Injury, Poison, External",Traumatic shock
+1891,T80,"Injury, Poison, External","Complications following infusion, transfusion and therapeutic injection"
+1892,T80,"Injury, Poison, External",ABO incompatibility reaction
+1893,T80,"Injury, Poison, External",Rh incompatibility reaction
+1894,T80,"Injury, Poison, External",Anaphylactic shock due to serum
+1895,T80,"Injury, Poison, External","Unspecified complication following infusion, transfusion and therapeutic injection"
+1896,T80,"Injury, Poison, External","Complications of procedures, not elsewhere classified"
+1897,T80,"Injury, Poison, External","Haemorrhage and haematoma complicating a procedure, not elsewhere classified"
+1898,T80,"Injury, Poison, External","Shock during or resulting from a procedure, not elsewhere classified"
+1899,T80,"Injury, Poison, External","Disruption of operation wound, not elsewhere classified"
+1900,T80,"Injury, Poison, External","Infection following a procedure, not elsewhere classified"
+1901,T80,"Injury, Poison, External",Foreign body accidentally left in body cavity or operation wound following a procedure
+1902,T80,"Injury, Poison, External",Unspecified complication of procedure
+1903,T80,"Injury, Poison, External",Neuroma (Neuroma of amputation stump)
+1904,T80,"Injury, Poison, External",Necrosis Of Amputation Stump
+1905,V80,"External Causes, Morbidity",Road traffic accident (Person injured in unspecified vehicle accident)
+1906,W00,"External Causes, Morbidity",Fall Accident (Other fall from one level to another)
+1907,W00,"External Causes, Morbidity",Unspecified fall
+1908,W20,"External Causes, Morbidity",Foreign Body (Foreign body or object entering through skin)
+1909,W50,"External Causes, Morbidity","Injury (Hit, struck, kicked, twisted, bitten or scratched by another person)"
+1910,W50,"External Causes, Morbidity",Animal Bite (Bitten or struck by other mammals)
+1911,W50,"External Causes, Morbidity",Insect Bite (Bitten or stung by nonvenomous insect and other nonvenomous arthropods)
+1912,W50,"External Causes, Morbidity",Snake bite (Bitten or crushed by other reptiles)
+1913,X60,"External Causes, Morbidity","Poisoning (Intentional self-poisoning by and exposure to other and unspecified drugs, medicaments and biological substances)"
+1914,X85,"External Causes, Morbidity",Assault (Assault by corrosive substance)
+1915,Y83,"External Causes, Morbidity",Amputation (Amputation of limb(s))
+1916,Y83,"External Causes, Morbidity","Surgical procedure, unspecified"
+1917,Y83,"External Causes, Morbidity",Kidney dialysis
+1918,Y83,"External Causes, Morbidity",Radiological procedure and radiotherapy
+1919,Y83,"External Causes, Morbidity",Shock therapy
+1920,Y83,"External Causes, Morbidity",Aspiration of fluid
+1921,Y83,"External Causes, Morbidity",Urinary catheterization
+1922,Y83,"External Causes, Morbidity",Blood-sampling
+1923,Y83,"External Causes, Morbidity",Other medical procedure (Other medical procedures)
+1924,Y83,"External Causes, Morbidity","Medical procedure, unspecified"
+1925,Y85,"External Causes, Morbidity",Sequelae of transport accidents
+1926,Y85,"External Causes, Morbidity",Sequelae of intentional self-harm
+1927,Y85,"External Causes, Morbidity",Sequelae of assault
+1928,Y85,"External Causes, Morbidity",Sequelae of other external causes
+1929,Y85,"External Causes, Morbidity",Sequelae of war operations
+1930,Y90,"External Causes, Morbidity",Alcohol Intoxication (Moderate alcohol intoxication)
+1931,Y90,"External Causes, Morbidity",Alcohol Intoxication (Severe alcohol intoxication)
+1932,Y90,"External Causes, Morbidity","Alcohol (Alcohol involvement, not otherwise specified)"
+1933,Z00,Contact with Services,"Examination, Encounter (General medical examination)"
+1934,Z00,Contact with Services,Examination And Encounter (Routine child health examination)
+1935,Z00,Contact with Services,"Examination And Encounter (General psychiatric examination, not elsewhere classified)"
+1936,Z00,Contact with Services,Examination And Encounter (Examination of potential donor of organ and tissue)
+1937,Z00,Contact with Services,Examination And Encounter (Examination of eyes and vision)
+1938,Z00,Contact with Services,Examination And Encounter (Examination of ears and hearing)
+1939,Z00,Contact with Services,"Examination, Encounter (Dental examination)"
+1940,Z00,Contact with Services,"Examination, Encounter (Gynaecological examination (general)(routine))"
+1941,Z00,Contact with Services,"Examination And Encounter (Radiological examination, not elsewhere classified)"
+1942,Z00,Contact with Services,"Examination, Encounter (Laboratory examination)"
+1943,Z00,Contact with Services,"Examination And Encounter (Special examination, unspecified)"
+1944,Z00,Contact with Services,"Examination, Encounter (Examination for driving licence)"
+1945,Z00,Contact with Services,"Examination, Encounter (Examination for insurance purposes)"
+1946,Z00,Contact with Services,"Examination, Encounter (Issue of medical certificate)"
+1947,Z00,Contact with Services,Examination And Encounter (Other examinations for administrative purposes)
+1948,Z00,Contact with Services,"Examination And Encounter (Examination for administrative purposes, unspecified)"
+1949,Z00,Contact with Services,Observation for suspected tuberculosis
+1950,Z00,Contact with Services,"Examination, Encounter (Examination and observation for other specified reasons)"
+1951,Z00,Contact with Services,Examination And Encounter (Routine general health check-up of defined subpopulation)
+1952,Z00,Contact with Services,Examination And Encounter (Occupational health examination)
+1953,Z00,Contact with Services,Special screening examination for infections with a predominantly sexual mode of transmission
+1954,Z00,Contact with Services,Special screening examination for human immunodeficiency virus [HIV]
+1955,Z00,Contact with Services,Special screening examination for neoplasms
+1956,Z00,Contact with Services,Special screening examination for neoplasm of cervix
+1957,Z00,Contact with Services,Special screening examination for diabetes mellitus
+1958,Z00,Contact with Services,"Special screening examination, unspecified"
+1959,Z20,Contact with Services,Contact with and exposure to communicable diseases
+1960,Z20,Contact with Services,Contact with and exposure to tuberculosis
+1961,Z20,Contact with Services,Contact with and exposure to infections with a predominantly sexual mode of transmission
+1962,Z20,Contact with Services,Contact with and exposure to rabies
+1963,Z20,Contact with Services,HIV (Contact with and exposure to human immunodeficiency virus [HIV])
+1964,Z20,Contact with Services,Contact with and exposure to other communicable diseases
+1965,Z20,Contact with Services,HIV (Asymptomatic human immunodeficiency virus [HIV] infection status)
+1966,Z20,Contact with Services,Carrier of infectious disease
+1967,Z20,Contact with Services,Immunization (against single viral diseases)
+1968,Z20,Contact with Services,Immunization (against poliomyelitis)
+1969,Z20,Contact with Services,Immunization (against yellow fever)
+1970,Z20,Contact with Services,Immunization (against DTP + polio)
+1971,Z20,Contact with Services,Immunization Not Carried Out
+1972,Z20,Contact with Services,Isolation
+1973,Z20,Contact with Services,Chemotherapy (other prophylactic chemotherapy)
+1974,Z30,Contact with Services,Family Planning Service (General counselling and advice on contraception)
+1975,Z30,Contact with Services,Family Planning Service (Insertion of (intrauterine) contraceptive device)
+1976,Z30,Contact with Services,Sterilization
+1977,Z30,Contact with Services,Contraceptive Drugs (Surveillance of contraceptive drugs)
+1978,Z30,Contact with Services,Contraceptive Management (Other contraceptive management)
+1979,Z30,Contact with Services,"Family Planning Service (Contraceptive management, unspecified)"
+1980,Z30,Contact with Services,Artificial Insemination
+1981,Z30,Contact with Services,In Vitro Fertilization
+1982,Z30,Contact with Services,Counselling (Genetic counselling)
+1983,Z30,Contact with Services,Pregnancy (Pregnancy examination and test)
+1984,Z30,Contact with Services,"Pregnancy (Pregnancy, not (yet) confirmed)"
+1985,Z30,Contact with Services,Pregnancy (Pregnancy confirmed)
+1986,Z30,Contact with Services,"Pregnancy (Pregnant state, incidental)"
+1987,Z30,Contact with Services,Antenatal Care (Supervision of normal pregnancy)
+1988,Z30,Contact with Services,"Antenatal Care (Supervision of normal pregnancy, unspecified)"
+1989,Z30,Contact with Services,Antenatal Care (Supervision of high-risk pregnancy)
+1990,Z30,Contact with Services,ANC (Supervision of pregnancy with history of abortive outcome)
+1991,Z30,Contact with Services,ANC (Supervision of pregnancy with other poor reproductive or obstetric history)
+1992,Z30,Contact with Services,ANC (Supervision of pregnancy with history of insufficient antenatal care)
+1993,Z30,Contact with Services,ANC (Supervision of pregnancy with grand multiparity)
+1994,Z30,Contact with Services,ANC (Supervision of elderly primigravida)
+1995,Z30,Contact with Services,Antenatal Care (Antenatal screening)
+1996,Z30,Contact with Services,ANC (Antenatal screening for malformations using ultrasound and other physical methods)
+1997,Z30,Contact with Services,ANC (Antenatal screening for isoimmunization)
+1998,Z30,Contact with Services,Newborn (Single live birth)
+1999,Z30,Contact with Services,Newborn (Single stillbirth)
+2000,Z30,Contact with Services,"Newborn (Twins, both liveborn)"
+2001,Z30,Contact with Services,"Newborn (Twins, one liveborn and one stillborn)"
+2002,Z30,Contact with Services,"Newborn (Twins, both stillborn)"
+2003,Z30,Contact with Services,"Multiple Births (Other multiple births, all liveborn)"
+2004,Z30,Contact with Services,"Newborn (Outcome of delivery, unspecified)"
+2005,Z30,Contact with Services,Postpartum Care (Postpartum Care And Examination)
+2006,Z30,Contact with Services,Postpartum Care (Care and examination immediately after delivery)
+2007,Z30,Contact with Services,Examination And Encounter (Care and examination of lactating mother)
+2008,Z30,Contact with Services,Examination And Encounter (Routine postpartum follow-up)
+2009,Z40,Contact with Services,Examination And Encounter (Prophylactic surgery)
+2010,Z40,Contact with Services,Surgery (Other prophylactic surgery)
+2011,Z40,Contact with Services,Examination And Encounter (Procedures for purposes other than remedying health state)
+2012,Z40,Contact with Services,Plastic Surgery (Other plastic surgery for unacceptable cosmetic appearance)
+2013,Z40,Contact with Services,Circumcision (Routine and ritual circumcision)
+2014,Z40,Contact with Services,Examination And Encounter (Follow-up care involving plastic surgery)
+2015,Z40,Contact with Services,Post-operative Care (Attention to artificial openings)
+2016,Z40,Contact with Services,Post-operative Care (Attention to tracheostomy)
+2017,Z40,Contact with Services,Post-operative Care (Attention to gastrostomy)
+2018,Z40,Contact with Services,Post-operative Care (Attention to ileostomy)
+2019,Z40,Contact with Services,Post-operative Care (Attention to colostomy)
+2020,Z40,Contact with Services,Cystostomy (Attention to cystostomy)
+2021,Z40,Contact with Services,Artificial Openings (Attention to other artificial openings of urinary tract)
+2022,Z40,Contact with Services,Artificial Openings (Attention to unspecified artificial opening)
+2023,Z40,Contact with Services,Fitting And Adjustment (Fitting and adjustment of other external prosthetic devices)
+2024,Z40,Contact with Services,Fitting And Adjustment (Fitting and adjustment of other devices)
+2025,Z40,Contact with Services,Fitting And Adjustment (Fitting and adjustment of spectacles and contact lenses)
+2026,Z40,Contact with Services,Fitting And Adjustment (Fitting and adjustment of hearing aid)
+2027,Z40,Contact with Services,Fitting And Adjustment (Fitting and adjustment of orthopaedic device)
+2028,Z40,Contact with Services,"Fitting, Adjustment (Fitting and adjustment of unspecified device)"
+2029,Z40,Contact with Services,Examination And Encounter (Other specified orthopaedic follow-up care)
+2030,Z40,Contact with Services,Examination And Encounter (Other surgical follow-up care)
+2031,Z40,Contact with Services,Post-operative Care (Attention to surgical dressings and sutures)
+2032,Z40,Contact with Services,"Surgical follow-up care, unspecified"
+2033,Z40,Contact with Services,Dialysis (Care involving dialysis)
+2034,Z40,Contact with Services,Dialysis (Other dialysis)
+2035,Z40,Contact with Services,Physical Therapy (Other physical therapy)
+2036,Z40,Contact with Services,"Psychotherapy (Psychotherapy, not elsewhere classified)"
+2037,Z40,Contact with Services,Psychotherapy (Speech therapy)
+2038,Z40,Contact with Services,"Examination And Encounter (Care involving use of rehabilitation procedure, unspecified)"
+2039,Z40,Contact with Services,Other medical care
+2040,Z40,Contact with Services,Radiotherapy Session
+2041,Z40,Contact with Services,Chemotherapy (Chemotherapy session for neoplasm)
+2042,Z40,Contact with Services,Blood Transfusion (Blood transfusion (without reported diagnosis))
+2043,Z40,Contact with Services,Post-operative Care (Palliative care)
+2044,Z40,Contact with Services,Blood Donor
+2045,Z55,Contact with Services,"Socioeconomic, psychosocial (Problems related to unwanted pregnancy)"
+2046,Z70,Contact with Services,Counselling (Drug abuse counselling and surveillance)
+2047,Z70,Contact with Services,Counselling (Human immunodeficiency virus [HIV] counselling)
+2048,Z70,Contact with Services,Other specified counselling
+2049,Z70,Contact with Services,Drug Use
+2050,Z70,Contact with Services,reduced mobility (Need for assistance due to reduced mobility)
+2051,Z70,Contact with Services,Encounter For Medical Or Nursing Care Or Supervision (Need for assistance with personal care)
+2052,Z80,Contact with Services,"Allergy (Personal history of allergy to drugs, medicaments and biological substances)"
+2053,Z80,Contact with Services,Surgical (Other postsurgical states)
+2054,U00,"Codes, special purpose",Severe acute respiratory syndrome [SARS]

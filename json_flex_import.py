@@ -17,6 +17,7 @@ Deviations from OCL API responses:
 * Sources/Collections:
     - "supported_locales" response is a list, but only a comma-separated string is supported when posted
 '''
+
 import json
 import requests
 import settings
@@ -96,6 +97,8 @@ class ocl_json_flex_import:
 
     def __init__(self, file_path='', api_url_root='', api_token='',
                  test_mode=False, do_update_if_exists=False):
+        ''' Initialize the ocl_json_flex_import object '''
+
         self.file_path = file_path
         self.api_token = api_token
         self.api_url_root = api_url_root
@@ -110,6 +113,7 @@ class ocl_json_flex_import:
 
 
     def process(self):
+        ''' Processes an import file '''
         # Display global settings
         print "**** GLOBAL SETTINGS ****"
         print "    API Root URL:", self.api_url_root
@@ -134,6 +138,7 @@ class ocl_json_flex_import:
 
 
     def does_object_exist(self, obj_url):
+        ''' Returns whether an object at the specified URL already exists '''
         request_existence = requests.head(self.api_url_root + obj_url, headers=self.api_headers)
         if request_existence.status_code == requests.codes.ok:
             return True
@@ -146,6 +151,8 @@ class ocl_json_flex_import:
 
 
     def process_object(self, obj_type, obj):
+        ''' Processes an individual document in the import file '''
+
         # Grab the ID
         obj_id = None
         if self.obj_def["Source"]["id_field"] in obj:
@@ -173,12 +180,6 @@ class ocl_json_flex_import:
             else:
                 raise InvalidOwnerError(obj, "Valid owner information required for object of type '" + obj_type + "'")
 
-        # Check if owner exists
-        if has_owner and obj_owner_url:
-            if not self.does_object_exist(obj_owner_url):
-                print "** SKIPPING: Owner does not exist at: " + obj_owner_url
-                return
-
         # Set source URL -- e.g. /orgs/MyOrganization/sources/MySource/
         # NOTE: Source URL always ends with a forward slash
         has_source = False
@@ -192,12 +193,6 @@ class ocl_json_flex_import:
                 source_url = obj_owner_url + 'sources/' + obj.pop("source") + "/"
             else:
                 raise InvalidSourceError(obj, "Valid source information required for object of type '" + obj_type + "'")
-
-        # Check if owner exists
-        if has_source and obj_source_url:
-            if not self.does_object_exist(obj_source_url):
-                print "** SKIPPING: Source does not exist at: " + obj_source_url
-                return
 
         # Build object URLs -- note that these always end with forward slashes
         if has_source:
@@ -224,6 +219,22 @@ class ocl_json_flex_import:
         print "** Allowed Fields: **", json.dumps(obj)
         print "** Removed Fields: **", json.dumps(obj_not_allowed)
 
+        # Check if owner exists
+        if has_owner and obj_owner_url:
+            if self.does_object_exist(obj_owner_url):
+                print "** INFO: Owner exists at: " + obj_owner_url
+            else:
+                print "** SKIPPING: Owner does not exist at: " + obj_owner_url
+                return
+
+        # Check if source exists
+        if has_source and obj_source_url:
+            if self.does_object_exist(obj_source_url):
+                print "** INFO: Source exists at: " + obj_source_url
+            else:                
+                print "** SKIPPING: Source does not exist at: " + obj_source_url
+                return
+
         # Check if object already exists: GET self.api_url_root + obj_url
         print "GET " + self.api_url_root + obj_url
         obj_already_exists = self.does_object_exist(obj_url)
@@ -248,6 +259,8 @@ class ocl_json_flex_import:
     def update_or_create(self, obj_type='', obj_id='', obj_owner_url='', obj_source_url='',
                          obj_url='', new_obj_url='', obj_already_exists=False,
                          obj=None, obj_not_allowed=None):
+        ''' Posts an object to the OCL API as either an update or create '''
+
         # Determine which URL to use based on whether or not object already exists
         if obj_already_exists:
             url = obj_url

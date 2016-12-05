@@ -1,7 +1,17 @@
 '''
 OCL Flexible JSON Importer -- 
 Script that uses the OCL API to import multiple resource types from a JSON lines file.
-Resources currently supported: Sources
+Configuration for individual resources can generally be set inline in the JSON.
+
+Resources currently supported:
+* Sources
+* Organizations
+
+Resources that will be supported in the future:
+* Collections
+* Concepts
+* Mappings
+* References
 
 Deviations from OCL API responses:
 * Sources/Collections:
@@ -9,28 +19,40 @@ Deviations from OCL API responses:
 '''
 import json
 import requests
+import settings
 from pprint import pprint
 
 
-api_token_showcase_root = ''
-api_token_showcase_paynejd = ''
-api_token_staging_root = '23c5888470d4cb14d8a3c7f355f4cdb44000679a'
-api_token_staging_paynejd = 'a61ba53ed7b8b26ece8fcfc53022b645de0ec055'
-api_token_production_root = '230e6866c2037886909c58d8088b1a5e7cabc74b'
-api_token_production_paynejd = '950bd651dc4ee29d6bcee3e6dacfe7834bb0f881'
+# Owner fields: ( owner AND owner_type ) OR ( owner_url )
+# Repository fields: ( source ) OR ( source_url )
+# Concept/Mapping field: ( id ) OR ( url )
 
-api_url_showcase = 'https://api.openconceptlab.org'
-api_url_staging = 'https://api.staging.openconceptlab.org'
-api_url_production = 'http://api.showcase.openconceptlab.org'
 
-file_path = 'CIEL_Sources/pih_sources.json'
-api_token = api_token_staging_root
-api_url_root = api_url_staging
-test_mode = False
+class ImportError(Exception):
+    """ Base exception for this module """
+    pass
+
+class UnexpectedStatusCodeError(ImportError):
+    """ Exception raised for unexpected status code """
+    def __init__(self, expression, message):
+        self.expression = expression
+        self.message = message
+
+class InvalidOwnerError(ImportError):
+    """ Exception raised when owner information is invalid """
+    def __init__(self, expression, message):
+        self.expression = expression
+        self.message = message
+
+class InvalidSourceError(ImportError):
+    """ Exception raised when source information is invalid """
+    def __init__(self, expression, message):
+        self.expression = expression
+        self.message = message
 
 
 class ocl_json_flex_import:
-    ''' Class to flexibly import multiple resource types into OCL from JSON Lines files '''
+    ''' Class to flexibly import multiple resource types into OCL from JSON lines files using OCL API '''
 
     OBJ_TYPE_USER = 'User'
     OBJ_TYPE_ORGANIZATION = 'Organization'
@@ -41,6 +63,13 @@ class ocl_json_flex_import:
     OBJ_TYPE_REFERENCE = 'Reference'
 
     obj_def = {
+        OBJ_TYPE_ORGANIZATION: {
+            "id_field": "id",
+            "url_name": "orgs",
+            "has_owner": False,
+            "has_source": False,
+            "allowed_fields": ["id", "company", "extras", "location", "name", "public_access", "website"]
+        },
         OBJ_TYPE_SOURCE: {
             "id_field": "id",
             "url_name": "sources",
@@ -48,26 +77,49 @@ class ocl_json_flex_import:
             "has_source": False,
             "allowed_fields": ["id", "short_code", "name", "full_name", "description", "source_type", "custom_validation_schema", "public_access", "default_locale", "supported_locales", "website", "extras", "external_id"],
         },
-        OBJ_TYPE_ORGANIZATION: {
+        OBJ_TYPE_CONCEPT: {
             "id_field": "id",
-            "url_name": "orgs",
-            "has_owner": False,
-            "has_source": False,
-            "allowed_fields": ["id", "company", "extras", "location", "name", "public_access", "website"]
-        }
+            "url_name": "concepts",
+            "has_owner": True,
+            "has_source": True,
+            "allowed_fields": ["id", "external_id", "concept_class", "datatype", "names", "descriptions", "retired", "extras"],
+        },
     }
+    #    OBJ_TYPE_MAPPING: {
+    #        "id_field": "id",
+    #        "url_name": "mappings",
+    #        "has_owner": True,
+    #        "has_source": True,
+    #        "allowed_fields": ["id", "short_code", "name", "full_name", "description", "source_type", "custom_validation_schema", "public_access", "default_locale", "supported_locales", "website", "extras", "external_id"],
+    #    }
 
 
-    def __init__(self, file_path='', api_url_root='', api_token='', test_mode=False):
+    def __init__(self, file_path='', api_url_root='', api_token='',
+                 test_mode=False, do_update_if_exists=False):
         self.file_path = file_path
         self.api_token = api_token
         self.api_url_root = api_url_root
         self.test_mode = test_mode
+        self.do_update_if_exists = do_update_if_exists
+
+        # Prepare the headers
+        self.api_headers = {
+            'Authorization': 'Token ' + self.api_token,
+            'Content-Type': 'application/json'
+        }
 
 
     def process(self):
+        # Display global settings
+        print "**** GLOBAL SETTINGS ****"
+        print "    API Root URL:", self.api_url_root
+        print "    API Token:", self.api_token
+        print "    Import File:", self.file_path
+        print "    Test Mode:", self.test_mode
+        print ""
+
         # Loop through each JSON object in the file
-        with open(file_path) as json_file:
+        with open(self.file_path) as json_file:
             for json_line_raw in json_file:
                 json_line_obj = json.loads(json_line_raw)
                 if "type" in json_line_obj:
@@ -81,180 +133,150 @@ class ocl_json_flex_import:
                 print "\n\n\n"
 
 
+    def does_object_exist(self, obj_url):
+        request_existence = requests.head(self.api_url_root + obj_url, headers=self.api_headers)
+        if request_existence.status_code == requests.codes.ok:
+            return True
+        elif request_existence.status_code != requests.codes.not_found:
+            return False
+        else:
+            raise UnexpectedStatusCodeError(
+                "GET " + self.api_url_root + obj_url,
+                "Unexpected status code returned: " + request_existence.status_code)
+
+
     def process_object(self, obj_type, obj):
         # Grab the ID
         obj_id = None
         if self.obj_def["Source"]["id_field"] in obj:
             obj_id = obj[self.obj_def["Source"]["id_field"]]
 
-        # Grab owner info
+        # Set owner URL -- e.g. /users/johndoe/ OR /orgs/MyOrganization/
+        # NOTE: Owner URL always ends with a forward slash
         has_owner = False
         obj_owner_url = None
         if self.obj_def[obj_type]["has_owner"]:
             has_owner = True
             if "owner_url" in obj:
-                # relative url
                 obj_owner_url = obj.pop("owner_url")
                 obj.pop("owner", None)
                 obj.pop("owner_type", None)
-
             elif "owner" in obj and "owner_type" in obj:
                 obj_owner_type = obj.pop("owner_type")
                 obj_owner = obj.pop("owner")
                 if obj_owner_type == self.OBJ_TYPE_ORGANIZATION:
-                    obj_owner_url = "/" + self.obj_def[self.OBJ_TYPE_ORGANIZATION]["url_name"] + "/" + obj_owner
+                    obj_owner_url = "/" + self.obj_def[self.OBJ_TYPE_ORGANIZATION]["url_name"] + "/" + obj_owner + "/"
                 elif obj_owner_url == self.OBJ_TYPE_USER:
-                    obj_owner_url = "/" + self.obj_def[self.OBJ_TYPE_USER]["url_name"] + "/" + obj_owner
+                    obj_owner_url = "/" + self.obj_def[self.OBJ_TYPE_USER]["url_name"] + "/" + obj_owner + "/"
                 else:
-                    #TODO: throw error
-                    pass
-
+                    raise InvalidOwnerError(obj, "Valid owner information required for object of type '" + obj_type + "'")
             else:
-                #throw error
-                pass
+                raise InvalidOwnerError(obj, "Valid owner information required for object of type '" + obj_type + "'")
 
-        # Grab the source info
+        # Check if owner exists
+        if has_owner and obj_owner_url:
+            if not self.does_object_exist(obj_owner_url):
+                print "** SKIPPING: Owner does not exist at: " + obj_owner_url
+                return
+
+        # Set source URL -- e.g. /orgs/MyOrganization/sources/MySource/
+        # NOTE: Source URL always ends with a forward slash
         has_source = False
-        obj_source = None
+        obj_source_url = None
         if self.obj_def[obj_type]["has_source"]:
-            #TODO has_source = True
-            pass
-        else:
-            pass
-
-        # Pull out the fields that aren't allowed
-        obj_not_allowed = {}
-        for k in obj.keys():
-            if k in self.obj_def[obj_type]["allowed_fields"]:
-                # do nothing
-                pass
+            has_source = True
+            if "source_url" in obj:
+                obj_source_url = obj.pop("source_url")
+                obj.pop("source", None)
+            elif "source" in obj:
+                source_url = obj_owner_url + 'sources/' + obj.pop("source") + "/"
             else:
-                obj_not_allowed[k] = obj.pop(k)
+                raise InvalidSourceError(obj, "Valid source information required for object of type '" + obj_type + "'")
 
-        # Build object URLs
+        # Check if owner exists
+        if has_source and obj_source_url:
+            if not self.does_object_exist(obj_source_url):
+                print "** SKIPPING: Source does not exist at: " + obj_source_url
+                return
+
+        # Build object URLs -- note that these always end with forward slashes
         if has_source:
             # Concept, mapping, reference, etc.
-            new_obj_url = ''
-            obj_url = ''
+            new_obj_url = obj_source_url + self.obj_def[obj_type]["url_name"] + "/"
+            obj_url = new_obj_url + obj_id + "/"
         elif has_owner:
             # Repository (Source or collection)
-            new_obj_url = obj_owner_url + "/" + self.obj_def[obj_type]["url_name"] + "/"
+            new_obj_url = obj_owner_url + self.obj_def[obj_type]["url_name"] + "/"
             obj_url = new_obj_url + obj_id + "/"
         else:
             # Organization
             new_obj_url = '/' + self.obj_def[obj_type]["url_name"] + "/"
             obj_url = new_obj_url + obj_id + "/"
 
-        # Prepare the headers
-        headers = {
-            'Authorization': 'Token ' + self.api_token,
-            'Content-Type': 'application/json'
-        }
+        # Pull out the fields that aren't allowed
+        obj_not_allowed = {}
+        for k in obj.keys():
+            if k not in self.obj_def[obj_type]["allowed_fields"]:
+                obj_not_allowed[k] = obj.pop(k)
 
         # Display some debug info
-        print " ----- " + self.api_url_root + obj_url + " ----- "
-        print "** Allowed Fields: **"
-        print json.dumps(obj)
-        print "** Removed Fields: **"
-        print json.dumps(obj_not_allowed)
+        print "**** " + self.api_url_root + obj_url + " ****"
+        print "** Allowed Fields: **", json.dumps(obj)
+        print "** Removed Fields: **", json.dumps(obj_not_allowed)
 
-        # Route to the appropriate method for type-based handling
-        if obj_type == self.OBJ_TYPE_ORGANIZATION:
-            self.process_organization(obj_type=obj_type, obj_id=obj_id, obj_owner_url=obj_owner_url,
-                                      obj_url=obj_url, new_obj_url=new_obj_url,
-                                      obj=obj, obj_not_allowed=obj_not_allowed, headers=headers)
-        elif obj_type == self.OBJ_TYPE_SOURCE:
-            self.process_source(obj_type=obj_type, obj_id=obj_id, obj_owner_url=obj_owner_url,
-                                obj_url=obj_url, new_obj_url=new_obj_url,
-                                obj=obj, obj_not_allowed=obj_not_allowed, headers=headers)
-        elif obj_type == self.OBJ_TYPE_CONCEPT:
-            self.process_concept(obj)
-        elif obj_type == self.OBJ_TYPE_MAPPING:
-            self.process_mapping(obj)
-        elif obj_type == self.OBJ_TYPE_COLLECTION:
-            self.process_collection(obj)
-        elif obj_type == self.OBJ_TYPE_REFERENCE:
-            self.process_reference(obj)
-
-
-    def process_organization(self, obj_type='', obj_id='', obj_owner_url='', obj_url='', new_obj_url='',
-                       obj=None, obj_not_allowed=None, headers=None):
-        # Check if it exists: GET self.api_url_root + obj_url
+        # Check if object already exists: GET self.api_url_root + obj_url
         print "GET " + self.api_url_root + obj_url
-        r1 = requests.get(self.api_url_root + obj_url, headers=headers)
-        if r1.status_code == requests.codes.ok:
-            # Object exists, so skip for now -- in the future, can optionally perform an update
+        obj_already_exists = self.does_object_exist(obj_url)
+        if obj_already_exists and not self.do_update_if_exists:
             print "** SKIPPING: Object already exists at: " + self.api_url_root + obj_url
-        elif r1.status_code == requests.codes.not_found:
-            # Object does not exist, so create it
-            print "** Object does not exist at: " + self.api_url_root + obj_url
-            print "POST " + self.api_url_root + new_obj_url + '  ' + json.dumps(obj)
-            if not self.test_mode:
-                r3 = requests.post(self.api_url_root + new_obj_url, headers=headers, data=json.dumps(obj))
-                if r3.status_code == requests.codes.created:
-                    print "CREATED 201"
-                    print r3.text
-                else:
-                    print r3.headers
-                    print r3.text
-                    r3.raise_for_status()
+        elif obj_already_exists:
+            print "** INFO: Object already exists at: " + self.api_url_root + obj_url
         else:
-            print "** SKIPPING: Something happened with status code: " + str(r1.status_code)
+            print "** INFO: Object does not exist so we'll create it at: " + self.api_url_root + obj_url
+
+        # TODO: Validate the JSON object
+
+        # Create/update the object
+        self.update_or_create(
+            obj_type=obj_type, obj_id=obj_id,
+            obj_owner_url=obj_owner_url, obj_source_url=obj_source_url,
+            obj_url=obj_url, new_obj_url=new_obj_url,
+            obj_already_exists=obj_already_exists,
+            obj=obj, obj_not_allowed=obj_not_allowed)
 
 
-    def process_source(self, obj_type='', obj_id='', obj_owner_url='', obj_url='', new_obj_url='',
-                       obj=None, obj_not_allowed=None, headers=None):
-        # Check if it exists: GET self.api_url_root + obj_url
-        print "GET " + self.api_url_root + obj_url
-        r1 = requests.get(self.api_url_root + obj_url, headers=headers)
-        if r1.status_code == requests.codes.ok:
-            # Object exists, so skip for now -- in the future, can optionally perform an update
-            print "** SKIPPING: Object already exists at: " + self.api_url_root + obj_url
-        elif r1.status_code == requests.codes.not_found:
-            # Object does not exist, so create it
-            print "** Object does not exist at: " + self.api_url_root + obj_url
-
-            # Make sure that the owner exists, and skip if not
-            r2 = requests.get(self.api_url_root + obj_owner_url + '/', headers=headers)
-            if r2.status_code == requests.codes.ok:
-                print "** Owner exists: " + obj_owner_url + '/ -- we can move forward' 
-            else:
-                print "** SKIPPING: Owner does not exist: " + obj_owner_url
-                return
-
-            # Create the object
-            print "POST " + self.api_url_root + new_obj_url + '  ' + json.dumps(obj)
-            if not self.test_mode:
-                r3 = requests.post(self.api_url_root + new_obj_url, headers=headers, data=json.dumps(obj))
-                if r3.status_code == requests.codes.created:
-                    print "CREATED 201"
-                    print r3.text
-                else:
-                    print r3.headers
-                    print r3.text
-                    r3.raise_for_status()
+    def update_or_create(self, obj_type='', obj_id='', obj_owner_url='', obj_source_url='',
+                         obj_url='', new_obj_url='', obj_already_exists=False,
+                         obj=None, obj_not_allowed=None):
+        # Determine which URL to use based on whether or not object already exists
+        if obj_already_exists:
+            url = obj_url
         else:
-            print "** SKIPPING: Something happened with status code: " + r1.status_code
+            url = new_obj_url
 
+        # Get out of here if in test mode
+        if self.test_mode:
+            print "[TEST MODE] POST " + self.api_url_root + url + '  ' + json.dumps(obj)
+            return
 
-    def process_collection(self, json_obj, obj_id=None):
-        #print(obj["name"])
-        pass
+        # Skip updates for now
+        if obj_already_exists:
+            print "[SKIPPING UPDATE] POST " + self.api_url_root + url + '  ' + json.dumps(obj)
+            return
 
-    def process_concept(self, json_obj, obj_id=None):
-        #print(json_obj["datatype"])
-        pass
+        # Create or update the object
+        print "POST " + self.api_url_root + url + '  ' + json.dumps(obj)
+        request_post = requests.post(self.api_url_root + url, headers=self.api_headers,
+                                     data=json.dumps(obj))
+        print "STATUS CODE:", request_post.status_code
+        print request_post.headers
+        print request_post.text
+        request_post.raise_for_status()
 
-    def process_mapping(self, json_obj, obj_id=None):
-        #print(json_obj["from_concept"])
-        pass
-
-    def process_reference(self, json_obj, obj_id=None):
-        #print(json_obj["expression"])
-        pass
 
 
 ocl_importer = ocl_json_flex_import(
-    file_path=file_path, api_token=api_token,
-    api_url_root=api_url_root, test_mode=test_mode)
+    file_path=settings.import_file_path, api_token=settings.api_token,
+    api_url_root=settings.api_url_root, test_mode=settings.test_mode,
+    do_update_if_exists=settings.do_update_if_exists)
 ocl_importer.process()

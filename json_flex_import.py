@@ -6,10 +6,10 @@ Configuration for individual resources can generally be set inline in the JSON.
 Resources currently supported:
 * Sources
 * Organizations
+* Concepts
 
 Resources that will be supported in the future:
 * Collections
-* Concepts
 * Mappings
 * References
 
@@ -21,6 +21,7 @@ Deviations from OCL API responses:
 import json
 import requests
 import settings
+import sys
 from pprint import pprint
 
 
@@ -105,6 +106,8 @@ class ocl_json_flex_import:
         self.test_mode = test_mode
         self.do_update_if_exists = do_update_if_exists
 
+        self.cache_obj_exists = {}
+
         # Prepare the headers
         self.api_headers = {
             'Authorization': 'Token ' + self.api_token,
@@ -134,20 +137,27 @@ class ocl_json_flex_import:
                         print "SKIPPING: Unrecognized 'type' attribute '" + obj_type + "' for object: " + json_line_raw
                 else:
                     print "SKIPPING: No 'type' attribute: " + json_line_raw
-                print "\n\n\n"
+                print "\n\n"
 
 
     def does_object_exist(self, obj_url):
         ''' Returns whether an object at the specified URL already exists '''
+
+        # If obj existence cached, then just return True
+        if obj_url in self.cache_obj_exists and self.cache_obj_exists[obj_url]:
+            return True
+
+        # Object existence not cached, so use API to check if it exists
         request_existence = requests.head(self.api_url_root + obj_url, headers=self.api_headers)
         if request_existence.status_code == requests.codes.ok:
+            self.cache_obj_exists[obj_url] = True
             return True
-        elif request_existence.status_code != requests.codes.not_found:
+        elif request_existence.status_code == requests.codes.not_found:
             return False
         else:
             raise UnexpectedStatusCodeError(
                 "GET " + self.api_url_root + obj_url,
-                "Unexpected status code returned: " + request_existence.status_code)
+                "Unexpected status code returned: " + str(request_existence.status_code))
 
 
     def process_object(self, obj_type, obj):
@@ -190,7 +200,7 @@ class ocl_json_flex_import:
                 obj_source_url = obj.pop("source_url")
                 obj.pop("source", None)
             elif "source" in obj:
-                source_url = obj_owner_url + 'sources/' + obj.pop("source") + "/"
+                obj_source_url = obj_owner_url + 'sources/' + obj.pop("source") + "/"
             else:
                 raise InvalidSourceError(obj, "Valid source information required for object of type '" + obj_type + "'")
 
@@ -221,23 +231,35 @@ class ocl_json_flex_import:
 
         # Check if owner exists
         if has_owner and obj_owner_url:
-            if self.does_object_exist(obj_owner_url):
-                print "** INFO: Owner exists at: " + obj_owner_url
-            else:
-                print "** SKIPPING: Owner does not exist at: " + obj_owner_url
+            try:
+                if self.does_object_exist(obj_owner_url):
+                    print "** INFO: Owner exists at: " + obj_owner_url
+                else:
+                    print "** SKIPPING: Owner does not exist at: " + obj_owner_url
+                    return
+            except UnexpectedStatusCodeError as e:
+                print "** SKIPPING: Unexpected error occurred: ", e.expression, e.message
                 return
 
         # Check if source exists
         if has_source and obj_source_url:
-            if self.does_object_exist(obj_source_url):
-                print "** INFO: Source exists at: " + obj_source_url
-            else:                
-                print "** SKIPPING: Source does not exist at: " + obj_source_url
+            try:
+                if self.does_object_exist(obj_source_url):
+                    print "** INFO: Source exists at: " + obj_source_url
+                else:                
+                    print "** SKIPPING: Source does not exist at: " + obj_source_url
+                    return
+            except UnexpectedStatusCodeError as e:
+                print "** SKIPPING: Unexpected error occurred: ", e.expression, e.message
                 return
 
         # Check if object already exists: GET self.api_url_root + obj_url
         print "GET " + self.api_url_root + obj_url
-        obj_already_exists = self.does_object_exist(obj_url)
+        try:
+            obj_already_exists = self.does_object_exist(obj_url)
+        except UnexpectedStatusCodeError as e:
+            print "** SKIPPING: Unexpected error occurred: ", e.expression, e.message
+            return
         if obj_already_exists and not self.do_update_if_exists:
             print "** SKIPPING: Object already exists at: " + self.api_url_root + obj_url
         elif obj_already_exists:

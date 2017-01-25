@@ -1,0 +1,1 @@
+{"datatype": "None", "concept_class": "Diagnosis", "source": "NCoD", "extras": {"ICD10-Block": "A00", "ICD10-Chapter": "Infectious & Parasitic"}, "names": [{"locale": "en", "locale_preferred": "True", "name_type": "Fully Specified", "name": "Cholera"}], "owner": "EthiopiaNHDD", "owner_type": "Organization", "type": "Concept", "id": "1"}

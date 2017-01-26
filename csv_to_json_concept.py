@@ -1,9 +1,15 @@
+"""
+csv_to_json_mapping.py -- Convert CSV to OCL-formatted JSON concepts file
+"""
 import csv
 import json
 import re
 
+
 def csv_to_json_concept(csv_filename, id_column, standard_columns=None,
                         name_columns=None, desc_columns=None, extra_columns=None):
+    """ Convert CSV to OCL-formatted JSON concepts file """
+
     with open(csv_filename) as csvfile:
         csv_reader = csv.DictReader(csvfile)
         for csv_row in csv_reader:

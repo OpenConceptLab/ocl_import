@@ -34,17 +34,20 @@ class ImportError(Exception):
     """ Base exception for this module """
     pass
 
+
 class UnexpectedStatusCodeError(ImportError):
     """ Exception raised for unexpected status code """
     def __init__(self, expression, message):
         self.expression = expression
         self.message = message
 
+
 class InvalidOwnerError(ImportError):
     """ Exception raised when owner information is invalid """
     def __init__(self, expression, message):
         self.expression = expression
         self.message = message
+
 
 class InvalidSourceError(ImportError):
     """ Exception raised when source information is invalid """

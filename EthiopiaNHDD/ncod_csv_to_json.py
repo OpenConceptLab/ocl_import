@@ -26,6 +26,7 @@ csv_resource_definitions = [
 					{'resource_field':'name_type', 'value':'Fully Specified'},
 				],
 			],
+			'descriptions':[]
 		},
 		ocl_csv_to_json_flex.DEF_KEY_VALUE_PAIRS:{
 			'extras': [
@@ -60,6 +61,39 @@ csv_resource_definitions = [
 			{'resource_field':'owner', 'value':'EthiopiaNHDD'},
 			{'resource_field':'owner-type', 'value':'Organization'},
 			{'resource_field':'source', 'value':'NCoD'},
+		]
+	},
+	{
+		'definition_name':'NCoD Extended Edition',
+		'resource_type':'Reference',
+		'skip_if_empty_column':'Extended_ID',
+		'core_fields': [
+			{'resource_field':'expression', 'column':'concept_url'},
+			{'resource_field':'owner', 'value':'EthiopiaNHDD'},
+			{'resource_field':'owner-type', 'value':'Organization'},
+			{'resource_field':'collection', 'value':'NCoD-Extended'},
+		]
+	},
+	{
+		'definition_name':'NCoD Compact Edition',
+		'resource_type':'Reference',
+		'skip_if_empty_column':'Compact_ID',
+		'core_fields': [
+			{'resource_field':'expression', 'column':'concept_url'},
+			{'resource_field':'owner', 'value':'EthiopiaNHDD'},
+			{'resource_field':'owner-type', 'value':'Organization'},
+			{'resource_field':'collection', 'value':'NCoD-Compact'},
+		]
+	},
+	{
+		'definition_name':'NCoD Mini Edition',
+		'resource_type':'Reference',
+		'skip_if_empty_column':'Mini_ID',
+		'core_fields': [
+			{'resource_field':'expression', 'column':'concept_url'},
+			{'resource_field':'owner', 'value':'EthiopiaNHDD'},
+			{'resource_field':'owner-type', 'value':'Organization'},
+			{'resource_field':'collection', 'value':'NCoD-Mini'},
 		]
 	},
 ]

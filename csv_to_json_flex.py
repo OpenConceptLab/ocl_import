@@ -1,5 +1,25 @@
 '''
 csv_to_json_flex.py -- Convert CSV to OCL-formatted JSON flex file
+
+Script to convert CSV files to OCL-formatted JSON files using a provided set of definitions.
+Definitions take the form:
+
+csv_resource_definitions = [
+    'definition_name':'Concept',
+    'resource_type':'Concept',
+    'id_column':'id',
+    'skip_if_empty_column':'id',
+    ocl_csv_to_json_flex.DEF_CORE_FIELDS:[
+    ],
+    ocl_csv_to_json_flex.DEF_SUB_RESOURCES:{
+        'names':[],
+        'descriptions':[],
+    },
+    ocl_csv_to_json_flex.DEF_KEY_VALUE_PAIRS:{
+        'extras':[],
+    }
+]
+
 '''
 import csv
 import json

@@ -1,16 +1,32 @@
 """
-csv_to_json_mapping.py -- Convert CSV to OCL-formatted JSON concepts file
+csv_to_json_mapping.py -- Convert CSV to OCL-formatted JSON mappings file
 
 Retired -- use csv_to_json_flex moving forward
+
+Common Attributes -- stored in standard_columns
+   id (optional -- mappings are uniquely identified by the from/to/map_type combo)
+   from_concept_url
+   map_type
+   extras
+
+Internal Mapping -- 
+   to_concept_url
+
+External Mapping:
+   to_source_url
+   to_concept_code
+   to_concept_name (optional)
 """
 import csv
 import json
 import re
 
 
-def csv_to_json_concept(csv_filename, id_column, standard_columns=None,
+def csv_to_json_mapping(csv_filename, id_column=None, from_concept_url_column=None,
+                        map_type_column=None, to_
+                        standard_columns=None,
                         name_columns=None, desc_columns=None, extra_columns=None):
-    """ Convert CSV to OCL-formatted JSON concepts file """
+    """ Convert CSV to OCL-formatted JSON mappings file """
 
     with open(csv_filename) as csvfile:
         csv_reader = csv.DictReader(csvfile)

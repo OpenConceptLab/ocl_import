@@ -1,24 +1,27 @@
 '''
 csv_to_json_flex.py -- Convert CSV to OCL-formatted JSON flex file
 
-Script to convert CSV files to OCL-formatted JSON files using a provided set of definitions.
-Definitions take the form:
+Script to convert a CSV file to an OCL-formatted JSON file based on a provided
+set of CSV Resource Definitions. The resulting JSON is intended for the
+json_flex_import and is not suitable for the low-level concept/mapping importer.
 
-csv_resource_definitions = [
-    'definition_name':'Concept',
-    'resource_type':'Concept',
-    'id_column':'id',
-    'skip_if_empty_column':'id',
-    ocl_csv_to_json_flex.DEF_CORE_FIELDS:[
-    ],
-    ocl_csv_to_json_flex.DEF_SUB_RESOURCES:{
-        'names':[],
-        'descriptions':[],
-    },
-    ocl_csv_to_json_flex.DEF_KEY_VALUE_PAIRS:{
-        'extras':[],
-    }
-]
+Definitions take the form:
+    csv_resource_definitions = [
+        'definition_name':'Concept',
+        'resource_type':'Concept',
+        'id_column':'id',
+        'skip_if_empty_column':'id',
+        ocl_csv_to_json_flex.DEF_CORE_FIELDS:[
+            {'resource_type':...}
+        ],
+        ocl_csv_to_json_flex.DEF_SUB_RESOURCES:{
+            'names':[],
+            'descriptions':[],
+        },
+        ocl_csv_to_json_flex.DEF_KEY_VALUE_PAIRS:{
+            'extras':[],
+        },
+    ]
 
 '''
 import csv
@@ -53,15 +56,17 @@ class ocl_csv_to_json_flex:
             csv_reader = csv.DictReader(csvfile)
             for csv_row in csv_reader:
                 for csv_resource_def in self.csv_resource_definitions:
-                    self.process_csv_row_with_definition(csv_row, csv_resource_def)
+                    if 'is_active' not in csv_resource_def or csv_resource_def['is_active']:
+                        self.process_csv_row_with_definition(csv_row, csv_resource_def)
 
     def process_by_definition(self):
         ''' Processes the CSV file by looping through it entirely once for each definition '''
         for csv_resource_def in self.csv_resource_definitions:
-            with open(self.csv_filename) as csvfile:
-                csv_reader = csv.DictReader(csvfile)
-                for csv_row in csv_reader:
-                    self.process_csv_row_with_definition(csv_row, csv_resource_def)
+            if 'is_active' not in csv_resource_def or csv_resource_def['is_active']:
+                with open(self.csv_filename) as csvfile:
+                    csv_reader = csv.DictReader(csvfile)
+                    for csv_row in csv_reader:
+                        self.process_csv_row_with_definition(csv_row, csv_resource_def)
 
     def process_csv_row_with_definition(self, csv_row, csv_resource_def):
         ''' Process individual CSV row with the provided CSV resource definition '''
@@ -99,6 +104,9 @@ class ocl_csv_to_json_flex:
                     ocl_resource[field_def['resource_field']] = csv_row[field_def['column']]
                 elif 'value' in field_def:
                     ocl_resource[field_def['resource_field']] = field_def['value']
+                elif 'csv_to_json_processor' in field_def and 'data_column' in field_def:
+                    methodToCall = getattr(self, field_def['csv_to_json_processor'])
+                    ocl_resource[field_def['resource_field']] = methodToCall(csv_row, field_def)
                 else:
                     raise Exception('Expected "column" or "value" key in standard column definition, but none found: %s' % field_def)
 
@@ -153,6 +161,15 @@ class ocl_csv_to_json_flex:
 
         # Output
         print json.dumps(ocl_resource)
+
+
+    def process_reference(self, csv_row, field_def):
+        result = None
+        #print field_def['data_column']
+        if ('data_column' in field_def and field_def['data_column'] and
+                field_def['data_column'] in csv_row):
+            result = {'expressions': [ csv_row[field_def['data_column']] ]}
+        return result
 
 
     def format_identifier(self, unformatted_id):

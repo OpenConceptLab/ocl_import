@@ -71,11 +71,25 @@ class ocl_csv_to_json_flex:
     def process_csv_row_with_definition(self, csv_row, csv_resource_def):
         ''' Process individual CSV row with the provided CSV resource definition '''
 
-        # Optionally skip if specified column is empty
-        if ('skip_if_empty_column' in csv_resource_def and
-                csv_resource_def['skip_if_empty_column'] and
-                csv_resource_def['skip_if_empty_column'] in csv_row and
-                csv_row[csv_resource_def['skip_if_empty_column']] == ''):
+        # Check if this row should be skipped
+        is_skip_row = False
+        if 'skip_if_empty_column' in csv_resource_def and csv_resource_def['skip_if_empty_column']:
+            skip_columns = csv_resource_def['skip_if_empty_column']
+            if not isinstance(skip_columns, list):
+                skip_columns = [skip_columns]
+            for skip_column in skip_columns:
+                if skip_column not in csv_row:
+                    raise Exception("skip_if_empty_column '" + skip_column +
+                                    "'is not defined in the CSV file")
+                if csv_row[skip_column] == '':
+                    is_skip_row = True
+                    break
+        elif 'skip_handler' in csv_resource_def:
+            handler = getattr(self, csv_resource_def['skip_handler'])
+            if not handler:
+                raise Exception("skip_handler '" + csv_resource_def['skip_handler'] + "' is not defined")
+            is_skip_row = handler(csv_resource_def, csv_row)
+        if is_skip_row:
             if self.verbose:
                 print 'SKIPPING: ', csv_resource_def['definition_name']
             return

@@ -26,7 +26,7 @@ import json
 import requests
 import settings
 import sys
-from pprint import pprint
+import datetime
 
 
 # Owner fields: ( owner AND owner_type ) OR ( owner_url )
@@ -145,7 +145,7 @@ class ocl_json_flex_import:
     }
 
 
-    def __init__(self, file_path='', api_url_root='', api_token='',
+    def __init__(self, file_path='', api_url_root='', api_token='', limit=0,
                  test_mode=False, verbosity=1, do_update_if_exists=False):
         ''' Initialize the ocl_json_flex_import object '''
 
@@ -155,6 +155,7 @@ class ocl_json_flex_import:
         self.test_mode = test_mode
         self.do_update_if_exists = do_update_if_exists
         self.verbosity = verbosity
+        self.limit = limit
 
         self.cache_obj_exists = {}
 
@@ -165,38 +166,44 @@ class ocl_json_flex_import:
         }
 
 
+    def log(self, *args):
+        sys.stdout.write('[' + str(datetime.datetime.now()) + '] ')
+        for arg in args:
+            sys.stdout.write(str(arg))
+            sys.stdout.write(' ')
+        sys.stdout.write('\n')
+        sys.stdout.flush()
+
+
     def process(self):
         ''' Processes an import file '''
         # Display global settings
         if self.verbosity >= 1:
-            print "**** GLOBAL SETTINGS ****"
-            print "    API Root URL:", self.api_url_root
-            print "    API Token:", self.api_token
-            print "    Import File:", self.file_path
-            print "    Test Mode:", self.test_mode
-            print "    Update Resource if Exists: ", self.do_update_if_exists
-            print "    Verbosity:", self.verbosity
-            print ""
-
-        if self.verbosity >= 3:
-            print "\nOBJECT DEFINITIONS:"
-            pprint(self.obj_def)
-            print "\n"
+            self.log("**** GLOBAL SETTINGS ****",
+                     "API Root URL:", self.api_url_root,
+                     ", API Token:", self.api_token,
+                     ", Import File:", self.file_path,
+                     ", Test Mode:", self.test_mode,
+                     ", Update Resource if Exists: ", self.do_update_if_exists,
+                     ", Verbosity:", self.verbosity)
 
         # Loop through each JSON object in the file
         obj_def_keys = self.obj_def.keys()
         with open(self.file_path) as json_file:
+            count = 0
             for json_line_raw in json_file:
+                if self.limit > 0 and count >= self.limit:
+                    break
                 json_line_obj = json.loads(json_line_raw)
                 if "type" in json_line_obj:
                     obj_type = json_line_obj.pop("type")
                     if obj_type in obj_def_keys:
                         self.process_object(obj_type, json_line_obj)
                     else:
-                        print "**** SKIPPING: Unrecognized 'type' attribute '" + obj_type + "' for object: " + json_line_raw
+                        self.log("**** SKIPPING: Unrecognized 'type' attribute '" + obj_type + "' for object: " + json_line_raw)
                 else:
-                    print "**** SKIPPING: No 'type' attribute: " + json_line_raw
-                print "\n"
+                    self.log("**** SKIPPING: No 'type' attribute: " + json_line_raw)
+                count += 1
 
 
     def does_object_exist(self, obj_url, use_cache=True):
@@ -260,7 +267,6 @@ class ocl_json_flex_import:
         # Use API to check if mapping exists
         request_existence = requests.head(
             self.api_url_root + obj_url, headers=self.api_headers, params=params)
-        print request_existence.url
         if request_existence.status_code == requests.codes.ok:
             if 'num_found' in request_existence.headers and int(request_existence.headers['num_found']) >= 1:
                 return True
@@ -389,35 +395,35 @@ class ocl_json_flex_import:
 
         # Display some debug info
         if self.verbosity >= 1:
-            print "**** " + obj_type + ": " + self.api_url_root + obj_url + " ****"
+            self.log("**** Importing " + obj_type + ": " + self.api_url_root + obj_url + " ****")
         if self.verbosity >= 2:
-            print "** Allowed Fields: **", json.dumps(obj)
-            print "** Removed Fields: **", json.dumps(obj_not_allowed)
+            self.log("** Allowed Fields: **", json.dumps(obj))
+            self.log("** Removed Fields: **", json.dumps(obj_not_allowed))
 
         # Check if owner exists
         if has_owner and obj_owner_url:
             try:
                 if self.does_object_exist(obj_owner_url):
-                    print "** INFO: Owner exists at: " + obj_owner_url
+                    self.log("** INFO: Owner exists at: " + obj_owner_url)
                 else:
-                    print "** SKIPPING: Owner does not exist at: " + obj_owner_url
+                    self.log("** SKIPPING: Owner does not exist at: " + obj_owner_url)
                     if not self.test_mode:
                         return
             except UnexpectedStatusCodeError as e:
-                print "** SKIPPING: Unexpected error occurred: ", e.expression, e.message
+                self.log("** SKIPPING: Unexpected error occurred: ", e.expression, e.message)
                 return
 
         # Check if repository exists
         if (has_source or has_collection) and obj_repo_url:
             try:
                 if self.does_object_exist(obj_repo_url):
-                    print "** INFO: Repository exists at: " + obj_repo_url
+                    self.log("** INFO: Repository exists at: " + obj_repo_url)
                 else:
-                    print "** SKIPPING: Repository does not exist at: " + obj_repo_url
+                    self.log("** SKIPPING: Repository does not exist at: " + obj_repo_url)
                     if not self.test_mode:
                         return
             except UnexpectedStatusCodeError as e:
-                print "** SKIPPING: Unexpected error occurred: ", e.expression, e.message
+                self.log("** SKIPPING: Unexpected error occurred: ", e.expression, e.message)
                 return
 
         # Check if object already exists: GET self.api_url_root + obj_url
@@ -430,16 +436,16 @@ class ocl_json_flex_import:
             else:
                 obj_already_exists = self.does_object_exist(obj_url)
         except UnexpectedStatusCodeError as e:
-            print "** SKIPPING: Unexpected error occurred: ", e.expression, e.message
+            self.log("** SKIPPING: Unexpected error occurred: ", e.expression, e.message)
             return
         if obj_already_exists and not self.do_update_if_exists:
-            print "** SKIPPING: Object already exists at: " + self.api_url_root + obj_url
+            self.log("** SKIPPING: Object already exists at: " + self.api_url_root + obj_url)
             if not self.test_mode:
                 return
         elif obj_already_exists:
-            print "** INFO: Object already exists at: " + self.api_url_root + obj_url
+            self.log("** INFO: Object already exists at: " + self.api_url_root + obj_url)
         else:
-            print "** INFO: Object does not exist so we'll create it at: " + self.api_url_root + obj_url
+            self.log("** INFO: Object does not exist so we'll create it at: " + self.api_url_root + obj_url)
 
         # TODO: Validate the JSON object
 
@@ -455,7 +461,7 @@ class ocl_json_flex_import:
                 obj_already_exists=obj_already_exists,
                 obj=obj, obj_not_allowed=obj_not_allowed)
         except requests.exceptions.HTTPError as e:
-            print "ERROR: ", e
+            self.log("ERROR: ", e)
 
 
     def update_or_create(self, obj_type='', obj_id='', obj_owner_url='',
@@ -475,26 +481,26 @@ class ocl_json_flex_import:
 
         # Get out of here if in test mode
         if self.test_mode:
-            print "[TEST MODE] ", method, self.api_url_root + url + '  ', json.dumps(obj)
+            self.log("[TEST MODE] ", method, self.api_url_root + url + '  ', json.dumps(obj))
             return
 
         # Determine method
         if obj_already_exists:
             # Skip updates for now
-            print "[SKIPPING UPDATE] ", method, self.api_url_root + url + '  ', json.dumps(obj)
+            self.log("[SKIPPING UPDATE] ", method, self.api_url_root + url + '  ', json.dumps(obj))
             return
 
         # Create or update the object
-        print method, " ", self.api_url_root + url + '  ', json.dumps(obj)
+        self.log(method, " ", self.api_url_root + url + '  ', json.dumps(obj))
         if method == 'POST':
             request_post = requests.post(self.api_url_root + url, headers=self.api_headers,
                                          data=json.dumps(obj))
         elif method == 'PUT':
             request_post = requests.put(self.api_url_root + url, headers=self.api_headers,
                                          data=json.dumps(obj))
-        print "STATUS CODE:", request_post.status_code
-        print request_post.headers
-        print request_post.text
+        self.log("STATUS CODE:", request_post.status_code)
+        self.log(request_post.headers)
+        self.log(request_post.text)
         request_post.raise_for_status()
 
 
@@ -502,5 +508,6 @@ class ocl_json_flex_import:
 ocl_importer = ocl_json_flex_import(
     file_path=settings.import_file_path, api_token=settings.api_token,
     api_url_root=settings.api_url_root, test_mode=settings.test_mode,
-    do_update_if_exists=settings.do_update_if_exists, verbosity=settings.verbosity)
+    do_update_if_exists=settings.do_update_if_exists, verbosity=settings.verbosity,
+    limit=settings.limit)
 ocl_importer.process()
